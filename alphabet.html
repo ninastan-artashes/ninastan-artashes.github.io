@@ -176,7 +176,50 @@
 
         }
 
+        /* ---------- Alphabet Table ---------- */
 
+        .alphabet-table {
+            width: 100%;
+            margin: 35px 0 45px;
+        }
+
+        .alphabet-table th,
+        .alphabet-table td {
+            padding: 9px 14px;
+        }
+
+        .alphabet-table th {
+            font-size: 0.9rem;
+            letter-spacing: 0.03em;
+        }
+
+        .alphabet-table td:first-child {
+            font-size: 1.15rem;
+            font-weight: normal;
+        }
+
+        .alphabet-table td:nth-child(2) {
+            font-family: "Times New Roman", Georgia, serif;
+            font-style: italic;
+        }
+
+        .alphabet-table td:nth-child(4) {
+            font-variant-numeric: tabular-nums;
+        }
+
+        @media (max-width: 650px) {
+
+            .alphabet-table th,
+            .alphabet-table td {
+                padding: 8px 5px;
+                font-size: 0.85rem;
+            }
+
+            .alphabet-table td:first-child {
+                font-size: 1rem;
+            }
+
+        }
         
     </style>
 </head>
@@ -226,50 +269,62 @@
             以下はアルメニア文字の一覧表です。それぞれ音価（どのように発音するか）、
             名前（その文字の名前）、数価（そして文字に与えられた数字）を記載しています。
         </p>
+<table class="alphabet-table">
+    <thead>
+        <tr>
+            <th>文字</th>
+            <th>音価</th>
+            <th>名前</th>
+            <th>数価</th>
+        </tr>
+    </thead>
 
-        <p>
-            （文字＿音価＿名前＿数価）
-            <p>Ա ա &nbsp;&nbsp;&nbsp;&nbsp; a &nbsp;&nbsp; այբ &nbsp;&nbsp; 1</p>
-<p>Բ բ &nbsp;&nbsp;&nbsp;&nbsp; b &nbsp;&nbsp; բեն &nbsp;&nbsp; 2</p>
-<p>Գ գ &nbsp;&nbsp;&nbsp;&nbsp; g &nbsp;&nbsp; գիմ &nbsp;&nbsp; 3</p>
-<p>Դ դ &nbsp;&nbsp;&nbsp;&nbsp; d &nbsp;&nbsp; դա &nbsp;&nbsp; 4</p>
-<p>Ե ե &nbsp;&nbsp;&nbsp;&nbsp; ye e &nbsp;&nbsp; եչ &nbsp;&nbsp; 5</p>
-<p>Զ զ &nbsp;&nbsp;&nbsp;&nbsp; z &nbsp;&nbsp; զա &nbsp;&nbsp; 6</p>
-<p>Է է &nbsp;&nbsp;&nbsp;&nbsp; e &nbsp;&nbsp; է &nbsp;&nbsp; 7</p>
-<p>Ը ը &nbsp;&nbsp;&nbsp;&nbsp; ae &nbsp;&nbsp; ըթ &nbsp;&nbsp; 8</p>
-<p>Թ թ &nbsp;&nbsp;&nbsp;&nbsp; t’ &nbsp;&nbsp; թո &nbsp;&nbsp; 9</p>
-<p>Ժ ժ &nbsp;&nbsp;&nbsp;&nbsp; zh &nbsp;&nbsp; ժե &nbsp;&nbsp; 10</p>
-<p>Ի ի &nbsp;&nbsp;&nbsp;&nbsp; i &nbsp;&nbsp; ini &nbsp;&nbsp; 20</p>
-<p>Լ լ &nbsp;&nbsp;&nbsp;&nbsp; l &nbsp;&nbsp; լյուն &nbsp;&nbsp; 30</p>
-<p>Խ խ &nbsp;&nbsp;&nbsp;&nbsp; kh &nbsp;&nbsp; խե &nbsp;&nbsp; 40</p>
-<p>Ծ ծ &nbsp;&nbsp;&nbsp;&nbsp; tz &nbsp;&nbsp; ծա &nbsp;&nbsp; 50</p>
-<p>Կ կ &nbsp;&nbsp;&nbsp;&nbsp; k &nbsp;&nbsp; կեն &nbsp;&nbsp; 60</p>
-<p>Հ հ &nbsp;&nbsp;&nbsp;&nbsp; h &nbsp;&nbsp; հո &nbsp;&nbsp; 70</p>
-<p>Ձ ձ &nbsp;&nbsp;&nbsp;&nbsp; dz &nbsp;&nbsp; ձա &nbsp;&nbsp; 80</p>
-<p>Ղ ղ &nbsp;&nbsp;&nbsp;&nbsp; gh &nbsp;&nbsp; ղատ &nbsp;&nbsp; 90</p>
-<p>Ճ ճ &nbsp;&nbsp;&nbsp;&nbsp; ch &nbsp;&nbsp; ճե &nbsp;&nbsp; 100</p>
-<p>Մ մ &nbsp;&nbsp;&nbsp;&nbsp; m &nbsp;&nbsp; մեն &nbsp;&nbsp; 200</p>
-<p>Յ յ &nbsp;&nbsp;&nbsp;&nbsp; y &nbsp;&nbsp; յի/հի &nbsp;&nbsp; 300</p>
-<p>Ն ն &nbsp;&nbsp;&nbsp;&nbsp; n &nbsp;&nbsp; նու &nbsp;&nbsp; 400</p>
-<p>Շ շ &nbsp;&nbsp;&nbsp;&nbsp; sh &nbsp;&nbsp; շա &nbsp;&nbsp; 500</p>
-<p>Ո ո &nbsp;&nbsp;&nbsp;&nbsp; vo o &nbsp;&nbsp; ո &nbsp;&nbsp; 600</p>
-<p>Չ չ &nbsp;&nbsp;&nbsp;&nbsp; ch‘ &nbsp;&nbsp; չա &nbsp;&nbsp; 700</p>
-<p>Պ պ &nbsp;&nbsp;&nbsp;&nbsp; p &nbsp;&nbsp; պե &nbsp;&nbsp; 800</p>
-<p>Ջ ջ &nbsp;&nbsp;&nbsp;&nbsp; j &nbsp;&nbsp; ջե &nbsp;&nbsp; 900</p>
-<p>Ռ ռ &nbsp;&nbsp;&nbsp;&nbsp; rr &nbsp;&nbsp; ռա &nbsp;&nbsp; 1000</p>
-<p>Ս ս &nbsp;&nbsp;&nbsp;&nbsp; s &nbsp;&nbsp; սե &nbsp;&nbsp; 2000</p>
-<p>Վ վ &nbsp;&nbsp;&nbsp;&nbsp; v &nbsp;&nbsp; վև &nbsp;&nbsp; 3000</p>
-<p>Տ տ &nbsp;&nbsp;&nbsp;&nbsp; t &nbsp;&nbsp; տյուն &nbsp;&nbsp; 4000</p>
-<p>Ր ր &nbsp;&nbsp;&nbsp;&nbsp; r &nbsp;&nbsp; րե &nbsp;&nbsp; 5000</p>
-<p>Ց ց &nbsp;&nbsp;&nbsp;&nbsp; ts‘ &nbsp;&nbsp; ցո &nbsp;&nbsp; 6000</p>
-<p>Ու ու &nbsp;&nbsp;&nbsp;&nbsp; u &nbsp;&nbsp; ու &nbsp;&nbsp; 7000 (ւ)</p>
-<p>Փ փ &nbsp;&nbsp;&nbsp;&nbsp; p‘ &nbsp;&nbsp; փյուր &nbsp;&nbsp; 8000</p>
-<p>Ք ք &nbsp;&nbsp;&nbsp;&nbsp; k’ &nbsp;&nbsp; քե &nbsp;&nbsp; 9000</p>
-<p>ԵՒ և &nbsp;&nbsp;&nbsp;&nbsp; ev &nbsp;&nbsp; և</p>
-<p>Օ օ &nbsp;&nbsp;&nbsp;&nbsp; o &nbsp;&nbsp; օ</p>
-<p>Ֆ ֆ &nbsp;&nbsp;&nbsp;&nbsp; f &nbsp;&nbsp; ֆե</p>
+    <tbody>
+        <tr><td>Ա ա</td><td>a</td><td>այբ</td><td>1</td></tr>
+        <tr><td>Բ բ</td><td>b</td><td>բեն</td><td>2</td></tr>
+        <tr><td>Գ գ</td><td>g</td><td>գիմ</td><td>3</td></tr>
+        <tr><td>Դ դ</td><td>d</td><td>դա</td><td>4</td></tr>
+        <tr><td>Ե ե</td><td>ye / e</td><td>եչ</td><td>5</td></tr>
+        <tr><td>Զ զ</td><td>z</td><td>զա</td><td>6</td></tr>
+        <tr><td>Է է</td><td>e</td><td>է</td><td>7</td></tr>
+        <tr><td>Ը ը</td><td>æ</td><td>ըթ</td><td>8</td></tr>
+        <tr><td>Թ թ</td><td>t'</td><td>թո</td><td>9</td></tr>
+        <tr><td>Ժ ժ</td><td>zh</td><td>ժե</td><td>10</td></tr>
 
-        </p>
+        <tr><td>Ի ի</td><td>i</td><td>ինի</td><td>20</td></tr>
+        <tr><td>Լ լ</td><td>l</td><td>լյուն</td><td>30</td></tr>
+        <tr><td>Խ խ</td><td>kh</td><td>խե</td><td>40</td></tr>
+        <tr><td>Ծ ծ</td><td>tz</td><td>ծա</td><td>50</td></tr>
+        <tr><td>Կ կ</td><td>k</td><td>կեն</td><td>60</td></tr>
+        <tr><td>Հ հ</td><td>h</td><td>հո</td><td>70</td></tr>
+        <tr><td>Ձ ձ</td><td>dz</td><td>ձա</td><td>80</td></tr>
+        <tr><td>Ղ ղ</td><td>gh</td><td>ղատ</td><td>90</td></tr>
+        <tr><td>Ճ ճ</td><td>ch</td><td>ճե</td><td>100</td></tr>
+        <tr><td>Մ մ</td><td>m</td><td>մեն</td><td>200</td></tr>
+
+        <tr><td>Յ յ</td><td>y</td><td>յի / հի</td><td>300</td></tr>
+        <tr><td>Ն ն</td><td>n</td><td>նու</td><td>400</td></tr>
+        <tr><td>Շ շ</td><td>sh</td><td>շա</td><td>500</td></tr>
+        <tr><td>Ո ո</td><td>vo / o</td><td>ո</td><td>600</td></tr>
+        <tr><td>Չ չ</td><td>ch'</td><td>չա</td><td>700</td></tr>
+        <tr><td>Պ պ</td><td>p</td><td>պե</td><td>800</td></tr>
+        <tr><td>Ջ ջ</td><td>j</td><td>ջե</td><td>900</td></tr>
+        <tr><td>Ռ ռ</td><td>rr</td><td>ռա</td><td>1000</td></tr>
+        <tr><td>Ս ս</td><td>s</td><td>սե</td><td>2000</td></tr>
+        <tr><td>Վ վ</td><td>v</td><td>վև</td><td>3000</td></tr>
+
+        <tr><td>Տ տ</td><td>t</td><td>տյուն</td><td>4000</td></tr>
+        <tr><td>Ր ր</td><td>r</td><td>րե</td><td>5000</td></tr>
+        <tr><td>Ց ց</td><td>ts'</td><td>ցո</td><td>6000</td></tr>
+        <tr><td>Ու ու</td><td>u</td><td>ու</td><td>7000 (ւ)</td></tr>
+        <tr><td>Փ փ</td><td>p'</td><td>փյուր</td><td>8000</td></tr>
+        <tr><td>Ք ք</td><td>k'</td><td>քե</td><td>9000</td></tr>
+
+        <tr><td>Եւ և</td><td>ev</td><td>և</td><td>—</td></tr>
+        <tr><td>Օ օ</td><td>o</td><td>օ</td><td>—</td></tr>
+        <tr><td>Ֆ ֆ</td><td>f</td><td>ֆե</td><td>—</td></tr>
+    </tbody>
+</table>
 
         <p>
             アルメニア文字は紀元後405年ごろにメスロプ・マシュトツが考えたものとされています。
