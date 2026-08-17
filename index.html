@@ -3,100 +3,218 @@
 
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>現代東アルメニア語文法</title>
+    <title>Modern Eastern Armenian Grammar</title>
 
     <style>
+
+        /* ---------- Base ---------- */
+
         body {
-            max-width: 850px;
-            margin: 0 auto;
-            padding: 60px 25px;
+            margin: 0;
+            background: #f8f6f0;
+            color: #20242a;
             font-family: Georgia, "Times New Roman", serif;
-            line-height: 1.9;
-            color: #333;
-            background: #faf9f6;
+            line-height: 1.85;
         }
 
-        .title {
+        .page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 80px 50px 100px;
+            background: #fffdf8;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+
+        /* ---------- Title ---------- */
+
+        .title-page {
             text-align: center;
-            margin-bottom: 60px;
+            padding: 70px 20px 80px;
+        }
+
+        .series {
+            font-size: 0.82rem;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            margin-bottom: 45px;
+            color: #555b63;
         }
 
         h1 {
-            font-size: 2.4em;
+            font-size: 3rem;
+            line-height: 1.25;
             font-weight: normal;
-            margin-bottom: 15px;
+            letter-spacing: 0.04em;
+            margin: 0;
+            color: #18283b;
         }
 
         .armenian-title {
-            font-size: 1.5em;
-            margin-bottom: 30px;
+            margin-top: 25px;
+            font-size: 1.55rem;
+            line-height: 1.6;
+            color: #343b43;
+        }
+
+        .rule {
+            width: 90px;
+            margin: 45px auto;
+            border-top: 1px solid #777;
         }
 
         .author {
-            font-size: 1.1em;
-            margin-top: 30px;
+            font-size: 1.15rem;
+            letter-spacing: 0.08em;
+            line-height: 2;
+        }
+
+        .date {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+
+        /* ---------- Main text ---------- */
+
+        main {
+            max-width: 720px;
+            margin: 0 auto;
         }
 
         h2 {
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 8px;
-            margin-top: 50px;
+            font-size: 1.55rem;
+            font-weight: normal;
+            color: #18283b;
+            border-bottom: 1px solid #aaa;
+            padding-bottom: 10px;
+            margin-top: 70px;
+            margin-bottom: 30px;
         }
+
+        p {
+            margin: 0 0 1.4em;
+        }
+
+
+        /* ---------- Contents ---------- */
 
         .contents {
-            margin-top: 30px;
+            margin-top: 35px;
         }
 
-        .contents a {
-            display: block;
-            padding: 8px 0;
-            color: #333;
+        .contents-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            padding: 10px 0;
+            border-bottom: 1px dotted #bbb;
+        }
+
+        .contents-item a {
+            color: #20242a;
             text-decoration: none;
         }
 
-        .contents a:hover {
+        .contents-item a:hover {
+            color: #18283b;
             text-decoration: underline;
         }
 
-        .intro {
-            margin-top: 50px;
-            padding: 25px;
-            background: white;
-            border: 1px solid #e5e2dc;
+        .chapter-number {
+            display: inline-block;
+            width: 45px;
+            color: #666;
         }
 
+
+        /* ---------- Footer ---------- */
+
         footer {
-            margin-top: 80px;
+            margin-top: 100px;
+            padding-top: 25px;
+            border-top: 1px solid #aaa;
             text-align: center;
-            font-size: 0.9em;
+            font-size: 0.82rem;
             color: #777;
         }
+
+
+        /* ---------- Mobile ---------- */
+
+        @media (max-width: 650px) {
+
+            .page {
+                padding: 45px 25px 70px;
+            }
+
+            .title-page {
+                padding: 45px 10px 60px;
+            }
+
+            h1 {
+                font-size: 2.1rem;
+            }
+
+            .armenian-title {
+                font-size: 1.25rem;
+            }
+
+            .series {
+                font-size: 0.7rem;
+                letter-spacing: 0.15em;
+            }
+
+        }
+
     </style>
 </head>
 
 
 <body>
 
-    <div class="title">
+<div class="page">
 
-        <h1>現代東アルメニア語文法</h1>
+
+    <!-- TITLE PAGE -->
+
+    <section class="title-page">
+
+        <div class="series">
+            A Grammar of Modern Armenian
+        </div>
+
+        <h1>
+            Modern Eastern<br>
+            Armenian Grammar
+        </h1>
 
         <div class="armenian-title">
             Ժամանակակից Արևելահայերենի Քերականություն
         </div>
+
+        <div class="rule"></div>
 
         <div class="author">
             二宮篤紀<br>
             Ացուկի Նինոմիյա
         </div>
 
-    </div>
+        <div class="date">
+            2026
+        </div>
+
+    </section>
 
 
-    <div class="intro">
+    <!-- MAIN CONTENT -->
+
+    <main>
+
 
         <h2>はじめに</h2>
 
@@ -114,39 +232,74 @@
             そこで、今回この教科書を作りました。
         </p>
 
-    </div>
 
+        <h2>目次</h2>
 
-    <h2>目次</h2>
+        <div class="contents">
 
-    <div class="contents">
+            <div class="contents-item">
+                <a href="#">
+                    <span class="chapter-number">1.</span>
+                    アルメニア語の概要
+                </a>
+            </div>
 
-        <a href="#">アルメニア語の概要</a>
+            <div class="contents-item">
+                <a href="#">
+                    <span class="chapter-number">2.</span>
+                    音韻
+                </a>
+            </div>
 
-        <a href="#">言語の概要</a>
+            <div class="contents-item">
+                <a href="#">
+                    <span class="chapter-number">3.</span>
+                    名詞
+                </a>
+            </div>
 
-        <a href="#">音韻</a>
+            <div class="contents-item">
+                <a href="#">
+                    <span class="chapter-number">4.</span>
+                    形容詞
+                </a>
+            </div>
 
-        <a href="#">名詞</a>
+            <div class="contents-item">
+                <a href="#">
+                    <span class="chapter-number">5.</span>
+                    代名詞
+                </a>
+            </div>
 
-        <a href="#">形容詞</a>
+            <div class="contents-item">
+                <a href="#">
+                    <span class="chapter-number">6.</span>
+                    動詞
+                </a>
+            </div>
 
-        <a href="#">代名詞</a>
+            <div class="contents-item">
+                <a href="#">
+                    <span class="chapter-number">7.</span>
+                    統語論
+                </a>
+            </div>
 
-        <a href="#">動詞</a>
+        </div>
 
-        <a href="#">統語論</a>
-
-    </div>
+    </main>
 
 
     <footer>
 
-        <p>
-            Modern Eastern Armenian Grammar
-        </p>
+        Modern Eastern Armenian Grammar<br>
+        Ժամանակակից Արևելահայերենի Քերականություն
 
     </footer>
+
+
+</div>
 
 </body>
 
