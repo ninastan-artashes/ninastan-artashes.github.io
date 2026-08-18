@@ -171,43 +171,67 @@
 
         }
 
-        /* ---------- Flowing Red Line ---------- */
+/* ---------- Dark Red Flowing Wave ---------- */
 
 .flowing-lines {
     position: relative;
     width: 100%;
-    height: 90px;
-    margin: -15px auto 25px;
+    height: 120px;
+    margin: -20px 0 20px;
     overflow: hidden;
 }
 
+/* Main wave */
 .flowing-lines::before {
     content: "";
     position: absolute;
-    width: 125%;
-    height: 80px;
-    left: -12%;
-    top: -20px;
 
-    border-top: 3px solid #9b1c24;
-    border-radius: 50%;
+    width: 125%;
+    height: 95px;
+
+    left: -12%;
+    top: -35px;
+
+    background: linear-gradient(
+        105deg,
+        #5e0b12 0%,
+        #7f1019 25%,
+        #a71924 50%,
+        #7d0d16 75%,
+        #4d080e 100%
+    );
+
+    border-radius: 0 0 55% 45% / 0 0 70% 55%;
 
     transform: rotate(-3deg);
+
+    box-shadow:
+        0 5px 12px rgba(70, 0, 0, 0.18);
 }
 
+/* Second flowing layer */
 .flowing-lines::after {
     content: "";
     position: absolute;
-    width: 110%;
-    height: 70px;
-    left: 5%;
-    top: 5px;
 
-    border-top: 1px solid #9b1c24;
+    width: 115%;
+    height: 55px;
+
+    left: 8%;
+    top: 35px;
+
+    background: linear-gradient(
+        105deg,
+        rgba(83, 8, 15, 0.95),
+        rgba(156, 20, 31, 0.85),
+        rgba(91, 7, 14, 0.95)
+    );
+
     border-radius: 50%;
 
-    transform: rotate(-2deg);
-    opacity: 0.65;
+    transform: rotate(-4deg);
+
+    opacity: 0.9;
 }
 
     </style>
@@ -236,8 +260,6 @@
             Ժամանակակից Արևելահայերենի Քերականություն
         </div>
 
-        <div class="flowing-lines"></div>
-        
         <div class="author">
             二宮篤紀<br>
             Ացուկի Նինոմիյա
@@ -249,7 +271,8 @@
 
     </section>
 
-
+ <div class="flowing-lines"></div>
+    
     <!-- MAIN CONTENT -->
 
     <main>
