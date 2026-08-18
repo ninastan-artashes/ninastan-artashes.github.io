@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>名詞 | 現代東アルメニア語文法</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            background: #f8f6f0;
+            color: #20242a;
+            font-family: Georgia, "Times New Roman", serif;
+            line-height: 1.9;
+        }
+
+        .page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 50px 100px;
+            background: #fffdf8;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0 55px;
+            border-bottom: 1px solid #aaa;
+        }
+
+        .book-title {
+            font-size: 0.9rem;
+            letter-spacing: 0.12em;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            font-weight: normal;
+            color: #18283b;
+            margin: 0;
+        }
+
+        .armenian {
+            margin-top: 12px;
+            font-size: 1.2rem;
+        }
+
+        main {
+            max-width: 720px;
+            margin: 55px auto;
+        }
+
+        h2 {
+    font-size: 1.85rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 90px;
+    margin-bottom: 35px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid #18283b;
+           }
+
+        h3 {
+    font-size: 1.45rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 70px;
+    margin-bottom: 28px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #d5d2ca;
+           }
+
+        h4 {
+    font-size: 1.15rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 42px;
+    margin-bottom: 18px;
+    padding-left: 12px;
+    border-left: 3px solid #18283b;
+           }
+
+    p {
+    margin: 0 0 1em;
+    text-align: justify;
+      }
+
+        .armenian-text {
+            font-size: 1.05em;
+        }
+
+       .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    padding-top: 25px;
+    border-top: 1px solid #aaa;
+}
+
+.navigation a {
+    color: #18283b;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.navigation a:hover {
+    color: #8e111b;
+    text-decoration: underline;
+}
+
+.navigation .index {
+    text-align: center;
+}
+
+.navigation .previous {
+    text-align: left;
+}
+
+.navigation .next {
+    text-align: right;
+}
+
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #777;
+        }
+
+        @media (max-width: 650px) {
+
+            .page {
+                padding: 40px 25px 70px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                text-align: left;
+            }
+
+        }
+
+        table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 35px 0 50px;
+    font-size: 0.95rem;
+    background: #fffdf8;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #d6d3cb;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    font-weight: normal;
+    color: #18283b;
+    background: #f1eee6;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+}
+
+tr:last-child td {
+    border-bottom: 1px solid #aaa;
+}
+
+        /* 表の左端の項目名 */
+        th:first-child {
+            text-align: center;
+        }
+
+        /* 表の中のアルメニア文字 */
+        td {
+            font-family: Georgia, "Times New Roman", serif;
+        }
+
+        /* スマートフォン */
+        @media (max-width: 650px) {
+
+            table {
+                font-size: 0.85rem;
+            }
+
+            th,
+            td {
+                padding: 8px 6px;
+            }
+
+        }
+
+        /* ---------- Alphabet Table ---------- */
+
+        .alphabet-table {
+            width: 100%;
+            margin: 35px 0 45px;
+        }
+
+        .alphabet-table th,
+        .alphabet-table td {
+            padding: 9px 14px;
+        }
+
+        .alphabet-table th {
+            font-size: 0.9rem;
+            letter-spacing: 0.03em;
+        }
+
+        .alphabet-table td:first-child {
+            font-size: 1.15rem;
+            font-weight: normal;
+        }
+
+        .alphabet-table td:nth-child(2) {
+            font-family: "Times New Roman", Georgia, serif;
+            font-style: italic;
+        }
+
+        .alphabet-table td:nth-child(4) {
+            font-variant-numeric: tabular-nums;
+        }
+
+        @media (max-width: 650px) {
+
+            .alphabet-table th,
+            .alphabet-table td {
+                padding: 8px 5px;
+                font-size: 0.85rem;
+            }
+
+            .alphabet-table td:first-child {
+                font-size: 1rem;
+            }
+
+        }
+        
+    </style>
+</head>
+
+
+<body>
+
+<div class="page">
+
+    <header>
+
+        <div class="book-title">
+            MODERN EASTERN ARMENIAN GRAMMAR
+        </div>
+
+        <h1>
+            Ⅲ　名詞
+        </h1>
+
+        <div class="armenian">
+             Գոյական
+        </div>
+
+    </header>
+
+    <main>
+        
+<h2>後置冠詞（որոշիչ հոդ）について</h2>
+
+<p>その名詞が特定されているとき、英語では名詞の前にtheをつけますよね。アルメニア語にもこのような「冠詞」と呼ばれるものが存在します。しかし、アルメニア語ではその冠詞は名詞の後ろに付くので、この冠詞のことを「後置冠詞」と言います。</p>
+
+<p>後置冠詞のルールを説明します。</p>
+
+<ol>
+    <li>
+        <p>基本的に、子音で終わる名詞の場合はըを、母音で終わる名詞の場合にはնを後置冠詞として語尾につけます。</p>
+    </li>
+
+    <li>
+        <p>ただし、続く名詞（後置冠詞がついている名詞の次に来ている名詞）が母音で始まるならば、必ずնになります。ちなみに、ե、և、ոは語頭に来ると母音の前に子音が発音されますので、これらの前にある語の後置冠詞はըになります。</p>
+    </li>
+
+    <li>
+        <p>ただし、以下の場合は絶対に後置冠詞が付きません。</p>
+
+        <ul>
+            <li>呼格、属格、奪格、具格、地格の時</li>
+            <li>すなわち、後置冠詞は主格、体格、与格にしか付きません。</li>
+            <li>古典期の活用を残している名詞が複数形で使われている時<br>
+                （例；մարդիկ；人々※複数形、կանայք；女性※複数形）</li>
+            <li>単数主格がցիで終わり、複数主格がիքである名詞</li>
+        </ul>
+    </li>
+</ol>
+
+<p>※英語では固有名詞に冠詞はつきませんが、アルメニア語ではつきます。</p>
+
+<p>いくつかの名詞で試してみましょう。</p>
+
+<p>例；Անի կարդում է։；アニ（Ani）は読書をする。→Անին կարդում է։；アニ（the Ani）は読書をする。</p>
+
+<p>例；Աշակերտներ կարող են խոսել հայերեն։；子供達（children）はアルメニア語を話すことができる。→Աշակերտները կարող են խոսել հայերեն։；その子供達（the children）はアルメニア語を話すことができる。</p>
+
+<p>分かっていただけたでしょうか。慣れるまでは語尾に冠詞が付くことに不自然さを感じるかと思いますが、何度も読んで、聞いて、体得しましょう。</p>
+
+
+<h2>不定冠詞（անորոշիչ հոդ）について</h2>
+
+<p>英語のtheにあたるのは「後置冠詞」、英語のaにあたるのは「不定冠詞」です。こちらの不定冠詞はかなり英語と似ています。</p>
+
+<p>アルメニア語での不定冠詞はմիです。名詞の前につきます。</p>
+
+<p>例；Մի պատանի տեսավ մի կնոջ։；ある少年がある女性を見た。</p>
+
+<p>さて一方で、以下のように冠詞を一個もつけずに「不定」を表す方法もあります。</p>
+
+<p>例；Կինը նամակ բերեց։；女性は手紙を持ってきた。</p>
+
+<p>では「不定冠詞によって表される不定」と「何もつけないことで表される不定」は何が異なるのでしょうか。</p>
+
+<p>そもそも「不定」とは、とても分かりやすく言えば、「全てのものに個体識別番号があったとして、その番号が特定できてない状態」のようなものです。反対に、後置冠詞によって「定まった」ものは「その番号が特定できている状態」ですね。</p>
+
+<p>「不定冠詞によって表される不定」は「何もつけないことで表される不定」に比べてより「定まって」います。上の例を使うなら、個体識別番号の上2桁ぐらいが明かされたような状態です。一方「何もつけないことで表される不定」は、どちらかというと概念に近く、その姿がぼんやりとしています。</p>
+
+<p>例；Հնագետները պեղումների վայրում մարդու կմախք գտան։；考古学者は発掘地点で、人間の骨を発見した。</p>
+
+<p>例；Հնագետները պեղումների վայրում բրոնզեդարյա մի մարդու կմախք գտան։；考古学者は発掘地点で、青銅器時代の人間の骨を発見した。</p>
+
+<p>前者は、人間の骨を発見したということを伝えています。具体的な詳細は、話し手にも知られていないか、もしくはそこに注目していないか、のどちらかです。</p>
+
+<p>後者は、「青銅器時代の」という特性が明らかになっていることから、発掘されたものが具体的にどのようであったかが話し手に分かっているので、միがついています。</p>
+
+      
+<h3>コラム1　―միとմեկについて―</h3>
+
+<p>近年、միを不定冠詞としてみなして良いものかという議論がなされています。それはなぜかというと、主に口語では、アルメニア語話者はմիとմեկ；1を区別していないように見えるからです。</p>
+
+<p>例；Մի տարում նա դարծավ մի մեծ գործարանի ղեկավար։；彼は一年である大きな工場の長になった。</p>
+
+<p>上の文では、本来ならմի տարումではなくմեկ տարումとすべきでしょう。</p>
+
+<p>ここからもわかる通り、միが不定冠詞という役割を超えて、「1」という数字を表すことにも使われているということです。口語ではմեկが使われるのは稀で、ほとんどの場合միに置き換わっています。大抵の場合、「1」として使われている時にはմիはアクセントをおいて発音されます。</p>
+
+
+<h3>コラム2　―そのほかの「特定」の仕方―</h3>
+
+<h4>所有接尾辞（possessive suffix, ստացական հոդ）（-ս、-դ）</h4>
+
+<p>全ての名詞、そして全ての格で使うことができます。-սは一人称の所有者、-դは二人称の所有者を表します。ただ、最近ではあまり好まれない傾向にあるようです。</p>
+
+<p>例；Նա գիրքս է։；それは私の本だ。</p>
+
+<p>例；Ո՞րն է գիրքդ։；どれがあなたの本ですか。</p>
+
+<p>この所有接尾辞は非定形動詞（時制や人称により形が変わらない動詞）である不定詞、分詞に付いて、その動詞の主語（動作主）になることもできます。</p>
+
+<p>例；Ստացածս նամակը թունավորված է։；私が受け取った手紙は毒されていました。</p>
+
+<p>所有接尾辞は後置詞に付いて、後置詞の目的語になります。</p>
+
+<p>例；մոտս；私の近くに</p>
+
+<p>とにかく所有接尾辞は使用範囲がとても広くいろんな語とくっつきます。</p>
+
+<p>※-սや-դはあくまでも人称のみを決定します。なのでもしも一人称複数、二人称複数を表したいときは、名詞の最後にներをつけてから所有接尾辞をつける必要があります。この場合、名詞自体が単数なのか複数なのかは、文脈により判断しなければいけない場合が出てきます。</p>
+
+<p>Սիրտ；心、Սիրտս；私の心、Սիրտեր；心（複数形）、Սիրտերս；私の心（複数形）、Սիրտներս；私たちの心</p>
+
+<p>Աշակերտ；子供、Աշակերտս；私の子供、Աշակերտներ；子供、Աշակերտներս；私の子供達 OR 私たちの子供 OR 私たちの子供達</p>
+
+<h4>人称接尾辞（personal suffix, դիմորոշ հոդ）（-ս、-դ）</h4>
+
+<p>主な使い方は以下の通りです。</p>
+
+<p>例；Մենք բոլորս մեկ ընտանիք ենք։；私たちはみんなで一つの家族だ。</p>
+
+<p>Բոլոր；全て にսがついて「私たち皆」という意味を作っています。</p>
+
+<p>例；Դուք՝ առաջավորներդ, պիտի օգնեք մեզ՝ ետ մնացողներիս։；あなたたちはとても優れているのだから、私たちのような遅れている人々を助けなければいけません。（直訳；進んでいるものであるあなたたちは、遅れているものである私たちを助けなければいけません。）</p>
+
+<p>この人称接尾辞は「所有」ではなく「動作主」を表しているところに注意です。分かりやすく言えば、</p>
+
+<p>Բոլոր＝-ս（皆んな＝私たち）</p>
+
+<p>Առաջավորներ＝-դ（進んでいる者＝あなたたち）</p>
+
+<h4>指示接尾辞（demonstrative suffix, ցուցական հոդ）</h4>
+
+<p>この用法は-սのみで使えます。この用法は時間や場所が話者（一人称なので-ս）に近いことを表します。</p>
+
+<p>例；ամառս；この夏、ձմեռս；この冬、վերջերս；ここ最近</p>
+
+<p>例；Մեր ինտերնետային էջը վերջերս է թարմացվել։；私たちのウェブサイトは最近アップデートされた。</p>
+
+<p>その他にも、以下のような用法があります。</p>
+
+<p>例；Տեղիս բնակիչները հայեր են։；私の近くの（ここら辺の）居住地はアルメニア人が多い。</p>
+
+<p>例；Իմ բարբառում կա 43 հնչյուն։；この方言には43の音があります。</p>
+
+    </main>
+
+    <div class="navigation">
+
+    <div class="previous">
+        <a href="noun-number.html">← 前の項目</a>
+    </div>
+
+    <div class="index">
+        <a href="noun-index.html">目次</a>
+    </div>
+
+    <div class="next">
+        <a href="noun-case.html">次の項目 →</a>
+    </div>
+
+</div>
+    
+    <footer>
+
+        現代東アルメニア語文法<br>
+        Ժամանակակից Արևելահայերենի Քերականություն
+
+    </footer>
+
+</div>
+
+</body>
+
+</html>
