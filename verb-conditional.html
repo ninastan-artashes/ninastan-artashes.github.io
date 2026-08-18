@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>動詞 | 現代東アルメニア語文法</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            background: #f8f6f0;
+            color: #20242a;
+            font-family: Georgia, "Times New Roman", serif;
+            line-height: 1.9;
+        }
+
+        .page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 50px 100px;
+            background: #fffdf8;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0 55px;
+            border-bottom: 1px solid #aaa;
+        }
+
+        .book-title {
+            font-size: 0.9rem;
+            letter-spacing: 0.12em;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            font-weight: normal;
+            color: #18283b;
+            margin: 0;
+        }
+
+        .armenian {
+            margin-top: 12px;
+            font-size: 1.2rem;
+        }
+
+        main {
+            max-width: 720px;
+            margin: 55px auto;
+        }
+
+        h2 {
+    font-size: 1.85rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 90px;
+    margin-bottom: 35px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid #18283b;
+           }
+
+        h3 {
+    font-size: 1.45rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 70px;
+    margin-bottom: 28px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #d5d2ca;
+           }
+
+        h4 {
+    font-size: 1.15rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 42px;
+    margin-bottom: 18px;
+    padding-left: 12px;
+    border-left: 3px solid #18283b;
+           }
+
+    p {
+    margin: 0 0 1em;
+    text-align: justify;
+      }
+
+        .armenian-text {
+            font-size: 1.05em;
+        }
+
+      .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    padding-top: 25px;
+    border-top: 1px solid #aaa;
+}
+
+.navigation a {
+    color: #18283b;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.navigation a:hover {
+    color: #8e111b;
+    text-decoration: underline;
+}
+
+.navigation .index {
+    text-align: center;
+}
+
+.navigation .previous {
+    text-align: left;
+}
+
+.navigation .next {
+    text-align: right;
+}
+
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #777;
+        }
+
+        @media (max-width: 650px) {
+
+            .page {
+                padding: 40px 25px 70px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                text-align: left;
+            }
+
+        }
+
+        table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 35px 0 50px;
+    font-size: 0.95rem;
+    background: #fffdf8;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #d6d3cb;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    font-weight: normal;
+    color: #18283b;
+    background: #f1eee6;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+}
+
+tr:last-child td {
+    border-bottom: 1px solid #aaa;
+}
+
+        /* 表の左端の項目名 */
+        th:first-child {
+            text-align: center;
+        }
+
+        /* 表の中のアルメニア文字 */
+        td {
+            font-family: Georgia, "Times New Roman", serif;
+        }
+
+        /* スマートフォン */
+        @media (max-width: 650px) {
+
+            table {
+                font-size: 0.85rem;
+            }
+
+            th,
+            td {
+                padding: 8px 6px;
+            }
+
+        }
+
+        /* ---------- Alphabet Table ---------- */
+
+        .alphabet-table {
+            width: 100%;
+            margin: 35px 0 45px;
+        }
+
+        .alphabet-table th,
+        .alphabet-table td {
+            padding: 9px 14px;
+        }
+
+        .alphabet-table th {
+            font-size: 0.9rem;
+            letter-spacing: 0.03em;
+        }
+
+        .alphabet-table td:first-child {
+            font-size: 1.15rem;
+            font-weight: normal;
+        }
+
+        .alphabet-table td:nth-child(2) {
+            font-family: "Times New Roman", Georgia, serif;
+            font-style: italic;
+        }
+
+        .alphabet-table td:nth-child(4) {
+            font-variant-numeric: tabular-nums;
+        }
+
+        @media (max-width: 650px) {
+
+            .alphabet-table th,
+            .alphabet-table td {
+                padding: 8px 5px;
+                font-size: 0.85rem;
+            }
+
+            .alphabet-table td:first-child {
+                font-size: 1rem;
+            }
+
+        }
+        
+    </style>
+</head>
+
+
+<body>
+
+<div class="page">
+
+    <header>
+
+        <div class="book-title">
+            MODERN EASTERN ARMENIAN GRAMMAR
+        </div>
+
+        <h1>
+            Ⅴ　動詞
+        </h1>
+
+        <div class="armenian">
+             Բայ
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <h2>条件法</h2>
+
+        <p>
+            接続法の導入でも説明しましたが、一般的に条件法は「（〜ならば）未来に起こる動作」を表します。
+        </p>
+
+        <h3>未来形</h3>
+
+        <table>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+
+        <h3>条件法未来</h3>
+
+        <table>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+
+        <h4>動相</h4>
+
+        <table>
+            <tr>
+                <td>կ ＋現在語幹＋活用語尾※</td>
+            </tr>
+        </table>
+
+        <h4>静相</h4>
+
+        <table>
+            <tr>
+                <td>結果分詞＋լինելの条件法未来形</td>
+            </tr>
+        </table>
+
+        <h4>進行相</h4>
+
+        <table>
+            <tr>
+                <td>進行分詞＋լինելの条件法未来形</td>
+            </tr>
+        </table>
+
+        <h4>未来相</h4>
+
+        <table>
+            <tr>
+                <td>未来分詞Ⅰ＋լինելの条件法未来形</td>
+            </tr>
+        </table>
+
+        <p>
+            活用語尾は、接続法未来形の時と同じですが、もう一度載せておきます。詳しくは接続法未来形を参照してください。
+        </p>
+
+        <table>
+            <tr>
+                <th></th>
+                <th>単数</th>
+                <th>複数</th>
+            </tr>
+            <tr>
+                <th>一人称</th>
+                <td>-մ</td>
+                <td>-նք</td>
+            </tr>
+            <tr>
+                <th>二人称</th>
+                <td>-ս</td>
+                <td>-ք</td>
+            </tr>
+            <tr>
+                <th>三人称</th>
+                <td>-</td>
+                <td>-ն</td>
+            </tr>
+        </table>
+
+        <h4>・条件法未来形動相</h4>
+
+        <p>
+            ―未来を表します。この用法において直説法未来形と意味の違いはありません。
+        </p>
+
+        <p>
+            （例）Նա համալսարանը կավարտի հաջորդ տարի։；彼は来年大学を卒業する。
+        </p>
+
+        <p>
+            （例）Նա համալսարանը է ավարտելու հաջորդ տարի։；（意味は上と同じ）
+        </p>
+
+        <p>
+            この二つには意味の違いはほとんどありませんが、条件法未来形の方が直説法未来形よりも「必ず起こるだろうと思っている未来」や「より近い未来」を表します。
+        </p>
+
+        <p>
+            ―一般論や反復的な動作（習慣など）を述べるときに用いられます。
+        </p>
+
+        <p>
+            （例）Քամին մեղմորեն կփչի ծառերի միջով։；風が木々の間を吹き抜ける。
+        </p>
+
+        <p>
+            （例）Ամեն առավոտ ես կխմեմ սուրճ և կգնեմ աշխատանքի ավտոբուսով։；毎朝、私はコーヒーを飲み、バスで仕事に行く。
+        </p>
+
+        <p>
+            ―可能性を表します。主に二人称単数で用いられます。
+        </p>
+
+        <p>
+            （例）Այս հին պատմությունը դեռ կլսես գյուղի տարեծ մարդկանցից։；あなたは年寄りの村人からこの古い話を聞くかもしれません。
+        </p>
+
+        <p>
+            ―予想を表します。
+        </p>
+
+        <p>
+            （例）Նա հարուստ կլինի, որովհետև շատ սովորեց իր դպրոցում։；彼は高校でたくさん勉強したので、裕福になるだろう。
+        </p>
+
+        <p>
+            （例）Վաղը անձրևոտ կլինի։；明日は雨になるだろう。
+        </p>
+
+        <p>
+            ―直接相手に対して話す時には、命令やお願いを表します。
+        </p>
+
+        <p>
+            （例）Կփակես դուռը։；ドアを閉めろ。
+        </p>
+
+        <p>
+            （例）Ինձ հաց կտա՞ս։；私にパンをください。
+        </p>
+
+        <p>
+            ―「ある条件下で」起こる未来のことを表します。譲歩の意味にもなりえます。
+        </p>
+
+        <p>
+            （例）Եթե եղանակը լավ լինի, կգնամ զբոսանքի։；もし天気が良かったら、遊びに行きます。
+        </p>
+
+        <p>
+            （例）Եթե դու լավ սովորես, ապա կհաջողես քննությունները։；もしあなたがよく勉強すれば、それならテストで成功するでしょう。
+        </p>
+
+        <p>
+            （例）Եթե նույնիսկ Ջոն Քերին ընտրվի ԱՄՆ-ի նախագահ, Կոնգրեսը կմնա հանրապատական և մյայն գլոբալ հարցերում։；もしジョン・ケリーがアメリカ大統領に選ばれたとしても、世界的な問題に対してだけは、議会は共和党的のままであろう。
+        </p>
+
+        <p>
+            （例）Ասածս ժամին հգաս, կհանդիպենք։；私が言った時間にこれば、私たちは会えるよ。
+        </p>
+
+        <p>
+            上の例のように、二つの文章が従属節と主節のように繋がっていなくても、どちらも条件法未来形にすることで、前者が条件、後者がその条件下で起こり得る未来となります。
+        </p>
+
+        <h4>・条件法未来形静相</h4>
+
+        <p>
+            ―未来のある時点ですでに完了している動作を表します。
+        </p>
+
+        <p>
+            （例）Նա որոշած կլինի թե վաղն որ ռեստորանում գնա ընթրիքի։；彼は、明日どこに食べに行くか決めているだろう。
+        </p>
+
+        <p>
+            （例）Ես իմ ներկայացումը պատրաստած կլինեմ վաղին մինչև։；明日までには私はプレゼンを用意しているだろう。
+        </p>
+
+        <p>
+            ―おそらく起こったであろう動作を表します。
+        </p>
+
+        <p>
+            （例）Կարդացե՞լ ես այդ գիրքը։ Անշուշտ կարդացած կլինես։；この本を読みましたか。もちろん読みましたよね。
+        </p>
+
+        <p>
+            （例）Քանի անգամ Իսպանիան ճանապարհորդած կլինես։；何回スペインに旅行に行きましたか？
+        </p>
+
+        <p>
+            ―過去に起こったであろう、もしくは現在に起こっているだろうと話者が思っていることを表します。英語でもHe would be in the hospital.のように過去形を使うことがありますよね。
+        </p>
+
+        <p>
+            （例）Որտե՞ղ են երեխաներս։ Նրանք գնացած կլինեն ռեստորանը։；私の友達はどこに行きましたか。彼らはレストランに行ったと思いますよ。
+        </p>
+
+        <p>
+            （例）Գնացքն արդեն մեկնած կլինի։；電車はもう行ってしまっているだろう。
+        </p>
+
+        <h4>・条件法未来形進行相</h4>
+
+        <p>
+            ―未来に進行しているであろう動作を表します。
+        </p>
+
+        <p>
+            （例）Ես քննարկելիս կլինեմ մեր նոր նախագծին մասին։；私たちは新しいプロジェクトについて話し合っているだろう。
+        </p>
+
+        <h4>・条件法未来形未来相</h4>
+
+        <p>
+            ―未来のある時点で、その時まさに起こりそうな動作を表します。
+        </p>
+
+        <p>
+            （例）Երբ որ ճանապարհորդության մեկնելու կլինես, Սոնային նույնպես հետդ կտանես։；あなたが旅行に行く時には、ソナを連れて行って。
+        </p>
+
+
+        <h3>過去形</h3>
+
+        <table>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+
+        <h3>条件法過去形</h3>
+
+        <table>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+
+        <h4>動相</h4>
+
+        <table>
+            <tr>
+                <td>կ ＋過去語幹＋活用語尾※</td>
+            </tr>
+        </table>
+
+        <h4>静相</h4>
+
+        <table>
+            <tr>
+                <td>結果分詞＋լինելの条件法過去形</td>
+            </tr>
+        </table>
+
+        <h4>進行相</h4>
+
+        <table>
+            <tr>
+                <td>進行分詞＋լինելの条件法過去形</td>
+            </tr>
+        </table>
+
+        <h4>未来相</h4>
+
+        <table>
+            <tr>
+                <td>未来分詞Ⅰ＋լինելの条件法過去形</td>
+            </tr>
+        </table>
+
+        <h4>・-ել, -ալ, -վել-, ցնել-の動詞について</h4>
+
+        <table>
+            <tr>
+                <th></th>
+                <th>単数</th>
+                <th>複数</th>
+            </tr>
+            <tr>
+                <th>一人称</th>
+                <td>-ի</td>
+                <td>-ինք</td>
+            </tr>
+            <tr>
+                <th>二人称</th>
+                <td>-իր</td>
+                <td>-իք</td>
+            </tr>
+            <tr>
+                <th>三人称</th>
+                <td>-</td>
+                <td>-ին</td>
+            </tr>
+        </table>
+
+        <h4>・-ենալ, -անալ, -նել, -չելの動詞について</h4>
+
+        <table>
+            <tr>
+                <th></th>
+                <th>単数</th>
+                <th>複数</th>
+            </tr>
+            <tr>
+                <th>一人称</th>
+                <td>-ա</td>
+                <td>-անք</td>
+            </tr>
+            <tr>
+                <th>二人称</th>
+                <td>-ար</td>
+                <td>-աք</td>
+            </tr>
+            <tr>
+                <th>三人称</th>
+                <td>-ավ</td>
+                <td>-ան</td>
+            </tr>
+        </table>
+
+        <h4>・条件法過去形動相</h4>
+
+        <p>
+            もし話している時間と同じ時間を表しているなら
+        </p>
+
+        <p>
+            ―起こりえない過去や状況を表します。・・A
+        </p>
+
+        <p>
+            ―丁寧な疑問、頼みやアドバイスを表します。・・B
+        </p>
+
+        <p>
+            もし話している時間よりも過去の時間を表しているなら
+        </p>
+
+        <p>
+            ―過去に起こりえた動作を表します。・・C
+        </p>
+
+        <p>
+            ―過去の習慣的な動作を表します。・・D
+        </p>
+
+        <p>
+            （例）Նրան նամակ կգրեի, եթե իմանայի նրա հասցեն։；もし彼の番号を知っていたなら、彼にあてて手紙を書いていただろうに。・・A/C
+        </p>
+
+        <p>
+            （例）Եթե ես ժամանակ ունենայի, կգնայի։；もし時間を知っていたなら、出かけたのに。・・A/C
+        </p>
+
+        <p>
+            （例）Ես կցանկանայի, որ դու մտածեիր այն մասին, թե ինչ հետևանքներ կարող են լինել։；どんな結果があるのかを考えて欲しいと思います。・・B
+        </p>
+
+        <p>
+            （例）Մեր հաևանը ժամերով կաշխատեր իր այգում։；私たちの近所は庭で何時間も働いていた。・・D
+        </p>
+
+        <h4>・条件法過去形静相</h4>
+
+        <p>
+            ―過去の一時点よりも前に完了した動作を表します。
+        </p>
+
+        <p>
+            （例）Եթե ծրագիրը հաստատված լիներ, մենք արդեն կսկսեինք դա կատարել ։；もし計画が認められたら、私たちはすでに実行していただろうに。
+        </p>
+
+        <p>
+            （例）Եթե խնդիրը ժամանակին լուցված լիներ՝ հաշվի առնելով բոլոր մանրամասները և առանց սխալների, մենք ոչ միայն վաղուց ավարտած կլինեինք նախագիծը, այլ նաև արդեն ներկայացրած կլինեինք այն մրցույթին։；もしこの問題が時間通りに解決されていたら、全ての詳細を考慮に入れてミスなしで、私たちはとっくの昔にプロジェクトを終わらせていただけではなく、試合にそれを提出していただろうに。
+        </p>
+
+        <h4>・条件法過去形進行相</h4>
+
+        <p>
+            ―過去の一時点よりも前に始まったことで進行している動作を表します。
+        </p>
+
+        <p>
+            （例）Դու գնալիս կլինեիր թանգարան, եթե չիմանայիր այդ մասին։；もしあなたがこれに関して知っていなかったら、あなたは博物館に行っていただろうに。
+        </p>
+
+        <h4>・条件法過去形未来相</h4>
+
+        <p>
+            ―過去の一時点において、まさに起ころうとしている動作を表します。
+        </p>
+
+        <p>
+            （例）Եթե եղանակը բարենպաստ լիներ, փառատոնը արդեն սկսելու կլիներ։；もし天気が良かったなら、もう祭りに出かけるところだったのに。
+        </p>
+
+
+        <h3>ü　条件法の否定形</h3>
+
+        <p>
+            条件法は他の活用形とは異なり、単純に活用する語にչをつけるだけでは否定形になりません。なぜなら条件法にはկという接頭辞がすでについているからです。ですので、ここで特別に否定分詞というのが登場します。すでに非定形動詞の章で登場はしていましたが、いつ使うのかを詳しく説明していなかったものです。この否定分詞は「条件法を否定するときのみ」に用いることに注意してください。
+        </p>
+
+        <table>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+
+        <h4>動相</h4>
+
+        <table>
+            <tr>
+                <td>否定分詞　＋　չ＋助動詞（現在or過去）</td>
+            </tr>
+        </table>
+
+        <h4>静相</h4>
+
+        <table>
+            <tr>
+                <td>結果分詞　＋　չ＋助動詞（現在or過去）　＋　助動詞の否定分詞</td>
+            </tr>
+        </table>
+
+        <h4>進行相</h4>
+
+        <table>
+            <tr>
+                <td>進行分詞　＋　չ＋助動詞（現在or過去）　＋　助動詞の否定分詞</td>
+            </tr>
+        </table>
+
+        <h4>未来相</h4>
+
+        <table>
+            <tr>
+                <td>未来分詞　＋　չ＋助動詞（現在or過去）　＋　助動詞の否定分詞</td>
+            </tr>
+        </table>
+
+        <p>
+            試しにգրելという動詞の条件法未来形動相を否定形にしてみましょう。
+        </p>
+
+        <table>
+            <tr>
+                <th>未来形動相</th>
+                <th>過去形動相</th>
+            </tr>
+            <tr>
+                <td>Գրի չեմ</td>
+                <td>Գրի չէի</td>
+            </tr>
+            <tr>
+                <td>Գրի չես</td>
+                <td>Գրի չէիր</td>
+            </tr>
+            <tr>
+                <td>Գրի չի</td>
+                <td>Գրի չէր</td>
+            </tr>
+            <tr>
+                <td>Գրի չենք</td>
+                <td>Գրի չէինք</td>
+            </tr>
+            <tr>
+                <td>Գրի չեք</td>
+                <td>Գրի չէիք</td>
+            </tr>
+            <tr>
+                <td>Գրի չեն</td>
+                <td>Գրի չէին</td>
+            </tr>
+        </table>
+
+    </main>
+
+    <div class="navigation">
+
+    <div class="previous">
+        <a href="adjective-adverb.html">← 前の章</a>
+    </div>
+
+    <div class="index">
+        <a href="index.html">目次</a>
+    </div>
+
+    <div class="next">
+        <a href="numeral.html">次の章 →</a>
+    </div>
+
+</div>
+
+    <footer>
+
+        現代東アルメニア語文法<br>
+        Ժամանակակից Արևելահայերենի Քերականություն
+
+    </footer>
+
+</div>
+
+</body>
+
+</html>
