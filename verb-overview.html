@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>動詞 | 現代東アルメニア語文法</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            background: #f8f6f0;
+            color: #20242a;
+            font-family: Georgia, "Times New Roman", serif;
+            line-height: 1.9;
+        }
+
+        .page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 50px 100px;
+            background: #fffdf8;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0 55px;
+            border-bottom: 1px solid #aaa;
+        }
+
+        .book-title {
+            font-size: 0.9rem;
+            letter-spacing: 0.12em;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            font-weight: normal;
+            color: #18283b;
+            margin: 0;
+        }
+
+        .armenian {
+            margin-top: 12px;
+            font-size: 1.2rem;
+        }
+
+        main {
+            max-width: 720px;
+            margin: 55px auto;
+        }
+
+        h2 {
+    font-size: 1.85rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 90px;
+    margin-bottom: 35px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid #18283b;
+           }
+
+        h3 {
+    font-size: 1.45rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 70px;
+    margin-bottom: 28px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #d5d2ca;
+           }
+
+        h4 {
+    font-size: 1.15rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 42px;
+    margin-bottom: 18px;
+    padding-left: 12px;
+    border-left: 3px solid #18283b;
+           }
+
+    p {
+    margin: 0 0 1em;
+    text-align: justify;
+      }
+
+        .armenian-text {
+            font-size: 1.05em;
+        }
+
+      .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    padding-top: 25px;
+    border-top: 1px solid #aaa;
+}
+
+.navigation a {
+    color: #18283b;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.navigation a:hover {
+    color: #8e111b;
+    text-decoration: underline;
+}
+
+.navigation .index {
+    text-align: center;
+}
+
+.navigation .previous {
+    text-align: left;
+}
+
+.navigation .next {
+    text-align: right;
+}
+
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #777;
+        }
+
+        @media (max-width: 650px) {
+
+            .page {
+                padding: 40px 25px 70px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                text-align: left;
+            }
+
+        }
+
+        table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 35px 0 50px;
+    font-size: 0.95rem;
+    background: #fffdf8;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #d6d3cb;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    font-weight: normal;
+    color: #18283b;
+    background: #f1eee6;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+}
+
+tr:last-child td {
+    border-bottom: 1px solid #aaa;
+}
+
+        /* 表の左端の項目名 */
+        th:first-child {
+            text-align: center;
+        }
+
+        /* 表の中のアルメニア文字 */
+        td {
+            font-family: Georgia, "Times New Roman", serif;
+        }
+
+        /* スマートフォン */
+        @media (max-width: 650px) {
+
+            table {
+                font-size: 0.85rem;
+            }
+
+            th,
+            td {
+                padding: 8px 6px;
+            }
+
+        }
+
+        /* ---------- Alphabet Table ---------- */
+
+        .alphabet-table {
+            width: 100%;
+            margin: 35px 0 45px;
+        }
+
+        .alphabet-table th,
+        .alphabet-table td {
+            padding: 9px 14px;
+        }
+
+        .alphabet-table th {
+            font-size: 0.9rem;
+            letter-spacing: 0.03em;
+        }
+
+        .alphabet-table td:first-child {
+            font-size: 1.15rem;
+            font-weight: normal;
+        }
+
+        .alphabet-table td:nth-child(2) {
+            font-family: "Times New Roman", Georgia, serif;
+            font-style: italic;
+        }
+
+        .alphabet-table td:nth-child(4) {
+            font-variant-numeric: tabular-nums;
+        }
+
+        @media (max-width: 650px) {
+
+            .alphabet-table th,
+            .alphabet-table td {
+                padding: 8px 5px;
+                font-size: 0.85rem;
+            }
+
+            .alphabet-table td:first-child {
+                font-size: 1rem;
+            }
+
+        }
+        
+    </style>
+</head>
+
+
+<body>
+
+<div class="page">
+
+    <header>
+
+        <div class="book-title">
+            MODERN EASTERN ARMENIAN GRAMMAR
+        </div>
+
+        <h1>
+            Ⅴ　動詞
+        </h1>
+
+        <div class="armenian">
+             Բայ
+        </div>
+
+    </header>
+
+    <main>
+
+      
+    <h2>全体像</h2>
+
+
+    <p>
+        まず、アルメニア語の動詞は活用します（conjugation, խոնարհում）。その形のことを活用形と言います。
+    </p>
+
+    <p>
+        アルメニア語の動詞には
+    </p>
+
+    <ul>
+        <li>定形（非定形、定形）</li>
+        <li>法（直説法、接続法、条件法、義務法、命令法）</li>
+        <li>時制（現在、過去、現在完了、過去完了、アオリスト、未来、過去未来）</li>
+        <li>相（動的、静的、進行的、未来的）</li>
+        <li>人称（1人称、2人称、3人称）</li>
+        <li>数（単数、複数）</li>
+    </ul>
+
+    <p>
+        など、たくさんの項目があります。それらを「定形、非定形について」「動詞の種類について」そして「動詞の活用について」の3項目で分類すると表のようにまとめると以下のようになります。
+    </p>
+
+
+    <h3>定形、非定形について</h3>
+
+
+    <p>・非定形動詞</p>
+
+    <p>
+        不定詞、現在分詞、進行分詞、未来分詞I、未来分詞Ⅱ、結果分詞、主格分詞、完了分詞、否定分詞
+    </p>
+
+    <p>・定形動詞</p>
+
+    <p>
+        したの四角の枠一つ一つに6個の活用形が入ります。
+    </p>
+
+
+    <h3>直説法</h3>
+
+    <div class="table-wrapper">
+        <table>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <p>動相</p>
+
+    <div class="table-wrapper">
+        <table>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <p>静相</p>
+
+    <div class="table-wrapper">
+        <table>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <p>進行相</p>
+
+    <div class="table-wrapper">
+        <table>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <p>未来相</p>
+
+    <div class="table-wrapper">
+        <table>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+
+    <p>現在形</p>
+
+    <div class="table-wrapper">
+        <table>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+        </table>
+    </div>
+
+
+    <p>過去形</p>
+
+    <div class="table-wrapper">
+        <table>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td>×</td></tr>
+        </table>
+    </div>
+
+
+    <p>現在完了形</p>
+
+    <div class="table-wrapper">
+        <table>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td>×</td></tr>
+        </table>
+    </div>
+
+
+    <p>過去完了形</p>
+
+    <div class="table-wrapper">
+        <table>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td>×</td></tr>
+        </table>
+    </div>
+
+
+    <p>アオリスト</p>
+
+    <div class="table-wrapper">
+        <table>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td>×</td></tr>
+        </table>
+    </div>
+
+
+    <p>未来形</p>
+
+    <div class="table-wrapper">
+        <table>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td>×</td></tr>
+        </table>
+    </div>
+
+
+    <p>過去未来形</p>
+
+    <div class="table-wrapper">
+        <table>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td>×</td></tr>
+        </table>
+    </div>
+
+
+    <h3>接続法</h3>
+
+    <div class="table-wrapper">
+        <table>
+            <tr><td></td></tr>
+        </table>
+    </div>
+
+    <p>動相</p>
+
+    <div class="table-wrapper">
+        <table>
+            <tr><td></td></tr>
+        </table>
+    </div>
+
+    <p>静相</p>
+
+    <div class="table-wrapper">
+        <table>
+            <tr><td></td></tr>
+        </table>
+    </div>
+
+    <p>進行相</p>
+
+    <div class="table-wrapper">
+        <table>
+            <tr><td></td></tr>
+        </table>
+    </div>
+
+    <p>未来相</p>
+
+    <div class="table-wrapper">
+        <table>
+            <tr><td></td></tr>
+        </table>
+    </div>
+
+    <p>未来形</p>
+
+    <div class="table-wrapper">
+        <table>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+        </table>
+    </div>
+
+    <p>過去形</p>
+
+    <div class="table-wrapper">
+        <table>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+        </table>
+    </div>
+
+
+    <h3>条件法</h3>
+
+    <div class="table-wrapper">
+        <table>
+            <tr><td></td></tr>
+        </table>
+    </div>
+
+    <p>動相</p>
+
+    <div class="table-wrapper">
+        <table>
+            <tr><td></td></tr>
+        </table>
+    </div>
+
+    <p>静相</p>
+
+    <div class="table-wrapper">
+        <table>
+            <tr><td></td></tr>
+        </table>
+    </div>
+
+    <p>進行相</p>
+
+    <div class="table-wrapper">
+        <table>
+            <tr><td></td></tr>
+        </table>
+    </div>
+
+    <p>未来相</p>
+
+    <div class="table-wrapper">
+        <table>
+            <tr><td></td></tr>
+        </table>
+    </div>
+
+    <p>未来形</p>
+
+    <div class="table-wrapper">
+        <table>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+        </table>
+    </div>
+
+    <p>過去形</p>
+
+    <div class="table-wrapper">
+        <table>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+        </table>
+    </div>
+
+
+    <h3>義務法</h3>
+
+    <div class="table-wrapper">
+        <table>
+            <tr><td></td></tr>
+        </table>
+    </div>
+
+    <p>動相</p>
+
+    <div class="table-wrapper">
+        <table>
+            <tr><td></td></tr>
+        </table>
+    </div>
+
+    <p>静相</p>
+
+    <div class="table-wrapper">
+        <table>
+            <tr><td></td></tr>
+        </table>
+    </div>
+
+    <p>進行相</p>
+
+    <div class="table-wrapper">
+        <table>
+            <tr><td></td></tr>
+        </table>
+    </div>
+
+    <p>未来相</p>
+
+    <div class="table-wrapper">
+        <table>
+            <tr><td></td></tr>
+        </table>
+    </div>
+
+    <p>未来形</p>
+
+    <div class="table-wrapper">
+        <table>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+        </table>
+    </div>
+
+    <p>過去形</p>
+
+    <div class="table-wrapper">
+        <table>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+        </table>
+    </div>
+
+
+    <h3>命令法</h3>
+
+    <div class="table-wrapper">
+        <table>
+            <tr><td></td></tr>
+        </table>
+    </div>
+
+    <p>単数</p>
+
+    <div class="table-wrapper">
+        <table>
+            <tr><td></td></tr>
+        </table>
+    </div>
+
+    <p>複数</p>
+
+    <div class="table-wrapper">
+        <table>
+            <tr><td></td></tr>
+        </table>
+    </div>
+
+    <p>2人称</p>
+
+    <div class="table-wrapper">
+        <table>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+        </table>
+    </div>
+
+
+    <h3>動詞の種類について</h3>
+
+
+    <p>
+        動詞は大きく分けて2種類あります。以下の2つです。
+    </p>
+
+    <ul>
+        <li>-ել, &nbsp;-ալ（語尾；ending, վերջավորություն）</li>
+    </ul>
+
+    <p>
+        ですが、さらに接尾辞がくっついて一つの動詞となっているものもたくさんあります
+    </p>
+
+    <ul>
+        <li>-վ-, -ն-, -չ-, -ան- , -են- , -ցն- （接尾辞；suffix, սոսկածանց）</li>
+    </ul>
+
+    <p>
+        これらは現在語幹、アオリスト語幹のどちらを使うかを決定するのに必要な情報です。
+    </p>
+
+    <p>
+        しかし、-ել, &nbsp;-ալと-վ-, -ն-, -չ-, -անալ, -ենալ, -ցն-が掛け算のように組み合わさって動詞ができあがる訳ではなく、実は、-վ-, -ն-, -չ-, -ցն-にはելしかつかず、-ան-, -են-にはալしかつかないので、結局できる形は以下の8通りです。
+    </p>
+
+    <p>
+        -ել, -ալ, -վել, -նել, -չել, -ցնել, -անալ, -ենալ
+    </p>
+
+
+    <div class="section-marker">§ 動詞活用の種類の歴史</div>
+
+
+    <p>
+        歴史的にはかつて古典アルメニア語（グラバル）の時代には動詞の語尾にはալ, ել, իլ, ուլ, ոլ（←գոլだけ）の5種類の不定詞語尾がありましたが、時代の流れによりどんどん単純化されて行きました。例えば今日最もメジャーなել動詞の一つգրելは昔はգրեալが不定形でした。
+    </p>
+
+
+    <h3>動詞の活用形について</h3>
+
+
+    <h3>動詞の活用の作り方</h3>
+
+
+    <p>
+        　＝動詞の現在語幹ORアオリスト語幹OR語幹　＋　人称語尾　（＋　補助動詞）
+    </p>
+
+    <p>
+        人称語尾は以下のように、人称と数に従ってまとめられます。ですが態、時制、相によってどんな人称語尾が付くかは変わります。
+    </p>
+
+
+    <div class="table-wrapper">
+        <table>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+
+    <div class="table-wrapper">
+        <table>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+
+    <p>単数</p>
+
+    <div class="table-wrapper">
+        <table>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+
+    <p>複数</p>
+
+    <div class="table-wrapper">
+        <table>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+
+    <p>一人称</p>
+
+    <div class="table-wrapper">
+        <table>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+
+    <p>二人称</p>
+
+    <div class="table-wrapper">
+        <table>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+
+    <p>三人称</p>
+
+    <div class="table-wrapper">
+        <table>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+
+    <p>
+        少しはイメージがついたでしょうか。いや、正直表にしただけではわからないという方もいるでしょうし、いくつか例を挙げていきます。
+    </p>
+
+
+    <p>
+        例；կգնանքという形の動詞があったとします。これは
+    </p>
+
+    <p>
+        「定形、非定形」の観点では「定形動詞・条件法・未来形・動相」
+    </p>
+
+    <p>
+        「動詞の種類」という観点では「ալ動詞」
+    </p>
+
+    <p>
+        「動詞の活用形」という観点では「一人称・複数」
+    </p>
+
+    <p>
+        という情報を一気に私たちに示してくれているのです。
+    </p>
+
+
+    <p>
+        もう一つ例をあげましょう。
+    </p>
+
+    <p>
+        例；գրելիս էր これは
+    </p>
+
+    <p>
+        「定形・非定形」という観点では「定形動詞・直説法・過去形・進行相」
+    </p>
+
+    <p>
+        「動詞の種類」という観点では「ել動詞」
+    </p>
+
+    <p>
+        「動詞の活用形」という観点では「三人称・単数」
+    </p>
+
+    <p>
+        という情報を持っていることがわかります。
+    </p>
+
+
+    <p>
+        ここまでの説明から、動詞にはたくさんの情報が含まれていることがわかっていただけたと思います。
+    </p>
+
+
+    <h2>動詞の種類</h2>
+
+
+    <p>
+        全ての動詞は
+    </p>
+
+    <ul>
+        <li>―単純動詞（simple verb, պարզ բայ）（語根　＋　-ել, -ալ）</li>
+        <li>―重動詞（suffixed verb, ածանցավոր բայ）（語根　＋　-վ-, -ն-, -չ-, -ան-, -են-, -ցն-　＋　-ել, -ալ）</li>
+        <li>―複合動詞（動詞＋名詞・配置詞）</li>
+    </ul>
+
+    <p>
+        のどれかに属します。ここからの説明では-ելと-ալをそれぞれ-ել動詞、-ալ動詞と呼び、-վ-, -ն-, -չ-, -ան-, -են-, -ցն-を接尾辞（suffix, ածանց/վերջածանց）と呼びます。
+    </p>
+
+
+    <p>
+        最後の「複合動詞」は、2語以上の言葉が組み合わさって、一つの意味をなすものです。
+    </p>
+
+
+    <p>
+        例；սխալ անել；間違える
+    </p>
+
+    <p>
+        例；օգնություն անել；助ける
+    </p>
+
+    <p>
+        例；փորձ անել；努力する
+    </p>
+
+    <p>
+        例；ցույց տալ；示す
+    </p>
+
+
+    <p>
+        など、本当にたくさんあります。中には、他の動詞一つで置き換えられるものもあります。例えばօգնություն անելはօգնելと同じ意味です。
+    </p>
+
+
+    <p>
+        これらの動詞は文構造的に面白い動きを見せます。そのことについては「語順」の章でも書いていますので、ぜひそちらを参考にしてください。
+    </p>
+
+
+    <p>
+        重動詞を作る際に挿入される接尾辞のうち、-ն-, -չ-, -ան-, -են-は特に強い意味があるわけではありませんが、
+      -վ-と-ցն-にはそれぞれ「受動・再帰・相互・逆使役」と「使役」を表します。この2つ-վ-と-ցն-は非常に大事に
+      なってきますので絶対覚えておいてください。
+    </p>
+
+    </main>
+
+    <div class="navigation">
+
+    <div class="previous">
+        <a href="adjective-adverb.html">← 前の章</a>
+    </div>
+
+    <div class="index">
+        <a href="verb-index.html">目次</a>
+    </div>
+
+    <div class="next">
+        <a href="numeral.html">次の章 →</a>
+    </div>
+
+</div>
+
+    <footer>
+
+        現代東アルメニア語文法<br>
+        Ժամանակակից Արևելահայերենի Քերականություն
+
+    </footer>
+
+</div>
+
+</body>
+
+</html>
