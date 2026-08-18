@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>動詞 | 現代東アルメニア語文法</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            background: #f8f6f0;
+            color: #20242a;
+            font-family: Georgia, "Times New Roman", serif;
+            line-height: 1.9;
+        }
+
+        .page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 50px 100px;
+            background: #fffdf8;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0 55px;
+            border-bottom: 1px solid #aaa;
+        }
+
+        .book-title {
+            font-size: 0.9rem;
+            letter-spacing: 0.12em;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            font-weight: normal;
+            color: #18283b;
+            margin: 0;
+        }
+
+        .armenian {
+            margin-top: 12px;
+            font-size: 1.2rem;
+        }
+
+        main {
+            max-width: 720px;
+            margin: 55px auto;
+        }
+
+        h2 {
+    font-size: 1.85rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 90px;
+    margin-bottom: 35px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid #18283b;
+           }
+
+        h3 {
+    font-size: 1.45rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 70px;
+    margin-bottom: 28px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #d5d2ca;
+           }
+
+        h4 {
+    font-size: 1.15rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 42px;
+    margin-bottom: 18px;
+    padding-left: 12px;
+    border-left: 3px solid #18283b;
+           }
+
+    p {
+    margin: 0 0 1em;
+    text-align: justify;
+      }
+
+        .armenian-text {
+            font-size: 1.05em;
+        }
+
+      .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    padding-top: 25px;
+    border-top: 1px solid #aaa;
+}
+
+.navigation a {
+    color: #18283b;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.navigation a:hover {
+    color: #8e111b;
+    text-decoration: underline;
+}
+
+.navigation .index {
+    text-align: center;
+}
+
+.navigation .previous {
+    text-align: left;
+}
+
+.navigation .next {
+    text-align: right;
+}
+
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #777;
+        }
+
+        @media (max-width: 650px) {
+
+            .page {
+                padding: 40px 25px 70px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                text-align: left;
+            }
+
+        }
+
+        table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 35px 0 50px;
+    font-size: 0.95rem;
+    background: #fffdf8;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #d6d3cb;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    font-weight: normal;
+    color: #18283b;
+    background: #f1eee6;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+}
+
+tr:last-child td {
+    border-bottom: 1px solid #aaa;
+}
+
+        /* 表の左端の項目名 */
+        th:first-child {
+            text-align: center;
+        }
+
+        /* 表の中のアルメニア文字 */
+        td {
+            font-family: Georgia, "Times New Roman", serif;
+        }
+
+        /* スマートフォン */
+        @media (max-width: 650px) {
+
+            table {
+                font-size: 0.85rem;
+            }
+
+            th,
+            td {
+                padding: 8px 6px;
+            }
+
+        }
+
+        /* ---------- Alphabet Table ---------- */
+
+        .alphabet-table {
+            width: 100%;
+            margin: 35px 0 45px;
+        }
+
+        .alphabet-table th,
+        .alphabet-table td {
+            padding: 9px 14px;
+        }
+
+        .alphabet-table th {
+            font-size: 0.9rem;
+            letter-spacing: 0.03em;
+        }
+
+        .alphabet-table td:first-child {
+            font-size: 1.15rem;
+            font-weight: normal;
+        }
+
+        .alphabet-table td:nth-child(2) {
+            font-family: "Times New Roman", Georgia, serif;
+            font-style: italic;
+        }
+
+        .alphabet-table td:nth-child(4) {
+            font-variant-numeric: tabular-nums;
+        }
+
+        @media (max-width: 650px) {
+
+            .alphabet-table th,
+            .alphabet-table td {
+                padding: 8px 5px;
+                font-size: 0.85rem;
+            }
+
+            .alphabet-table td:first-child {
+                font-size: 1rem;
+            }
+
+        }
+        
+    </style>
+</head>
+
+
+<body>
+
+<div class="page">
+
+    <header>
+
+        <div class="book-title">
+            MODERN EASTERN ARMENIAN GRAMMAR
+        </div>
+
+        <h1>
+            Ⅴ　動詞
+        </h1>
+
+        <div class="armenian">
+             Բայ
+        </div>
+
+    </header>
+
+    <main>
+        <h2>義務法</h2>
+
+<p>義務法は、インド・ヨーロッパ語族の言語の中でも持っている言語は少なく、著名なところではラトビア語と、ドラヴィダ語系だけです。現代東アルメニア語では、動詞に直接活用をさせるのではなく、պիտիやպետք էに接続法の動詞を用いて表すことができます。</p>
+
+<p>基本的な意味は、その名の通り「〜しなければならない」などの義務や必要性、そして、未来の意味です。</p>
+
+<h3>未来形</h3>
+
+<table>
+    <tr>
+        <th></th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>義務法未来形</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>動相</td>
+        <td>Պիտի/պետք է＋接続法未来形</td>
+    </tr>
+    <tr>
+        <td>静相</td>
+        <td>結果分詞＋լինելの義務法未来形</td>
+    </tr>
+    <tr>
+        <td>進行相</td>
+        <td>進行分詞＋լինելの義務法未来形</td>
+    </tr>
+    <tr>
+        <td>未来相</td>
+        <td>未来分詞Ⅰ＋լինելの義務法未来形</td>
+    </tr>
+</table>
+
+<h4>義務法未来形動相</h4>
+
+<p>―近い未来に行いたいと思っている動作を表します。</p>
+
+<p>例；Գիտես, թե ի՞նչ պիտի պատմեմ։；私が今から何をあなたに伝えようとしているかわかる。</p>
+
+<p>―近い未来に行わなければならない動作を表します。</p>
+
+<p>例；Հիմա պիտի ավարտեմ իմ թեզը։；今私は論文を終わらせなければならない。</p>
+
+<p>―義務や必要性を表します。これは客観的に判断されたもの・主観的に判断されたものどちらも表し得ます。</p>
+
+<p>例；Պետք է ընդունենք, որ փոփոխությունները երբեմն անհրաժեշտ են աճի համար։；成長のためには変革が必要だと私たちは受け入れなければならない。</p>
+
+<p>例；Պետք է մտածեք ոչ միայն ձեր մասին, այլ նաև այն ազդեցության մասին, որ թողնում եք շրջապատի վրա։；あなたのことばかり考えるのではなく、あなたが周りに及ぼす影響まで考えないといけない。</p>
+
+<p>例；Աշակերտները Հայաստանում պիտի սովորեցվեն հայերենով։；アルメニアの子供たちはアルメニア語で教えられなければならない。</p>
+
+<p>―話し手によって非常に起こる可能性が高い、もしくは起こるはずだと思われていることを表します。運命などもこの形で表します。</p>
+
+<p>例；Նա պիտի դառնա մեծ արվեստագետ։；彼は偉大な芸術家になるだろう。</p>
+
+<h4>義務法未来形静相</h4>
+
+<p>―話している時もしくは未来に、ある動作の結果が起こっていなければならないことを表します。</p>
+
+<p>例；Խանութներում վաճառվող հավկիթի վրա պետք է նշված լինի արտադրման օրը։；店で売られている卵には生産日時を表記しなければならない。</p>
+
+<p>例；Ժողովուրդը պիտի բռնկված լինի իրենց իրավունքների համար։；人々は、彼らの権利のために情熱的になっているはずだ。</p>
+
+<h4>義務法未来形進行相</h4>
+
+<p>―話している時もしくは未来に進行中であるはずの動作を表します。</p>
+
+<p>例；Նրանք հիմա անցնելիս պետք է լինեն այդ կամուրջով։；彼らは今あの橋を使って渡っていることだろう。</p>
+
+<h4>義務法未来形未来相</h4>
+
+<p>―話している時もしくは未来の時点で、まさに起ころうとするはずの動作を表します。</p>
+
+<p>例；Դուք այս ժամին վազելու պետք է լինեք։；あなたはこの時間に急いでいるところだろう。</p>
+
+<h3>過去形</h3>
+
+<table>
+    <tr>
+        <th></th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>義務法過去形</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>動相</td>
+        <td>Պիտի/պետք է＋接続法過去形</td>
+    </tr>
+    <tr>
+        <td>静相</td>
+        <td>結果分詞＋լինելの義務法過去形</td>
+    </tr>
+    <tr>
+        <td>進行相</td>
+        <td>進行分詞＋լինելの義務法過去形</td>
+    </tr>
+    <tr>
+        <td>未来相</td>
+        <td>未来分詞Ⅰ＋լինելの義務法過去形</td>
+    </tr>
+</table>
+
+<h4>義務法過去形動相</h4>
+
+<p>―過去の一時点で起こらなければならない動作を表します。</p>
+
+<p>例；Դու պիտի գնայիր երեկույթ, բայց չգնացիր։；あなたはパーティに来るはずだったけど、来なかった。</p>
+
+<h4>義務法過去形静相</h4>
+
+<p>―科学的な蓋然性を表します。</p>
+
+<h3>義務法の非定形</h3>
+
+<p>義務法の否定形はպիտիやպետքにչをつけるだけです。</p>
+
+<p>例；չպետք է գնալ；行く必要はない。</p>
+
+<h3>義務法の歴史</h3>
+
+<p>古典期では、պիտիմは不完全動詞に分類されていて、中アルメニア語ではすでにこのպիտի＋不定詞という形で用いられることが多くなっていたようです。このպիտիが音韻変化を起こしてբիդօր、 պտի、 բդի、 բդու、 բուդու、 բըդըに変化してしまい、方言に残ったそうです。</p>
+
+<p>中アルメニア語で、すでに          պիտիの後ろには接続法が置かれるようになり、現在の形に落ち着きました。</p>
+
+<p>Պիտիと同じ意味を表すものにպետք էがありますが、これは近代になってから多く使われ始めました。これまた元は古典アルメニア語の時からで、պարտքから派生したպարտ էが元となっているようです。</p>
+    </main>
+
+    <div class="navigation">
+
+    <div class="previous">
+        <a href="adjective-adverb.html">← 前の章</a>
+    </div>
+
+    <div class="index">
+        <a href="index.html">目次</a>
+    </div>
+
+    <div class="next">
+        <a href="numeral.html">次の章 →</a>
+    </div>
+
+</div>
+
+    <footer>
+
+        現代東アルメニア語文法<br>
+        Ժամանակակից Արևելահայերենի Քերականություն
+
+    </footer>
+
+</div>
+
+</body>
+
+</html>
