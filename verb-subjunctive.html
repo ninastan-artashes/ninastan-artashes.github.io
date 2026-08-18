@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>動詞 | 現代東アルメニア語文法</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            background: #f8f6f0;
+            color: #20242a;
+            font-family: Georgia, "Times New Roman", serif;
+            line-height: 1.9;
+        }
+
+        .page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 50px 100px;
+            background: #fffdf8;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0 55px;
+            border-bottom: 1px solid #aaa;
+        }
+
+        .book-title {
+            font-size: 0.9rem;
+            letter-spacing: 0.12em;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            font-weight: normal;
+            color: #18283b;
+            margin: 0;
+        }
+
+        .armenian {
+            margin-top: 12px;
+            font-size: 1.2rem;
+        }
+
+        main {
+            max-width: 720px;
+            margin: 55px auto;
+        }
+
+        h2 {
+    font-size: 1.85rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 90px;
+    margin-bottom: 35px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid #18283b;
+           }
+
+        h3 {
+    font-size: 1.45rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 70px;
+    margin-bottom: 28px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #d5d2ca;
+           }
+
+        h4 {
+    font-size: 1.15rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 42px;
+    margin-bottom: 18px;
+    padding-left: 12px;
+    border-left: 3px solid #18283b;
+           }
+
+    p {
+    margin: 0 0 1em;
+    text-align: justify;
+      }
+
+        .armenian-text {
+            font-size: 1.05em;
+        }
+
+      .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    padding-top: 25px;
+    border-top: 1px solid #aaa;
+}
+
+.navigation a {
+    color: #18283b;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.navigation a:hover {
+    color: #8e111b;
+    text-decoration: underline;
+}
+
+.navigation .index {
+    text-align: center;
+}
+
+.navigation .previous {
+    text-align: left;
+}
+
+.navigation .next {
+    text-align: right;
+}
+
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #777;
+        }
+
+        @media (max-width: 650px) {
+
+            .page {
+                padding: 40px 25px 70px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                text-align: left;
+            }
+
+        }
+
+        table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 35px 0 50px;
+    font-size: 0.95rem;
+    background: #fffdf8;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #d6d3cb;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    font-weight: normal;
+    color: #18283b;
+    background: #f1eee6;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+}
+
+tr:last-child td {
+    border-bottom: 1px solid #aaa;
+}
+
+        /* 表の左端の項目名 */
+        th:first-child {
+            text-align: center;
+        }
+
+        /* 表の中のアルメニア文字 */
+        td {
+            font-family: Georgia, "Times New Roman", serif;
+        }
+
+        /* スマートフォン */
+        @media (max-width: 650px) {
+
+            table {
+                font-size: 0.85rem;
+            }
+
+            th,
+            td {
+                padding: 8px 6px;
+            }
+
+        }
+
+        /* ---------- Alphabet Table ---------- */
+
+        .alphabet-table {
+            width: 100%;
+            margin: 35px 0 45px;
+        }
+
+        .alphabet-table th,
+        .alphabet-table td {
+            padding: 9px 14px;
+        }
+
+        .alphabet-table th {
+            font-size: 0.9rem;
+            letter-spacing: 0.03em;
+        }
+
+        .alphabet-table td:first-child {
+            font-size: 1.15rem;
+            font-weight: normal;
+        }
+
+        .alphabet-table td:nth-child(2) {
+            font-family: "Times New Roman", Georgia, serif;
+            font-style: italic;
+        }
+
+        .alphabet-table td:nth-child(4) {
+            font-variant-numeric: tabular-nums;
+        }
+
+        @media (max-width: 650px) {
+
+            .alphabet-table th,
+            .alphabet-table td {
+                padding: 8px 5px;
+                font-size: 0.85rem;
+            }
+
+            .alphabet-table td:first-child {
+                font-size: 1rem;
+            }
+
+        }
+        
+    </style>
+</head>
+
+
+<body>
+
+<div class="page">
+
+    <header>
+
+        <div class="book-title">
+            MODERN EASTERN ARMENIAN GRAMMAR
+        </div>
+
+        <h1>
+            Ⅴ　動詞
+        </h1>
+
+        <div class="armenian">
+             Բայ
+        </div>
+
+    </header>
+
+    <main>
+       <div class="page">
+
+    <header>
+        <div class="book-title">MODERN EASTERN ARMENIAN GRAMMAR</div>
+        <h1>接続法</h1>
+    </header>
+
+    <main>
+
+        <p>
+            接続法は、事実ベースで語る直接法と異なり、話者の願い、疑問、仮定、推薦、可能性などの、主観的な気持ちベースで語る法です。英語では、例えば
+        </p>
+
+        <p>
+            例；He would come.彼は来るだろう。
+        </p>
+
+        <p>
+            このwouldという助動詞には「話し手（私）が」彼が来ることを予想、もしくは願っていますね。アルメニア語の接続法はこれに近いです。
+        </p>
+
+        <p>
+            次のような文章を考えてみましょう。
+        </p>
+
+        <p>
+            例；In the future, if you do not interrupt me, that would be way better.；これからは、あなたが私を邪魔しないでくれるなら、もっといいね。
+        </p>
+
+        <p>
+            ここでyou do not interrupt me；あなたが私を邪魔しないという状況はまだ訪れていないわけですから、アルメニア語では接続法を使います。ちなみに、それに続くthat would be way better；それはもっといいという状況も同様に、まだ起こっていない状況です。この場合、アルメニア語では条件法という法を使います。
+        </p>
+
+
+        <h2>ü　未来形</h2>
+
+        <table>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+
+        <h3>接続法未来形</h3>
+
+        <table>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+
+        <h4>動相</h4>
+
+        <table>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td>現在語幹＋人称語尾※</td>
+            </tr>
+        </table>
+
+        <h4>静相</h4>
+
+        <table>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td>結果分詞＋լինել接続法未来形</td>
+            </tr>
+        </table>
+
+        <h4>進行相</h4>
+
+        <table>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td>進行分詞＋լինել接続法未来形</td>
+            </tr>
+        </table>
+
+        <h4>未来相</h4>
+
+        <table>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td>未来分詞Ⅰ＋լինել接続法未来形</td>
+            </tr>
+        </table>
+
+        <p>
+            ※人称語尾について
+        </p>
+
+        <p>
+            「現在語幹＋人称語尾」という形はこれから何度も出てきますので、慣れましょう。
+        </p>
+
+        <p>
+            接続法未来形で用いられる人称語尾は以下です。
+        </p>
+
+        <table>
+            <tr>
+                <th></th>
+                <th>単数</th>
+                <th>複数</th>
+            </tr>
+            <tr>
+                <th>一人称</th>
+                <td>-մ</td>
+                <td>-նք</td>
+            </tr>
+            <tr>
+                <th>二人称</th>
+                <td>-ս</td>
+                <td>-ք</td>
+            </tr>
+            <tr>
+                <th>三人称</th>
+                <td>-</td>
+                <td>-ն</td>
+            </tr>
+        </table>
+
+        <p>
+            「これ、なんか見覚えあるな」と思った方。そうです、これはեմの活用によく似ていますね。
+        </p>
+
+        <table>
+            <tr>
+                <th></th>
+                <th>単数</th>
+                <th>複数</th>
+            </tr>
+            <tr>
+                <th>一人称</th>
+                <td>եմ</td>
+                <td>ենք</td>
+            </tr>
+            <tr>
+                <th>二人称</th>
+                <td>ես</td>
+                <td>եք</td>
+            </tr>
+            <tr>
+                <th>三人称</th>
+                <td>է</td>
+                <td>են</td>
+            </tr>
+        </table>
+
+        <p>
+            実はこの語尾は「現在人称語尾」と分類することができて、接続法未来形、条件法未来形、義務法未来形全てに共通している語尾となっています。
+        </p>
+
+        <p>
+            ちなみにですが、少し先取りしてしまうと、これから出てくる過去形に対しては「過去人称語尾」が当てられます。
+        </p>
+
+
+        <h3>・-ել, -ալ, -վել, -ցնելの動詞について</h3>
+
+        <table>
+            <tr>
+                <th></th>
+                <th>単数</th>
+                <th>複数</th>
+            </tr>
+            <tr>
+                <th>一人称</th>
+                <td>-ի</td>
+                <td>-ինք</td>
+            </tr>
+            <tr>
+                <th>二人称</th>
+                <td>-իր</td>
+                <td>-իք</td>
+            </tr>
+            <tr>
+                <th>三人称</th>
+                <td>-</td>
+                <td>-ին</td>
+            </tr>
+        </table>
+
+
+        <h3>・-ենալ, -անալ, -նել, -չելの動詞について</h3>
+
+        <table>
+            <tr>
+                <th></th>
+                <th>単数</th>
+                <th>複数</th>
+            </tr>
+            <tr>
+                <th>一人称</th>
+                <td>-ա</td>
+                <td>-անք</td>
+            </tr>
+            <tr>
+                <th>二人称</th>
+                <td>-ար</td>
+                <td>-աք</td>
+            </tr>
+            <tr>
+                <th>三人称</th>
+                <td>-ավ</td>
+                <td>-ան</td>
+            </tr>
+        </table>
+
+        <p>
+            あれ、これも見覚えがありませんか。これはアオリストの動相の時に使った活用語尾と同じなんですね。ですからこれも覚えてしまえばお得です。
+        </p>
+
+
+        <h3>・接続法未来形動相</h3>
+
+        <p>
+            接続法未来形は使用できる場面が非常に多いです。単文の場合と複文の場合で分けて考えてみましょう。
+        </p>
+
+        <h4>主節内の場合</h4>
+
+        <p>
+            ―話者の願い、などを表します。
+        </p>
+
+        <p>
+            例；Բերեմ ևս մեկ հետաքրքիր օրինակ։；もう一つ興味深い例を示したい。
+        </p>
+
+        <p>
+            例；Քո սրտին սեր գումարեմ։；あなたの心に愛を足したい。（イヴェタ・ムクチャンのser aniから）（ただし、歌詞中では副文で使われているため、意味は少し異なる。）
+        </p>
+
+        <p>
+            ―勧誘の意味を表します。
+        </p>
+
+        <p>
+            例；Գնանք տուն։；家に帰ろう。
+        </p>
+
+        <p>
+            例；Գնանք սուրճ խմելու։；コーヒーを飲みに行こう。
+        </p>
+
+        <p>
+            ここではգնանքはգնալの一人称複数形です。
+        </p>
+
+        <p>
+            ―命令を表します。ただ、普通は命令法を使うので、珍しい用法です。
+        </p>
+
+        <p>
+            例；Ինձ լսե՜ս։；私の話を聞いて。
+        </p>
+
+        <p>
+            例；Մի շարժես այս աթոռը։；その椅子を動かしてくれませんか。
+        </p>
+
+        <p>
+            例；Եթե վաղը ուշ տուն գաս, չմոռանաս զանգել ինձ, որ չանհանգստանամ։；明日遅く帰ってくるなら、私に電話するのを忘れないで、私が不安にならないように。
+        </p>
+
+        <p>
+            上の文章ではեթե節内でも、主節でも接続法未来形が使われています。ここでは、
+        </p>
+
+        <p>
+            ―スローガンや慣用句で用いられます。
+        </p>
+
+        <p>
+            例；Ով կարդա՝ նա մարդ ա։読書をする者は、人間である。
+        </p>
+
+        <p>
+            例；Թող Արմենը գնա տուն։；アルメンを家にいかせてやろう！
+        </p>
+
+
+        <h4>従属節内の場合</h4>
+
+        <p>
+            従属節内で使われる時は、条件・譲歩・目的などを表したり、まだ現実には起こっていないこと全般です。
+        </p>
+
+        <p>
+            ―որによって「現実には起こっていないこと・望んでいること」などの情報を表せます。注意しないといけないのは、主節の動詞の時制に関わらず、従属節内は仮定法未来であるということです。
+        </p>
+
+        <p>
+            （例）Ես ցանկանում եմ, որ վաղը լինի ավելի լավը։；明日はもっと良くなるといいな。
+        </p>
+
+        <p>
+            （例）Ավելի դժվար էր ուսուցչին հետ քննարկես։；先生と議論する方がもっと難しかった。
+        </p>
+
+        <p>
+            上の文章は、少し不自然だそうで、したの方が良いそうです。
+        </p>
+
+        <p>
+            （例）Ավելի դժվար էր ուսուցչին հետ քննարկելը；（意味は上と同じ）
+        </p>
+
+        <p>
+            （例）Մորս ասացի, որ ինքն ավելի ուշ զանգահարի։；私は母に、もっと遅く呼ぶように言った。
+        </p>
+
+        <p>
+            ―願望や義務、可能を表す動詞とともに使われ、その動詞の内容を示します。書き言葉では不定詞を用いるのが正しいとされていますが、口語では接続法未来を用いることが多いです。近年ますます接続法未来の使用度が高まってきています。
+        </p>
+
+        <p>
+            （例）Ես ուզում եմ իմ պատրաստած սուրճ խմեք։；あなたに私の作ったコーヒーを飲んで欲しい。
+        </p>
+
+        <p>
+            （例）Ես ուզում եմ իմ պատրաստված սուրճ խմել։；（意味は上と同じ）
+        </p>
+
+        <p>
+            （例）Անի, կարո՞ղ եմ քեզ մոտ գամ։；アニ、君のところへ行っていいかい。
+        </p>
+
+        <p>
+            （例）Խնդրում եմ ինձ մի հաց տաս։；パンを一つくれませんか。
+        </p>
+
+        <p>
+            （例）Կառավարությունը թույլատրեց անցկացնի համերգ Ազատության հրապարակում։；政府はコンサートを共和国広場で行うことを許可した。
+        </p>
+
+        <p>
+            ―条件法とともに用いて、「（未来に）もし〜ならば〜」という仮定の文章を作れます。ここで「〜ならば」の仮定の部分を接続法未来で、それによって想定される非現実の未来が条件法によって表されます。
+        </p>
+
+        <p>
+            （例）Եթե ես ժամանակ ունենամ, կգրեմ այդ հոդվածը։；もし時間があったら、その記事を書くよ。
+        </p>
+
+        <p>
+            （例）Եթե նա սովորի, կստանա բարձր գնահատական։；もし彼が勉強したら、彼はいい成績を取るだろう。
+        </p>
+
+
+        <h3>・接続法未来形静相</h3>
+
+        <p>
+            以下のような場合に使われます。
+        </p>
+
+        <p>
+            ―未来のある時点までに起こらなければならない動作を表します。
+        </p>
+
+        <p>
+            （例）Բոլորիս խնդիրները կլուծվեն, եթե պետուռտան խնդիրը լուծված լինի, եթե ժողովրդի խնդիրները լուծված լինեն։；国の問題が解決し、人々の問題が解決した時、私たちの全ての問題は解決されるだろう。
+        </p>
+
+        <p>
+            ―「もしかしたら〜かもしれない/かもしれなかった」のような未来や過去の仮定的な状態を表します。
+        </p>
+
+        <p>
+            （例）Գուցե մարագ մտնելիս մկանը տեսած լինես։；あなたはもしかしたら小屋に入る時にネズミを見たかもしれません。
+        </p>
+
+        <p>
+            ―չկարծել；信じない、考えない、չհիշել；信じない、կասկածել；疑うとともに使われ、
+        </p>
+
+        <p>
+            （例）Չեմ կարծում, որ այս պետությունը երբևէ կորցրած լինի ինքնուրույնությունը։；その国がまさか独立を失ったとは思わない。
+        </p>
+
+
+        <h3>・接続法未来形進行相</h3>
+
+        <p>
+            ―未来のある時点で起こっている、進行中であるはずの動作を表します。
+        </p>
+
+        <p>
+            （例）Արարատի պատկերը յուրաքանչյուր հայորդի կրում է իր հոգում, որտեղ էլ նա ապրելիս լինի։；どこに住んでいようとも、アルメニア人はみんなアララトの景色を心の中に思い浮かべているだろう。
+        </p>
+
+
+        <h3>・接続法未来形未来相</h3>
+
+        <p>
+            ―未来の時点で、まさに起ころうとしている動作を表します。
+        </p>
+
+        <p>
+            （例）Եթե հրապարակելու լինեմ այս գիրքը, քեզ տեղյակ կպահեն։；もしその本を出版する時には、あなたに知らせるよ。
+        </p>
+
+        <p>
+            上の文章では、「出版する」という動作はまだ起こっていませんが、これからまさに起ころうとすることを表します。
+        </p>
+
+
+        <h2>ü　過去形</h2>
+
+        <table>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+
+        <h3>接続法過去形</h3>
+
+        <table>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+
+        <h4>動相</h4>
+
+        <table>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td>現在語幹＋人称語尾※</td>
+            </tr>
+        </table>
+
+        <h4>静相</h4>
+
+        <table>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td>結果分詞＋լինել接続法過去形</td>
+            </tr>
+        </table>
+
+        <h4>進行相</h4>
+
+        <table>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td>進行分詞＋լինել接続法過去形</td>
+            </tr>
+        </table>
+
+        <h4>未来相</h4>
+
+        <table>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td>未来分詞Ⅰ＋լինել接続法過去形</td>
+            </tr>
+        </table>
+
+        <p>
+            過去形の時の活用語尾は、前にも出てきている通りですが、下にそれを示します。
+        </p>
+
+
+        <h3>・-ել, -ալ, -վել, -ցնելの動詞について</h3>
+
+        <table>
+            <tr>
+                <th></th>
+                <th>単数</th>
+                <th>複数</th>
+            </tr>
+            <tr>
+                <th>一人称</th>
+                <td>-ի</td>
+                <td>-ինք</td>
+            </tr>
+            <tr>
+                <th>二人称</th>
+                <td>-իր</td>
+                <td>-իք</td>
+            </tr>
+            <tr>
+                <th>三人称</th>
+                <td>-</td>
+                <td>-ին</td>
+            </tr>
+        </table>
+
+
+        <h3>・-ենալ, -անալ, -նել, -չելの動詞について</h3>
+
+        <table>
+            <tr>
+                <th></th>
+                <th>単数</th>
+                <th>複数</th>
+            </tr>
+            <tr>
+                <th>一人称</th>
+                <td>-ա</td>
+                <td>-անք</td>
+            </tr>
+            <tr>
+                <th>二人称</th>
+                <td>-ար</td>
+                <td>-աք</td>
+            </tr>
+            <tr>
+                <th>三人称</th>
+                <td>-ավ</td>
+                <td>-ան</td>
+            </tr>
+        </table>
+
+
+        <p>
+            接続法過去形は一般的に、望んでいるが実際は起こらなかった過去の動作を表します。
+        </p>
+
+
+        <h3>・接続法過去形動相</h3>
+
+        <p>
+            ―過去に起こらなかった非現実的な動作を表します。
+        </p>
+
+        <p>
+            （例）Նրանք այդ ժամանակ պետք է խոսեին պրոֆեսորի հետ։；あなたはあの時教授と話すべきだった。
+        </p>
+
+        <p>
+            （例）Եթե ավելի ուշ հասնեի այդ տեղը, կկարողանայի խոսել իմ ընկերների հետ։；もしもっと遅くそこについたなら、私の友達と話せたのに。
+        </p>
+
+        <p>
+            （例）Ես ասացի, որ պատասխան տայիր մինչև հինգը։；私はあなたに5時までに答えを出すように言った。
+        </p>
+
+
+        <h3>・接続法過去形静相</h3>
+
+        <p>
+            ―仮定的な文章に用いることができます。
+        </p>
+
+        <p>
+            （例）Եթե այն ստորագրված լիներ, ապա այսօր Լեռնային Ղարաբաղի հակամարտությունը կարգավորված կլիներ։；もしそれが締結されていたら、ナゴルノ・カラバフの紛争は起こっていなかっただろう。
+        </p>
+
+    </main>
+
+    </main>
+
+    <div class="navigation">
+
+    <div class="previous">
+        <a href="adjective-adverb.html">← 前の章</a>
+    </div>
+
+    <div class="index">
+        <a href="verb-index.html">目次</a>
+    </div>
+
+    <div class="next">
+        <a href="numeral.html">次の章 →</a>
+    </div>
+
+</div>
+
+    <footer>
+
+        現代東アルメニア語文法<br>
+        Ժամանակակից Արևելահայերենի Քերականություն
+
+    </footer>
+
+</div>
+
+</body>
+
+</html>
