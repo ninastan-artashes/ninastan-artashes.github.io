@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>動詞 | 現代東アルメニア語文法</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            background: #f8f6f0;
+            color: #20242a;
+            font-family: Georgia, "Times New Roman", serif;
+            line-height: 1.9;
+        }
+
+        .page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 50px 100px;
+            background: #fffdf8;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0 55px;
+            border-bottom: 1px solid #aaa;
+        }
+
+        .book-title {
+            font-size: 0.9rem;
+            letter-spacing: 0.12em;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            font-weight: normal;
+            color: #18283b;
+            margin: 0;
+        }
+
+        .armenian {
+            margin-top: 12px;
+            font-size: 1.2rem;
+        }
+
+        main {
+            max-width: 720px;
+            margin: 55px auto;
+        }
+
+        h2 {
+    font-size: 1.85rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 90px;
+    margin-bottom: 35px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid #18283b;
+           }
+
+        h3 {
+    font-size: 1.45rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 70px;
+    margin-bottom: 28px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #d5d2ca;
+           }
+
+        h4 {
+    font-size: 1.15rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 42px;
+    margin-bottom: 18px;
+    padding-left: 12px;
+    border-left: 3px solid #18283b;
+           }
+
+    p {
+    margin: 0 0 1em;
+    text-align: justify;
+      }
+
+        .armenian-text {
+            font-size: 1.05em;
+        }
+
+      .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    padding-top: 25px;
+    border-top: 1px solid #aaa;
+}
+
+.navigation a {
+    color: #18283b;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.navigation a:hover {
+    color: #8e111b;
+    text-decoration: underline;
+}
+
+.navigation .index {
+    text-align: center;
+}
+
+.navigation .previous {
+    text-align: left;
+}
+
+.navigation .next {
+    text-align: right;
+}
+
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #777;
+        }
+
+        @media (max-width: 650px) {
+
+            .page {
+                padding: 40px 25px 70px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                text-align: left;
+            }
+
+        }
+
+        table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 35px 0 50px;
+    font-size: 0.95rem;
+    background: #fffdf8;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #d6d3cb;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    font-weight: normal;
+    color: #18283b;
+    background: #f1eee6;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+}
+
+tr:last-child td {
+    border-bottom: 1px solid #aaa;
+}
+
+        /* 表の左端の項目名 */
+        th:first-child {
+            text-align: center;
+        }
+
+        /* 表の中のアルメニア文字 */
+        td {
+            font-family: Georgia, "Times New Roman", serif;
+        }
+
+        /* スマートフォン */
+        @media (max-width: 650px) {
+
+            table {
+                font-size: 0.85rem;
+            }
+
+            th,
+            td {
+                padding: 8px 6px;
+            }
+
+        }
+
+        /* ---------- Alphabet Table ---------- */
+
+        .alphabet-table {
+            width: 100%;
+            margin: 35px 0 45px;
+        }
+
+        .alphabet-table th,
+        .alphabet-table td {
+            padding: 9px 14px;
+        }
+
+        .alphabet-table th {
+            font-size: 0.9rem;
+            letter-spacing: 0.03em;
+        }
+
+        .alphabet-table td:first-child {
+            font-size: 1.15rem;
+            font-weight: normal;
+        }
+
+        .alphabet-table td:nth-child(2) {
+            font-family: "Times New Roman", Georgia, serif;
+            font-style: italic;
+        }
+
+        .alphabet-table td:nth-child(4) {
+            font-variant-numeric: tabular-nums;
+        }
+
+        @media (max-width: 650px) {
+
+            .alphabet-table th,
+            .alphabet-table td {
+                padding: 8px 5px;
+                font-size: 0.85rem;
+            }
+
+            .alphabet-table td:first-child {
+                font-size: 1rem;
+            }
+
+        }
+        
+    </style>
+</head>
+
+
+<body>
+
+<div class="page">
+
+    <header>
+
+        <div class="book-title">
+            MODERN EASTERN ARMENIAN GRAMMAR
+        </div>
+
+        <h1>
+            Ⅴ　動詞
+        </h1>
+
+        <div class="armenian">
+             Բայ
+        </div>
+
+    </header>
+
+    <main>
+        <h2>動詞（Verb, Բայ）</h2>
+
+    <h2>語幹（stem, բայահիմք）</h2>
+
+    <p>
+        さて、実際に動詞を活用させていく前に、まだもう一つやらなければならないことがあります。
+        それは、「語幹」を作れるようになる、という作業です。
+    </p>
+
+    <p>
+        これから出てくるたくさんの活用は、動詞ごとにそれぞれ「現在語幹」か「アオリスト語幹」の
+        どちらから作られるのか違ってくることもありますし、語幹の作り方も、動詞ごとにバラバラです。
+        少し面倒くさいですが、頑張りましょう。
+    </p>
+
+    <p>
+        まず、動詞には「不定詞」というものがあります。
+        不定詞は人称や数、時制などの表現を全く教えてくれない素の動詞です。
+    </p>
+
+    <p>
+        その不定詞から -ել、-ալ を取り除き、さらにその他の接尾辞（-չ-、-ն-、-ան-、-են-、-ցն-、-վ-）
+        があるならば取り除いた形を、ここでは Stem と表しています。
+    </p>
+
+
+    <h3>現在語幹とアオリスト語幹</h3>
+
+    <table class="grammar-table">
+        <thead>
+            <tr>
+                <th>不定詞の語尾</th>
+                <th>現在語幹</th>
+                <th>アオリスト語幹</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th>-ել</th>
+                <td>Stem-</td>
+                <td>Stem-</td>
+            </tr>
+
+            <tr>
+                <th>-ալ</th>
+                <td>Stem-</td>
+                <td>Stem-աց</td>
+            </tr>
+
+            <tr>
+                <th>-չել</th>
+                <td>Stem-չ</td>
+                <td>Stem-</td>
+            </tr>
+
+            <tr>
+                <th>-նել</th>
+                <td>Stem-ն</td>
+                <td>Stem-</td>
+            </tr>
+
+            <tr>
+                <th>-անալ</th>
+                <td>Stem-ան</td>
+                <td>Stem-աց</td>
+            </tr>
+
+            <tr>
+                <th>-ենալ</th>
+                <td>Stem-են</td>
+                <td>Stem-աց</td>
+            </tr>
+
+            <tr>
+                <th>-ցնել</th>
+                <td>Stem-ցն</td>
+                <td>Stem-ցր</td>
+            </tr>
+
+            <tr>
+                <th>-վել</th>
+                <td>Stem-վ</td>
+                <td>Stem-վ</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <h3>注意と補足</h3>
+
+    <p>
+        ここに書く注意をしっかり頭に入れれば、この表は簡単に覚えられます。
+    </p>
+
+    <h4>現在語幹</h4>
+
+    <p>
+        動詞から -ել、-ալ を抜いた形です。
+    </p>
+
+    <h4>アオリスト語幹</h4>
+
+    <p>
+        動詞が -ել で終わるなら、それを抜き、動詞が -ալ で終わるなら、
+        その代わりに -ած を入れます。そして վ-、ցն- 以外の接尾辞は取り除きます。
+        ցն- だけは ցր- に変わります。
+    </p>
+
+    <div class="note-box">
+
+        <p>※ 注意</p>
+
+        <p>
+            「どうして վ と ցն だけ？」と思われた方もいるでしょう。
+            この2つの組み合わせに見覚えはありませんか？
+            「動詞の種類」という項目で、この2つだけには明確な意味があるとお伝えしました。
+        </p>
+
+        <p>
+            他の接尾辞はなくても意味が変わりませんが、この2つは無くなってしまうと
+            意味が全く違ってきてしまうから、特別扱いになっています。
+        </p>
+
+    </div>
+
+    </main>
+
+    <div class="navigation">
+
+    <div class="previous">
+        <a href="adjective-adverb.html">← 前の章</a>
+    </div>
+
+    <div class="index">
+        <a href="index.html">目次</a>
+    </div>
+
+    <div class="next">
+        <a href="numeral.html">次の章 →</a>
+    </div>
+
+</div>
+
+    <footer>
+
+        現代東アルメニア語文法<br>
+        Ժամանակակից Արևելահայերենի Քերականություն
+
+    </footer>
+
+</div>
+
+</body>
+
+</html>
