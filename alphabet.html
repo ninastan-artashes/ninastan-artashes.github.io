@@ -96,22 +96,37 @@
         }
 
         .navigation {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 80px;
-            padding-top: 25px;
-            border-top: 1px solid #aaa;
-        }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    padding-top: 25px;
+    border-top: 1px solid #aaa;
+}
 
-        .navigation a {
-            color: #18283b;
-            text-decoration: none;
-        }
+.navigation a {
+    color: #18283b;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
 
-        .navigation a:hover {
-            text-decoration: underline;
-        }
+.navigation a:hover {
+    color: #8e111b;
+    text-decoration: underline;
+}
 
+.navigation .index {
+    text-align: center;
+}
+
+.navigation .previous {
+    text-align: left;
+}
+
+.navigation .next {
+    text-align: right;
+}
+        
         footer {
             margin-top: 60px;
             text-align: center;
@@ -598,19 +613,21 @@ tr:last-child td {
 
     </main>
 
+<div class="navigation">
 
-    <div class="navigation">
-
-        <a href="index.html">
-            ← 目次
-        </a>
-
-        <a href="#">
-            次の章 →
-        </a>
-
+    <div class="previous">
+        <a href="overview.html">← 前の章</a>
     </div>
 
+    <div class="index">
+        <a href="index.html">目次</a>
+    </div>
+
+    <div class="next">
+        <a href="noun.html">次の章 →</a>
+    </div>
+
+</div>
 
     <footer>
 
