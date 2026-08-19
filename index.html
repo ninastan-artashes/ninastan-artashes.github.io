@@ -9,7 +9,9 @@
 
     <style>
 
-        /* ---------- Base ---------- */
+        /* =========================================
+           BASE
+           ========================================= */
 
         body {
             margin: 0;
@@ -20,283 +22,418 @@
         }
 
         .page {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 50px 100px;
-    background: #fffdf8;
-    min-height: 100vh;
-    box-sizing: border-box;
-　　　　}
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 50px 100px;
+            background: #fffdf8;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
 
 
-        /* ---------- Title ---------- */
+        /* =========================================
+           TITLE / COVER PAGE
+           ========================================= */
 
         .title-page {
-    position: relative;
-    text-align: center;
+            position: relative;
+            text-align: center;
 
-    min-height: 620px;
-    padding: 70px 20px 80px;
+            min-height: 620px;
+            padding: 70px 20px 80px;
 
-    box-sizing: border-box;
-    overflow: hidden;
+            box-sizing: border-box;
+            overflow: hidden;
 
-    margin-left: -50px;
-    margin-right: -50px;
+            /*
+             * Your original burgundy gradient.
+             * The khachkar photograph will sit behind
+             * the text and above this background.
+             */
+            background:
+                linear-gradient(
+                    180deg,
+                    #5a080f 0%,
+                    #8e101c 12%,
+                    #b51d2c 25%,
+                    #c94a54 38%,
+                    #d99b9f 52%,
+                    #eee0dc 68%,
+                    #fffdf8 85%
+                );
 
-  background:
-    linear-gradient(
-        180deg,
-        #35050a 0%,
-        #620812 18%,
-        #8f101c 35%,
-        #b52a37 52%,
-        #d27a80 68%,
-        #ead1d0 82%,
-        #f5ece9 93%,
-        #fffdf8 100%
-    );
-}
+            /*
+             * Extend the cover to the edges of .page
+             */
+            margin-left: -50px;
+            margin-right: -50px;
+        }
+
+
+        /* =========================================
+           KHACHKAR PHOTOGRAPH
+           ========================================= */
+
+        .khachkar-bg {
+            position: absolute;
+
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+            object-position: center;
+
+            /*
+             * opacity
+             */
+            opacity: 0.20;
+
+            /*
+             * Put photograph behind the text
+             */
+            z-index: 0;
+
+            /*
+             * Prevent the image from interfering
+             * with mouse clicks
+             */
+            pointer-events: none;
+        }
+
+
+        /* =========================================
+           SOFT OVERLAY
+           ========================================= */
+
+        .title-page::after {
+            content: "";
+
+            position: absolute;
+            inset: 0;
+
+            /*
+             * Very subtle cream overlay.
+             * This makes the photograph softer.
+             */
+            background: rgba(255, 253, 248, 0.08);
+
+            z-index: 1;
+
+            pointer-events: none;
+        }
+
+
+        /* =========================================
+           TITLE CONTENT
+           ========================================= */
+
+        .title-content {
+            position: relative;
+            z-index: 2;
+        }
+
 
         .series {
             font-size: 0.82rem;
             letter-spacing: 0.22em;
             text-transform: uppercase;
+
             margin-bottom: 45px;
+
             color: #f8eee9;
         }
+
 
         h1 {
             font-size: 3rem;
             line-height: 1.25;
             font-weight: normal;
             letter-spacing: 0.04em;
+
             margin: 0;
+
             color: #fffdf8;
         }
 
+
         .armenian-title {
             margin-top: 25px;
+
             font-size: 1.55rem;
             line-height: 1.6;
+
             color: #f8eee9;
         }
 
-        .rule {
-            width: 90px;
-            margin: 45px auto;
-            border-top: 1px solid #777;
+
+        .author {
+            font-size: 1.15rem;
+            letter-spacing: 0.08em;
+            line-height: 2;
+
+            color: #20242a;
+
+            margin-top: 180px;
         }
 
-.author {
-    font-size: 1.15rem;
-    letter-spacing: 0.08em;
-    line-height: 2;
-    color: #20242a;
 
-    margin-top: 180px;
-}
+        .date {
+            margin-top: 20px;
 
-.date {
-    margin-top: 20px;
-    font-size: 0.9rem;
-    color: #20242a;
-}
+            font-size: 0.9rem;
 
-        /* ---------- Main text ---------- */
+            color: #20242a;
+        }
+
+
+        /* =========================================
+           MAIN TEXT
+           ========================================= */
 
         main {
             max-width: 720px;
             margin: 0 auto;
         }
 
+
         h2 {
             font-size: 1.55rem;
             font-weight: normal;
+
             color: #18283b;
+
             border-bottom: 1px solid #aaa;
+
             padding-bottom: 10px;
+
             margin-top: 70px;
             margin-bottom: 30px;
         }
+
 
         p {
             margin: 0 0 1.4em;
         }
 
 
-        /* ---------- Contents ---------- */
+        /* =========================================
+           TABLE OF CONTENTS
+           ========================================= */
 
         .contents {
             margin-top: 35px;
         }
 
+
         .contents-item {
             display: flex;
+
             justify-content: space-between;
             align-items: baseline;
+
             padding: 10px 0;
+
             border-bottom: 1px dotted #bbb;
         }
 
+
         .contents-item a {
             color: #20242a;
+
             text-decoration: none;
         }
 
+
         .contents-item a:hover {
             color: #18283b;
+
             text-decoration: underline;
         }
 
+
         .chapter-number {
             display: inline-block;
+
             width: 45px;
+
             color: #666;
         }
 
 
-        /* ---------- Footer ---------- */
+        /* =========================================
+           FOOTER
+           ========================================= */
 
         footer {
-            margin-top: 100px;
+            max-width: 720px;
+
+            margin: 100px auto 0;
+
             padding-top: 25px;
+
             border-top: 1px solid #aaa;
+
             text-align: center;
+
             font-size: 0.82rem;
+
             color: #777;
         }
 
 
-        /* ---------- Mobile ---------- */
+        footer a {
+            color: #777;
+        }
 
-       @media (max-width: 650px) {
 
-    .page {
-        padding: 0 20px 70px;
-    }
+        /* =========================================
+           MOBILE
+           ========================================= */
 
-    .title-page {
-        padding: 55px 10px 0;
-    }
+        @media (max-width: 650px) {
 
-    h1 {
-        font-size: 2.1rem;
-        line-height: 1.25;
-    }
+            .page {
+                padding: 0 20px 70px;
+            }
 
-    .armenian-title {
-        font-size: 1.25rem;
-        line-height: 1.5;
-    }
 
-    .series {
-        font-size: 0.7rem;
-        letter-spacing: 0.15em;
-    }
+            .title-page {
+                min-height: 600px;
 
-    .author {
-        margin-top: 90px;
-        font-size: 1rem;
-        color: #20242a;
-    }
+                padding: 55px 10px 0;
 
-    .date {
-        margin-top: 15px;
-        font-size: 0.85rem;
-        color: #20242a;
-    }
+                margin-left: -20px;
+                margin-right: -20px;
+            }
 
-    .flowing-lines {
-        height: 240px;
-        margin-top: 0;
-    }
 
-    main {
-        max-width: 100%;
-    }
+            h1 {
+                font-size: 2.1rem;
+                line-height: 1.25;
+            }
 
-    h2 {
-        font-size: 1.4rem;
-        margin-top: 50px;
-    }
 
-}
+            .armenian-title {
+                font-size: 1.25rem;
+                line-height: 1.5;
+            }
 
-/* =========================================
-   COVER DESIGN
-   ========================================= */
 
-.title-page {
-    position: relative;
-    text-align: center;
+            .series {
+                font-size: 0.7rem;
 
-    min-height: 620px;
-    padding: 70px 20px 80px;
+                letter-spacing: 0.15em;
+            }
 
-    box-sizing: border-box;
-    overflow: hidden;
 
-    background:
-        linear-gradient(
-            180deg,
-            #5a080f 0%,
-            #8e101c 12%,
-            #b51d2c 25%,
-            #c94a54 38%,
-            #d99b9f 52%,
-            #eee0dc 68%,
-            #fffdf8 85%
-        );
-}
-.title-page > * {
-    position: relative;
-    z-index: 2;
-}
-        
+            .author {
+                margin-top: 90px;
+
+                font-size: 1rem;
+            }
+
+
+            .date {
+                margin-top: 15px;
+
+                font-size: 0.85rem;
+            }
+
+
+            main {
+                max-width: 100%;
+            }
+
+
+            h2 {
+                font-size: 1.4rem;
+
+                margin-top: 50px;
+            }
+
+
+            .khachkar-bg {
+                object-position: center;
+            }
+
+        }
+
     </style>
+
 </head>
 
 
 <body>
 
+
 <div class="page">
 
 
-    <!-- TITLE PAGE -->
+    <!-- =========================================
+         TITLE PAGE
+         ========================================= -->
 
     <section class="title-page">
 
-        <div class="series">
-            現代東アルメニア語文法
-        </div>
 
-        <h1>
-            Modern Eastern<br>
-            Armenian Grammar
-        </h1>
+        <!-- KHACHKAR PHOTOGRAPH -->
 
-        <div class="armenian-title">
-            Ժամանակակից Արևելահայերենի Քերականություն
-        </div>
+        <img
+            src="images/khachkar design.jpg"
+            alt=""
+            class="khachkar-bg"
+        >
 
-        <div class="author">
-            二宮篤紀<br>
-            Ացուկի Նինոմիյա
-        </div>
 
-        <div class="date">
-            2026
+        <!-- TITLE CONTENT -->
+
+        <div class="title-content">
+
+
+            <div class="series">
+                現代東アルメニア語文法
+            </div>
+
+
+            <h1>
+                Modern Eastern<br>
+                Armenian Grammar
+            </h1>
+
+
+            <div class="armenian-title">
+                Ժամանակակից Արևելահայերենի Քերականություն
+            </div>
+
+
+            <div class="author">
+                二宮篤紀<br>
+                Ացուկի Նինոմիյա
+            </div>
+
+
+            <div class="date">
+                2026
+            </div>
+
+
         </div>
 
     </section>
-    
-    <!-- MAIN CONTENT -->
+
+
+    <!-- =========================================
+         MAIN CONTENT
+         ========================================= -->
 
     <main>
 
 
         <h2>目次</h2>
+
 
         <div class="contents">
 
@@ -304,149 +441,217 @@
             <!-- はじめに -->
 
             <div class="contents-item">
+
                 <a href="introduction.html">
+
                     <span class="chapter-number"></span>
+
                     はじめに
+
                 </a>
+
             </div>
 
 
             <!-- I -->
 
             <div class="contents-item">
+
                 <a href="overview.html">
+
                     <span class="chapter-number">I</span>
+
                     アルメニア語の概要
+
                 </a>
+
             </div>
 
 
             <!-- II -->
 
             <div class="contents-item">
+
                 <a href="alphabet.html">
+
                     <span class="chapter-number">II</span>
+
                     文字と発音
+
                 </a>
+
             </div>
 
 
             <!-- III -->
 
             <div class="contents-item">
+
                 <a href="noun-index.html">
+
                     <span class="chapter-number">III</span>
+
                     名詞
+
                 </a>
+
             </div>
 
 
             <!-- IV -->
 
             <div class="contents-item">
+
                 <a href="adjective-adverb.html">
+
                     <span class="chapter-number">IV</span>
+
                     形容詞・副詞
+
                 </a>
+
             </div>
 
 
             <!-- V -->
 
             <div class="contents-item">
+
                 <a href="verb-index.html">
+
                     <span class="chapter-number">V</span>
+
                     動詞
+
                 </a>
+
             </div>
 
 
             <!-- VI -->
 
             <div class="contents-item">
+
                 <a href="numeral.html">
+
                     <span class="chapter-number">VI</span>
-                　　数詞
+
+                    数詞
+
                 </a>
+
             </div>
 
 
             <!-- VII -->
 
             <div class="contents-item">
+
                 <a href="#">
+
                     <span class="chapter-number">VII</span>
+
                     代名詞・接置詞
+
                 </a>
+
             </div>
 
 
             <!-- VIII -->
 
             <div class="contents-item">
+
                 <a href="#">
+
                     <span class="chapter-number">VIII</span>
+
                     句読法・話法
+
                 </a>
+
             </div>
 
 
             <!-- IX -->
 
             <div class="contents-item">
+
                 <a href="#">
+
                     <span class="chapter-number">IX</span>
+
                     文構造
+
                 </a>
+
             </div>
 
 
             <!-- X -->
 
             <div class="contents-item">
+
                 <a href="#">
+
                     <span class="chapter-number">X</span>
+
                     アルメニア語の歴史
+
                 </a>
+
             </div>
+
 
             <!-- Miscellaneous thoughts -->
 
             <div class="contents-item">
+
                 <a href="miscellaneousthoughts.html">
+
                     <span class="chapter-number"></span>
+
                     編集者の雑感
+
                 </a>
+
             </div>
+
 
         </div>
 
+
     </main>
 
-    <footer>
-    <p>
-        © 2026 Atsuki Ninomiya
-    </p>
-    <p>
-        This work is licensed under the
-        <a href="https://creativecommons.org/licenses/by-sa/4.0/">
-            Creative Commons Attribution-ShareAlike 4.0 International License
-        </a>
-        (CC BY-SA 4.0).
-    </p>
-</footer>
 
-    <!-- FOOTER -->
+    <!-- =========================================
+         FOOTER
+         ========================================= -->
 
     <footer>
 
-        現代東アルメニア語文法<br>
-        Ժամանակակից Արևելահայերենի Քերականություն
+        <p>
+            © 2026 Atsuki Ninomiya
+        </p>
+
+        <p>
+            This work is licensed under the
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/">
+                Creative Commons Attribution-ShareAlike 4.0 International License
+            </a>
+            (CC BY-SA 4.0).
+        </p>
+
+        <p>
+            現代東アルメニア語文法<br>
+            Ժամանակակից Արևելահայերենի Քերականություն
+        </p>
 
     </footer>
 
 
 </div>
+
 
 </body>
 
