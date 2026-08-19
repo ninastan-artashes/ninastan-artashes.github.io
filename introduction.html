@@ -1,401 +1,185 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 
-<html lang="ja">
+<html lang="ja"> 
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
 ```
-<title>はじめに | 現代東アルメニア語文法</title>
-
-<style>
-
-    /* =========================================
-       BASE
-       ========================================= */
-
-    body {
-        margin: 0;
-        background: #f8f6f0;
-        color: #20242a;
-        font-family: Georgia, "Times New Roman", serif;
-        line-height: 1.9;
-    }
-
-
-    .page {
-        max-width: 900px;
-        margin: 0 auto;
-        padding: 0 50px 100px;
-        background: #fffdf8;
-        min-height: 100vh;
-        box-sizing: border-box;
-    }
-
-
-    /* =========================================
-       KHACHKAR TITLE HEADER
-       ========================================= */
-
-    header {
-        position: relative;
-
-        text-align: center;
-
-        min-height: 300px;
-
-        padding: 60px 30px 55px;
-
-        box-sizing: border-box;
-
-        overflow: hidden;
-
-        /*
-         * Extend header to the edges of the page
-         */
-        margin-left: -50px;
-        margin-right: -50px;
-
-        /*
-         * Burgundy background
-         */
-        background:
-            linear-gradient(
-                180deg,
-                #5a080f 0%,
-                #8e101c 35%,
-                #b51d2c 65%,
-                #d99b9f 100%
-            );
-    }
-
-
-    /* =========================================
-       KHACHKAR IMAGE
-       ========================================= */
-
-    header .khachkar-bg {
-        position: absolute;
-
-        top: 0;
-        left: 0;
-
-        width: 100%;
-        height: 100%;
-
-        object-fit: cover;
-
-        /*
-         * 10% opacity
-         */
-        opacity: 0.10;
-
-        /*
-         * Photograph stays behind everything
-         */
-        z-index: 0;
-
-        /*
-         * Prevent image from affecting interaction
-         */
-        pointer-events: none;
-    }
-
-
-    /* =========================================
-       TITLE CONTENT
-       ========================================= */
-
-    .header-content {
-        position: relative;
-
-        z-index: 2;
-    }
-
-
-    .book-title {
-        font-size: 0.8rem;
-
-        letter-spacing: 0.22em;
-
-        color: #f8eee9;
-
-        margin-bottom: 28px;
-    }
-
-
-    h1 {
-        font-size: 2.6rem;
-
-        line-height: 1.3;
-
-        font-weight: normal;
-
-        color: #fffdf8;
-
-        margin: 0;
-    }
-
-
-    .armenian {
-        margin-top: 18px;
-
-        font-size: 1.35rem;
-
-        color: #f8eee9;
-    }
-
-
-    /* =========================================
-       MAIN CONTENT
-       ========================================= */
-
-    main {
-        max-width: 720px;
-
-        margin: 55px auto;
-    }
-
-
-    p {
-        margin-bottom: 1.7em;
-
-        text-align: justify;
-    }
-
-
-    /* =========================================
-       NAVIGATION
-       ========================================= */
-
-    .navigation {
-        max-width: 720px;
-
-        margin: 80px auto 0;
-
-        padding-top: 25px;
-
-        border-top: 1px solid #aaa;
-
-        display: flex;
-
-        justify-content: space-between;
-    }
-
-
-    .navigation a {
-        color: #7d101a;
-
-        text-decoration: none;
-    }
-
-
-    .navigation a:hover {
-        text-decoration: underline;
-    }
-
-
-    /* =========================================
-       FOOTER
-       ========================================= */
-
-    footer {
-        max-width: 720px;
-
-        margin: 60px auto 0;
-
-        padding-top: 20px;
-
-        border-top: 1px solid #aaa;
-
-        text-align: center;
-
-        font-size: 0.8rem;
-
-        color: #777;
-    }
-
-
-    /* =========================================
-       MOBILE
-       ========================================= */
-
-    @media (max-width: 650px) {
-
-        .page {
-            padding: 0 25px 70px;
-        }
-
-
-        header {
-            margin-left: -25px;
-            margin-right: -25px;
-
-            min-height: 260px;
-
-            padding: 45px 20px 40px;
-        }
-
-
-        h1 {
-            font-size: 2rem;
-        }
-
-
-        .armenian {
-            font-size: 1.15rem;
-        }
-
-
-        .book-title {
-            font-size: 0.7rem;
-
-            letter-spacing: 0.15em;
-        }
-
-
-        main {
-            margin-top: 45px;
-        }
-
-
-        p {
-            text-align: left;
-        }
-
-
-        .navigation {
-            flex-direction: row;
-        }
-
-    }
-
-</style>
+<title>はじめに | 現代東アルメニア語文法</title> 
+
+<style> 
+
+    body { 
+        margin: 0; 
+        background: #f8f6f0; 
+        color: #20242a; 
+        font-family: Georgia, "Times New Roman", serif; 
+        line-height: 1.9; 
+    } 
+
+    .page { 
+        max-width: 900px; 
+        margin: 0 auto; 
+        padding: 60px 50px 100px; 
+        background: #fffdf8; 
+        min-height: 100vh; 
+        box-sizing: border-box; 
+    } 
+
+    header { 
+        text-align: center; 
+        padding: 20px 0 55px; 
+        border-bottom: 1px solid #aaa; 
+    } 
+
+    .book-title { 
+        font-size: 0.9rem; 
+        letter-spacing: 0.12em; 
+        color: #555; 
+        margin-bottom: 25px; 
+    } 
+
+    h1 { 
+        font-size: 2.4rem; 
+        font-weight: normal; 
+        color: #18283b; 
+        margin: 0; 
+    } 
+
+    .armenian { 
+        margin-top: 12px; 
+        font-size: 1.2rem; 
+    } 
+
+    main { 
+        max-width: 720px; 
+        margin: 55px auto; 
+    } 
+
+    p { 
+        margin-bottom: 1.7em; 
+        text-align: justify; 
+    } 
+
+    .navigation { 
+        display: flex; 
+        justify-content: space-between; 
+        margin-top: 80px; 
+        padding-top: 25px; 
+        border-top: 1px solid #aaa; 
+    } 
+
+    .navigation a { 
+        color: #18283b; 
+        text-decoration: none; 
+    } 
+
+    .navigation a:hover { 
+        text-decoration: underline; 
+    } 
+
+    footer { 
+        margin-top: 60px; 
+        text-align: center; 
+        font-size: 0.8rem; 
+        color: #777; 
+    } 
+
+    @media (max-width: 650px) { 
+
+        .page { 
+            padding: 40px 25px 70px; 
+        } 
+
+        h1 { 
+            font-size: 2rem; 
+        } 
+
+        p { 
+            text-align: left; 
+        } 
+
+    } 
+
+</style> 
 ```
 
-</head>
+</head> 
 
-<body>
+<body> 
 
-<div class="page">
+<div class="page"> 
 
 ```
-<!-- =========================================
-     KHACHKAR TITLE HEADER
-     ========================================= -->
+<header> 
 
-<header>
+    <div class="book-title"> 
+        MODERN EASTERN ARMENIAN GRAMMAR 
+    </div> 
 
+    <h1>はじめに</h1> 
 
-    <!-- Khachkar photograph -->
+    <div class="armenian"> 
+        Երկու Խոսք 
+    </div> 
 
-    <img
-        src="images/khachkar.jpg"
-        alt=""
-        class="khachkar-bg"
-    >
-
-
-    <!-- Title -->
-
-    <div class="header-content">
+</header> 
 
 
-        <div class="book-title">
-            MODERN EASTERN ARMENIAN GRAMMAR
-        </div>
+<main> 
+
+    <p> 
+        日本ではアルメニアやナゴルノ・カラバフ地域に対しての関心がとても薄く、 
+        ましてやアルメニア語を学ぼうとする人は非常に少ないでしょう。 
+        今日まで日本にはアルメニア語の網羅的な文法書が存在せず、 
+        アルメニア語学習が非常に困難でした。 
+    </p> 
+
+    <p> 
+        日本での存在感の薄さとは対照的に、私は皆さんがアルメニアについて詳しく 
+        知れば知るほど、この国をもっと好きになると思っています。 
+        ですので、今回この教科書を作りました。 
+    </p> 
+
+    <p> 
+        この教科書を作るにあたって、多くの英語やアルメニア語の文法用語を日本語に 
+        翻訳しました。できるだけ他言語でも使われている一般的な用語を採用しましたが、 
+        アルメニア語に特徴的な幾つかの用語では、もしくは私の力不足で、 
+        一般的な用語でない可能性があります。 
+    </p> 
+
+    <p> 
+        この教科書を読んで、誰かこの言語に興味を持ってくれたら嬉しいです。 
+    </p> 
+
+</main> 
 
 
-        <h1>
-            はじめに
-        </h1>
+<div class="navigation"> 
+
+    <a href="index.html"> 
+        ← 目次 
+    </a> 
+
+    <a href="overview.html"> 
+        次の章 → 
+    </a> 
+
+</div> 
 
 
-        <div class="armenian">
-            Երկու Խոսք
-        </div>
+<footer> 
 
+    現代東アルメニア語文法<br> 
+    Ժամանակակից Արևելահայերենի Քերականություն 
 
-    </div>
-
-
-</header>
-
-
-<!-- =========================================
-     MAIN CONTENT
-     ========================================= -->
-
-<main>
-
-
-    <p>
-        日本ではアルメニアやナゴルノ・カラバフ地域に対しての関心がとても薄く、
-        ましてやアルメニア語を学ぼうとする人は非常に少ないでしょう。
-        今日まで日本にはアルメニア語の網羅的な文法書が存在せず、
-        アルメニア語学習が非常に困難でした。
-    </p>
-
-
-    <p>
-        日本での存在感の薄さとは対照的に、私は皆さんがアルメニアについて詳しく
-        知れば知るほど、この国をもっと好きになると思っています。
-        ですので、今回この教科書を作りました。
-    </p>
-
-
-    <p>
-        この教科書を作るにあたって、多くの英語やアルメニア語の文法用語を日本語に
-        翻訳しました。できるだけ他言語でも使われている一般的な用語を採用しましたが、
-        アルメニア語に特徴的な幾つかの用語では、もしくは私の力不足で、
-        一般的な用語でない可能性があります。
-    </p>
-
-
-    <p>
-        この教科書を読んで、誰かこの言語に興味を持ってくれたら嬉しいです。
-    </p>
-
-
-</main>
-
-
-<!-- =========================================
-     NAVIGATION
-     ========================================= -->
-
-<div class="navigation">
-
-
-    <a href="index.html">
-        ← 目次
-    </a>
-
-
-    <a href="overview.html">
-        次の章 →
-    </a>
-
-
-</div>
-
-
-<!-- =========================================
-     FOOTER
-     ========================================= -->
-
-<footer>
-
-    現代東アルメニア語文法<br>
-
-    Ժամանակակից Արևելահայերենի Քերականություն
-
-</footer>
+</footer> 
 ```
 
-</div>
+</div> 
 
-</body>
+</body> 
 
 </html>
