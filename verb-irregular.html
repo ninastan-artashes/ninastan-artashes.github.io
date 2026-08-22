@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>動詞 | 現代東アルメニア語文法</title>
+
+    <style>
+
+        .logo-link {
+    position: fixed;
+    top: 15px;
+    left: 20px;
+    z-index: 1000;
+    display: block;
+}
+
+.site-logo {
+    width: 80px;
+    height: auto;
+    display: block;
+}
+
+        body {
+            margin: 0;
+            background: #f8f6f0;
+            color: #20242a;
+            font-family: Georgia, "Times New Roman", serif;
+            line-height: 1.9;
+        }
+
+        .page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 50px 100px;
+            background: #fffdf8;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0 55px;
+            border-bottom: 1px solid #aaa;
+        }
+
+        .book-title {
+            font-size: 0.9rem;
+            letter-spacing: 0.12em;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            font-weight: normal;
+            color: #18283b;
+            margin: 0;
+        }
+
+        .armenian {
+            margin-top: 12px;
+            font-size: 1.2rem;
+        }
+
+        main {
+            max-width: 720px;
+            margin: 55px auto;
+        }
+
+        h2 {
+    font-size: 1.85rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 90px;
+    margin-bottom: 35px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid #18283b;
+           }
+
+        h3 {
+    font-size: 1.45rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 70px;
+    margin-bottom: 28px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #d5d2ca;
+           }
+
+        h4 {
+    font-size: 1.15rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 42px;
+    margin-bottom: 18px;
+    padding-left: 12px;
+    border-left: 3px solid #18283b;
+           }
+
+    p {
+    margin: 0 0 1em;
+    text-align: justify;
+      }
+
+        .armenian-text {
+            font-size: 1.05em;
+        }
+
+      .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    padding-top: 25px;
+    border-top: 1px solid #aaa;
+}
+
+.navigation a {
+    color: #18283b;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.navigation a:hover {
+    color: #8e111b;
+    text-decoration: underline;
+}
+
+.navigation .index {
+    text-align: center;
+}
+
+.navigation .previous {
+    text-align: left;
+}
+
+.navigation .next {
+    text-align: right;
+}
+
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #777;
+        }
+
+        @media (max-width: 650px) {
+
+            .page {
+                padding: 40px 25px 70px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                text-align: left;
+            }
+
+        }
+
+        table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 35px 0 50px;
+    font-size: 0.95rem;
+    background: #fffdf8;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #d6d3cb;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    font-weight: normal;
+    color: #18283b;
+    background: #f1eee6;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+}
+
+tr:last-child td {
+    border-bottom: 1px solid #aaa;
+}
+
+        /* 表の左端の項目名 */
+        th:first-child {
+            text-align: center;
+        }
+
+        /* 表の中のアルメニア文字 */
+        td {
+            font-family: Georgia, "Times New Roman", serif;
+        }
+
+        /* スマートフォン */
+        @media (max-width: 650px) {
+
+            table {
+                font-size: 0.85rem;
+            }
+
+            th,
+            td {
+                padding: 8px 6px;
+            }
+
+        }
+
+        /* ---------- Alphabet Table ---------- */
+
+        .alphabet-table {
+            width: 100%;
+            margin: 35px 0 45px;
+        }
+
+        .alphabet-table th,
+        .alphabet-table td {
+            padding: 9px 14px;
+        }
+
+        .alphabet-table th {
+            font-size: 0.9rem;
+            letter-spacing: 0.03em;
+        }
+
+        .alphabet-table td:first-child {
+            font-size: 1.15rem;
+            font-weight: normal;
+        }
+
+        .alphabet-table td:nth-child(2) {
+            font-family: "Times New Roman", Georgia, serif;
+            font-style: italic;
+        }
+
+        .alphabet-table td:nth-child(4) {
+            font-variant-numeric: tabular-nums;
+        }
+
+        @media (max-width: 650px) {
+
+            .alphabet-table th,
+            .alphabet-table td {
+                padding: 8px 5px;
+                font-size: 0.85rem;
+            }
+
+            .alphabet-table td:first-child {
+                font-size: 1rem;
+            }
+
+        }
+        
+    </style>
+</head>
+
+
+<body>
+
+<a href="index.html" class="logo-link">
+    <img src="images/logo for github.png" alt="Home" class="site-logo">
+</a>
+
+<div class="page">
+
+    <header>
+
+        <div class="book-title">
+            MODERN EASTERN ARMENIAN GRAMMAR
+        </div>
+
+        <h1>
+            Ⅴ　動詞
+        </h1>
+
+        <div class="armenian">
+             Բայ
+        </div>
+
+    </header>
+
+    <main>
+       <h2>不規則動詞</h2>
+
+<h3>代表的な不規則動詞</h3>
+
+<p>
+アルメニア語にも不規則動詞というものが存在します。アルメニア語の不規則動詞に特徴的なのは、二種類の語幹を使い分けることです。
+</p>
+
+<p>
+以下にそれぞれの動詞が現在語幹、過去語幹のどちらを使うかの一覧表と、具体的な活用の形の表を示しています。
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>տալ</th>
+      <th>գալ</th>
+      <th>լալ</th>
+      <th>լինել</th>
+      <th>ուտել</th>
+      <th>դնել</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>不定詞</th>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+    </tr>
+    <tr>
+      <th>現在</th>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+    </tr>
+    <tr>
+      <th>進行</th>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>present</td>
+      <td>present</td>
+    </tr>
+    <tr>
+      <th>未来Ⅰ</th>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+    </tr>
+    <tr>
+      <th>結果</th>
+      <td>past</td>
+      <td>past</td>
+      <td>past</td>
+      <td>past</td>
+      <td>past</td>
+      <td>past</td>
+    </tr>
+    <tr>
+      <th>主格</th>
+      <td>past</td>
+      <td>past</td>
+      <td>past</td>
+      <td><strong>present</strong></td>
+      <td>past</td>
+      <td><strong>present</strong></td>
+    </tr>
+    <tr>
+      <th>完了</th>
+      <td>past</td>
+      <td>past</td>
+      <td>past</td>
+      <td>past</td>
+      <td>past</td>
+      <td>past</td>
+    </tr>
+    <tr>
+      <th>否定</th>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+    </tr>
+    <tr>
+      <th>アオリスト</th>
+      <td>past</td>
+      <td>past</td>
+      <td>past</td>
+      <td>past</td>
+      <td>past</td>
+      <td>past</td>
+    </tr>
+    <tr>
+      <th>命令法</th>
+      <td>past</td>
+      <td>past</td>
+      <td>past</td>
+      <td>past</td>
+      <td>past</td>
+      <td>past</td>
+    </tr>
+    <tr>
+      <th>接続法</th>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+    </tr>
+    <tr>
+      <th>条件法</th>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+    </tr>
+    <tr>
+      <th>義務法</th>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>անել</th>
+      <th>տանել</th>
+      <th>դառնալ</th>
+      <th>առնել</th>
+      <th>բանալ</th>
+      <th>կենալ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>不定詞</th>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+    </tr>
+    <tr>
+      <th>現在</th>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+    </tr>
+    <tr>
+      <th>進行</th>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+    </tr>
+    <tr>
+      <th>未来Ⅰ</th>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+    </tr>
+    <tr>
+      <th>結果</th>
+      <td>past</td>
+      <td>past</td>
+      <td>past</td>
+      <td>past</td>
+      <td>past</td>
+      <td>past</td>
+    </tr>
+    <tr>
+      <th>主格</th>
+      <td><strong>present</strong></td>
+      <td><strong>present</strong></td>
+      <td><strong>present</strong></td>
+      <td><strong>present</strong></td>
+      <td>past</td>
+      <td>past</td>
+    </tr>
+    <tr>
+      <th>完了</th>
+      <td>past</td>
+      <td>past</td>
+      <td>past</td>
+      <td>past</td>
+      <td>past</td>
+      <td>past</td>
+    </tr>
+    <tr>
+      <th>否定</th>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+    </tr>
+    <tr>
+      <th>アオリスト</th>
+      <td>past</td>
+      <td>past</td>
+      <td>past</td>
+      <td>past</td>
+      <td>past</td>
+      <td>past</td>
+    </tr>
+    <tr>
+      <th>命令法</th>
+      <td>past</td>
+      <td>past</td>
+      <td>past</td>
+      <td>past</td>
+      <td>past</td>
+      <td>past</td>
+    </tr>
+    <tr>
+      <th>接続法</th>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+    </tr>
+    <tr>
+      <th>条件法</th>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+    </tr>
+    <tr>
+      <th>義務法</th>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+      <td>present</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>տալ</th>
+      <th>գալ</th>
+      <th>լալ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>現在語幹</th>
+      <td>տ</td>
+      <td>գ</td>
+      <td>լ</td>
+    </tr>
+    <tr>
+      <th>過去語幹</th>
+      <td>տվ</td>
+      <td>եկ</td>
+      <td>լաց</td>
+    </tr>
+    <tr>
+      <th>不定詞</th>
+      <td>տալ</td>
+      <td>գալ</td>
+      <td>լալ</td>
+    </tr>
+    <tr>
+      <th>現在</th>
+      <td>տալիս</td>
+      <td>գալիս</td>
+      <td>լալիս</td>
+    </tr>
+    <tr>
+      <th>進行</th>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th>未来Ⅰ</th>
+      <td>տալու</td>
+      <td>գալու</td>
+      <td>լալու</td>
+    </tr>
+    <tr>
+      <th>結果</th>
+      <td>տված</td>
+      <td>եկած</td>
+      <td>լացած</td>
+    </tr>
+    <tr>
+      <th>主格</th>
+      <td>տվող</td>
+      <td>եկող</td>
+      <td>լացող</td>
+    </tr>
+    <tr>
+      <th>完了</th>
+      <td>տվել</td>
+      <td>եկել</td>
+      <td>լացել</td>
+    </tr>
+    <tr>
+      <th>否定</th>
+      <td>տա</td>
+      <td>գա</td>
+      <td>լա</td>
+    </tr>
+    <tr>
+      <th>アオリスト</th>
+      <td>Տվեցի</td>
+      <td>Եկա</td>
+      <td>Լացեցի/լացեցիր</td>
+    </tr>
+    <tr>
+      <th>命令法</th>
+      <td>Տուր/տվեք</td>
+      <td>Արի/եկեք</td>
+      <td>Լաց/լացեք</td>
+    </tr>
+    <tr>
+      <th>接続法</th>
+      <td>տամ</td>
+      <td>գամ</td>
+      <td>լամ</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>լինել</th>
+      <th>ուտել</th>
+      <th>դնել</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>現在語幹</th>
+      <td>լին</td>
+      <td>ուտ</td>
+      <td>դն</td>
+    </tr>
+    <tr>
+      <th>過去語幹</th>
+      <td>եղ</td>
+      <td>կեր</td>
+      <td>դր</td>
+    </tr>
+    <tr>
+      <th>不定詞</th>
+      <td>լինել</td>
+      <td>ուտել</td>
+      <td>դնել</td>
+    </tr>
+    <tr>
+      <th>現在</th>
+      <td>լինում</td>
+      <td>ուտում</td>
+      <td>դնում</td>
+    </tr>
+    <tr>
+      <th>進行</th>
+      <td>-</td>
+      <td>ուտելիս</td>
+      <td>դնելիս</td>
+    </tr>
+    <tr>
+      <th>未来Ⅰ</th>
+      <td>լինելու</td>
+      <td>ուտելու</td>
+      <td>դնելու</td>
+    </tr>
+    <tr>
+      <th>結果</th>
+      <td>եղած</td>
+      <td>կերած</td>
+      <td>դրած</td>
+    </tr>
+    <tr>
+      <th>主格</th>
+      <td>Լինող (եղող)</td>
+      <td>կերող</td>
+      <td>դրող</td>
+    </tr>
+    <tr>
+      <th>完了</th>
+      <td>եղել</td>
+      <td>կերել</td>
+      <td>դրել</td>
+    </tr>
+    <tr>
+      <th>否定</th>
+      <td>լինի</td>
+      <td>ուտի</td>
+      <td>դնի</td>
+    </tr>
+    <tr>
+      <th>アオリスト</th>
+      <td>եղա</td>
+      <td>կերա</td>
+      <td>դրեցի</td>
+    </tr>
+    <tr>
+      <th>命令法</th>
+      <td>Եղիր/եղեք</td>
+      <td>Կեր/կերեք</td>
+      <td>Դիր/դրեք</td>
+    </tr>
+    <tr>
+      <th>接続法</th>
+      <td>լինեմ</td>
+      <td>ուտեմ</td>
+      <td>դնեմ</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>անել</th>
+      <th>տանել</th>
+      <th>դառնալ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>現在語幹</th>
+      <td>ան</td>
+      <td>տան</td>
+      <td>դառն</td>
+    </tr>
+    <tr>
+      <th>過去語幹</th>
+      <td>ար</td>
+      <td>տար</td>
+      <td>դառձ</td>
+    </tr>
+    <tr>
+      <th>不定詞</th>
+      <td>անել</td>
+      <td>տանել</td>
+      <td>դառնալ</td>
+    </tr>
+    <tr>
+      <th>現在</th>
+      <td>անում</td>
+      <td>տանում</td>
+      <td>դառնում</td>
+    </tr>
+    <tr>
+      <th>進行</th>
+      <td>անելիս</td>
+      <td>տանելիս</td>
+      <td>դառնալիս</td>
+    </tr>
+    <tr>
+      <th>未来Ⅰ</th>
+      <td>անելու</td>
+      <td>տանելու</td>
+      <td>դառնալու</td>
+    </tr>
+    <tr>
+      <th>結果</th>
+      <td>արած</td>
+      <td>տարած</td>
+      <td>դառձած</td>
+    </tr>
+    <tr>
+      <th>主格</th>
+      <td>արող</td>
+      <td>տանող</td>
+      <td>դառնող</td>
+    </tr>
+    <tr>
+      <th>完了</th>
+      <td>արել</td>
+      <td>տարել</td>
+      <td>դառձել</td>
+    </tr>
+    <tr>
+      <th>否定</th>
+      <td>անի</td>
+      <td>տանի</td>
+      <td>դառնա</td>
+    </tr>
+    <tr>
+      <th>アオリスト</th>
+      <td>արեցի</td>
+      <td>տարա</td>
+      <td>դառձա</td>
+    </tr>
+    <tr>
+      <th>命令法</th>
+      <td>Արա/արեք</td>
+      <td>Տար/տարեք</td>
+      <td>Դառձիր/դառձեք</td>
+    </tr>
+    <tr>
+      <th>接続法</th>
+      <td>անեմ</td>
+      <td>տանեմ</td>
+      <td>դառնամ</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>առնել</th>
+      <th>բանալ</th>
+      <th>կենալ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>現在語幹</th>
+      <td>առն</td>
+      <td>բան</td>
+      <td>կեն</td>
+    </tr>
+    <tr>
+      <th>過去語幹</th>
+      <td>առ</td>
+      <td>բաց</td>
+      <td>կաց</td>
+    </tr>
+    <tr>
+      <th>不定詞</th>
+      <td>առնել</td>
+      <td>բանալ</td>
+      <td>կենալ</td>
+    </tr>
+    <tr>
+      <th>現在</th>
+      <td>առնում</td>
+      <td>բանում</td>
+      <td>կենում</td>
+    </tr>
+    <tr>
+      <th>進行</th>
+      <td>առնելիս</td>
+      <td>բանալիս</td>
+      <td>կենալիս</td>
+    </tr>
+    <tr>
+      <th>未来Ⅰ</th>
+      <td>առնելու</td>
+      <td>բանալու</td>
+      <td>կենալու</td>
+    </tr>
+    <tr>
+      <th>結果</th>
+      <td>առած</td>
+      <td>բացած</td>
+      <td>կաց</td>
+    </tr>
+    <tr>
+      <th>主格</th>
+      <td>առնող</td>
+      <td>բացող</td>
+      <td>կացող</td>
+    </tr>
+    <tr>
+      <th>完了</th>
+      <td>առել</td>
+      <td>բացել</td>
+      <td>կացել</td>
+    </tr>
+    <tr>
+      <th>否定</th>
+      <td>առնի</td>
+      <td>բանա</td>
+      <td>կենա</td>
+    </tr>
+    <tr>
+      <th>アオリスト</th>
+      <td>առա</td>
+      <td>բացեցի</td>
+      <td>կացա</td>
+    </tr>
+    <tr>
+      <th>命令法</th>
+      <td>Առ/առեք</td>
+      <td>Բաց/բացեք</td>
+      <td>Կաց/կացեք</td>
+    </tr>
+    <tr>
+      <th>接続法</th>
+      <td>առնեմ</td>
+      <td>բանամ</td>
+      <td>կենամ</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>動詞ասելについて</h3>
+
+<p>
+一見普通のել動詞に見えますが、アオリストは、ասացի, ասացիր, ասացという特殊な形になり、命令法でもասա/ասացեքと、特殊な語幹になります。その他は、ել動詞と同じです。
+</p>
+
+<h3>動詞կամについて</h3>
+
+<p>
+この動詞は、2つの時制の活用形しか持ちません。
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>現在形</th>
+      <th>過去形</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>կամ, կաս, կա, կանք, կաք, կան</td>
+      <td>կայի, կայիր, կար, կայինք, կայիք, կային</td>
+    </tr>
+  </tbody>
+</table>
+    </main>
+
+    <div class="navigation">
+
+    <div class="previous">
+        <a href="adjective-adverb.html">← 前の章</a>
+    </div>
+
+    <div class="index">
+        <a href="index.html">目次</a>
+    </div>
+
+    <div class="next">
+        <a href="numeral.html">次の章 →</a>
+    </div>
+
+</div>
+
+    <footer>
+
+        現代東アルメニア語文法<br>
+        Ժամանակակից Արևելահայերենի Քերականություն
+
+    </footer>
+
+</div>
+
+</body>
+
+</html>
