@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>数詞 | 現代東アルメニア語文法</title>
+
+    <style>
+
+        .logo-link {
+    position: fixed;
+    top: 15px;
+    left: 20px;
+    z-index: 1000;
+    display: block;
+}
+
+.site-logo {
+    width: 80px;
+    height: auto;
+    display: block;
+}
+
+        body {
+            margin: 0;
+            background: #f8f6f0;
+            color: #20242a;
+            font-family: Georgia, "Times New Roman", serif;
+            line-height: 1.9;
+        }
+
+        .page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 50px 100px;
+            background: #fffdf8;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0 55px;
+            border-bottom: 1px solid #aaa;
+        }
+
+        .book-title {
+            font-size: 0.9rem;
+            letter-spacing: 0.12em;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            font-weight: normal;
+            color: #18283b;
+            margin: 0;
+        }
+
+        .armenian {
+            margin-top: 12px;
+            font-size: 1.2rem;
+        }
+
+        main {
+            max-width: 720px;
+            margin: 55px auto;
+        }
+
+        h2 {
+    font-size: 1.85rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 90px;
+    margin-bottom: 35px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid #18283b;
+           }
+
+        h3 {
+    font-size: 1.45rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 70px;
+    margin-bottom: 28px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #d5d2ca;
+           }
+
+        h4 {
+    font-size: 1.15rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 42px;
+    margin-bottom: 18px;
+    padding-left: 12px;
+    border-left: 3px solid #18283b;
+           }
+
+    p {
+    margin: 0 0 1em;
+    text-align: justify;
+      }
+
+        .armenian-text {
+            font-size: 1.05em;
+        }
+
+      .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    padding-top: 25px;
+    border-top: 1px solid #aaa;
+}
+
+.navigation a {
+    color: #18283b;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.navigation a:hover {
+    color: #8e111b;
+    text-decoration: underline;
+}
+
+.navigation .index {
+    text-align: center;
+}
+
+.navigation .previous {
+    text-align: left;
+}
+
+.navigation .next {
+    text-align: right;
+}
+
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #777;
+        }
+
+        @media (max-width: 650px) {
+
+            .page {
+                padding: 40px 25px 70px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                text-align: left;
+            }
+
+        }
+
+        table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 35px 0 50px;
+    font-size: 0.95rem;
+    background: #fffdf8;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #d6d3cb;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    font-weight: normal;
+    color: #18283b;
+    background: #f1eee6;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+}
+
+tr:last-child td {
+    border-bottom: 1px solid #aaa;
+}
+
+        /* 表の左端の項目名 */
+        th:first-child {
+            text-align: center;
+        }
+
+        /* 表の中のアルメニア文字 */
+        td {
+            font-family: Georgia, "Times New Roman", serif;
+        }
+
+        /* スマートフォン */
+        @media (max-width: 650px) {
+
+            table {
+                font-size: 0.85rem;
+            }
+
+            th,
+            td {
+                padding: 8px 6px;
+            }
+
+        }
+
+        /* ---------- Alphabet Table ---------- */
+
+        .alphabet-table {
+            width: 100%;
+            margin: 35px 0 45px;
+        }
+
+        .alphabet-table th,
+        .alphabet-table td {
+            padding: 9px 14px;
+        }
+
+        .alphabet-table th {
+            font-size: 0.9rem;
+            letter-spacing: 0.03em;
+        }
+
+        .alphabet-table td:first-child {
+            font-size: 1.15rem;
+            font-weight: normal;
+        }
+
+        .alphabet-table td:nth-child(2) {
+            font-family: "Times New Roman", Georgia, serif;
+            font-style: italic;
+        }
+
+        .alphabet-table td:nth-child(4) {
+            font-variant-numeric: tabular-nums;
+        }
+
+        @media (max-width: 650px) {
+
+            .alphabet-table th,
+            .alphabet-table td {
+                padding: 8px 5px;
+                font-size: 0.85rem;
+            }
+
+            .alphabet-table td:first-child {
+                font-size: 1rem;
+            }
+
+        }
+        
+    </style>
+</head>
+
+
+<body>
+
+<a href="index.html" class="logo-link">
+    <img src="images/logo for github.png" alt="Home" class="site-logo">
+</a>
+
+<div class="page">
+
+    <header>
+
+        <div class="book-title">
+            MODERN EASTERN ARMENIAN GRAMMAR
+        </div>
+
+        <h1>
+            Ⅵ　数詞
+        </h1>
+
+        <div class="armenian">
+             Բայ
+        </div>
+
+    </header>
+
+    <main>
+       <h2>数詞</h2>
+
+<p>
+数詞には4種類あります。基数詞、序数詞、配分数詞、分数詞です。他の多くの言語と同じように、10進法を用います。
+</p>
+
+<h3>基数詞（cardinal number, քանակական թվական）</h3>
+
+<p>
+基数詞は、最も基本の数で、「1」「2」「3」…という感じです。基数詞は変格がありませんので、そのまま名詞に付けて、修飾できます。注意しないといけないのは、基数詞で修飾された名詞は複数形ではなく単数形で表さないといけないということです。ただし、基数詞以外にもさらに別の語で修飾されている時のみ、複数形にできます。
+</p>
+
+<p>
+1 մեկ、2 երկու、3 երեք、4 չորս、5 հինգ、6 վեց、7 յոթ、8 ութ、9 ինը、10 տաս(ը)
+</p>
+
+<p>
+20 քսան、30 երեսուն、40 քառասուն、50 հիսուն、60 վաթսուն、70 յոթանասուն、80 ութսուն、90 իննսուն、100 հարյուր
+</p>
+
+<p>
+1000 հազար、1000000 միլիոն、1000000000 միլիարդ
+</p>
+
+<p>ではいくつかの数字で確認しましょう。</p>
+
+<p>例；19；տասնինը</p>
+
+<p>例；157；հարյուր հինսուն յոթ</p>
+
+<p>例；643；վեց հարյուր քառասուն երեք</p>
+
+<p>例；2025；երկու հազար քսան հինգ</p>
+
+<p>
+考え方は英語の時と同じで、位の間に何も入れず、そのまま繋げるだけです。
+</p>
+
+<p>
+基数詞は名詞化することができます。その場合は母音ի変格に属します。ただし、2 երկուを除きます。
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>単数</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>主格</th>
+      <td>երկուս</td>
+    </tr>
+    <tr>
+      <th>与格</th>
+      <td>երկուսի</td>
+    </tr>
+    <tr>
+      <th>奪格</th>
+      <td>երկուսից</td>
+    </tr>
+    <tr>
+      <th>具格</th>
+      <td>երկուսով</td>
+    </tr>
+    <tr>
+      <th>地格</th>
+      <td>երկուսում</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>例；Մենք հանդիպեցիք ժամը յոթին։；私たちは7時に会った。</p>
+
+<p>例；Վեց սարի հետևում մի գյուղ կար։；山を2つ超えたところには村があった。</p>
+
+<p>例；Տասն ընտրվեց որպես ներկայացուցիչ։；10人が代表として選ばれた。</p>
+
+<h3>序数詞（ordinal number, դասական թվական）</h3>
+
+<p>
+序数詞は「何番目」のように、順番、序列、順位を示します。
+</p>
+
+<p>
+序数詞は基数詞にերորդを足すことで表されます。ただし、երկուとերեք、そしてչորսはրորդがつきます。さらに、մեկにはառաջինという特別な形があります。
+</p>
+
+<p>
+序数詞は、基数詞と同じように変格しません。そして、序数詞がついた名詞は必ず定冠詞がつきます。
+</p>
+
+<p>以上の注意を踏まえて、序数詞を勉強しましょう。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>基数詞</th>
+      <th>序数詞</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>մեկ</td><td>առաջին</td></tr>
+    <tr><td>երկու</td><td>երկրորդ</td></tr>
+    <tr><td>երեք</td><td>երրորդ</td></tr>
+    <tr><td>չորս</td><td>չորրորդ</td></tr>
+    <tr><td>հինգ</td><td>հինգերորդ</td></tr>
+    <tr><td>վեց</td><td>վեցերորդ</td></tr>
+    <tr><td>յոթ</td><td>յոթերորդ</td></tr>
+    <tr><td>ութ</td><td>ութերորդ</td></tr>
+    <tr><td>ինը</td><td>իններորդ</td></tr>
+    <tr><td>տասնմեկ</td><td>տասնմեկերորդ</td></tr>
+    <tr><td>տասներկու</td><td>տասներկրորդ</td></tr>
+  </tbody>
+</table>
+
+<p>
+序数詞も名詞化することができます。その場合、母音ի変格に属します。
+</p>
+
+<p>
+序数詞の他にも「序数詞のような」意味を持つ形容詞があります。例えば、վերջին；最後の、հաջորդ；次の、հետևյալ；続くなどです。
+</p>
+
+<p>例；Նա ավարտեց մրցույթը չորրորդ տեղում։；彼は試合を4位で終えた。</p>
+
+<p>例；Ճանապարհորդությանս առաջին օրը, մենք գնացինք լեռ։；旅の1日目に山に行った。</p>
+
+<p>例；Չորրորդը ստացավ մրցանակ։；4位の者が賞を取った。</p>
+
+<h3>配分数詞（distributive number, բաշխական թվական）</h3>
+
+<p>
+配分数詞は量的にある物がどのように、どのくらい配分されているかを示します。
+</p>
+
+<p>
+配分数詞は基数詞にականをつけることで作られます。例外はありません。
+</p>
+
+<p>
+基数詞、序数詞と同様に、配分数詞は変格しません。
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>基数詞</th>
+      <th>配分数詞</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>մեկ</td><td>մեկական</td></tr>
+    <tr><td>երկու</td><td>երկուական</td></tr>
+    <tr><td>երեք</td><td>երեքական</td></tr>
+  </tbody>
+</table>
+
+<p>
+配分数詞は名詞化できますが、ほとんど使う場面がありません。その場合、母音ի変格に属します。
+</p>
+
+<p>
+例；Մենք երեքական հարց տվեցինք բոլոր մասնակիցներին։；私たちは全ての参加者に3問ずつ質問をしました。
+</p>
+
+<p>
+<strong>例；Բուսաբանները հինգական տեսակ ընտրեցին՝ ուսումնասիրելու կլիմայական փոփոխությունների ազդեցությունը կենսաբազմազանության վրա։；植物学者は気候変動や生物多様性の影響を調べるために5種類ごとの種を選んだ。</strong>
+</p>
+
+<p>
+<strong>例；Ուզում եմ կիսվել հարյուր խնձորը։ Մեկականը արդեն բաժանվել է, մնացածը կտրամադրվի վաղը；これらの100個のリンゴを配りたい。一つずつは配ったので残りは明日配る。</strong>
+</p>
+
+<h3>分数詞</h3>
+
+<p>分数詞は、2通りで表されます。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>1</th>
+      <th>2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>分子</th>
+      <td>基数詞</td>
+      <td>基数詞</td>
+    </tr>
+    <tr>
+      <th>分母</th>
+      <td>序数詞</td>
+      <td>序数詞の配分数詞</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>
+「序数詞の配分数詞」というわかりにく言い方をしてしまいましたが、分母の数を表す序数詞にականを付けるだけです。
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>分数</th>
+      <th>表現</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1/2</td><td>մեկ երկրորդ/մեկ երկուական</td></tr>
+    <tr><td>1/3</td><td>մեկ երրորդ/մեկ երրորդական</td></tr>
+    <tr><td>2/3</td><td>երկու երրորդ/երկու երրորդական</td></tr>
+    <tr><td>5/8</td><td>հինգ ութերորդական</td></tr>
+  </tbody>
+</table>
+
+<p>
+序数詞で表される方の分数詞の方がよく使われる傾向にありますが、2つには少し意味的な違いがあります。
+</p>
+
+<p>
+1は、一般的に分数を表すときに最もよく使われます。
+</p>
+
+<p>
+2は、特に配分のニュアンスを強く出したいときによく使います。
+</p>
+
+<p>
+例；Գյուղացին ստացավ իր ցանած հացահատիկի մեկ հինգերորդը։；その農家は彼の収穫の5分の1を受け取った。
+</p>
+
+<p>
+例；Յուրաքանչյուր գյուղացու տրվեց հավաքված հացահատիկի մեկ հինգերորդական մասը։収穫の5分の1づつはそれぞれの農家たちに与えられた。
+</p>
+
+<p>
+例；Նա կերավ տորթի միայն մեկ հիգերորդը։；彼はケーキのたった5分の1しか食べていない。
+</p>
+
+<p>
+例；Բնակչության մեկ տասներորդը մասնակցեց հարցմանը։；人口の10分の1が調査に参加した。
+</p>
+
+<h3>コラム　―倍数表現―</h3>
+
+<p>
+アルメニア語には倍数を表すための専用の数詞はありません。ですので、「〜倍」を表す時には基数詞＋անգամ（倍）を使います。これは副詞的にも、形容詞的にも用いることができます。
+</p>
+
+<p>
+例；Ես երեք անգամ մանրամասնորեն ուսումնասիրեցի այդ էջը, որպեսզի լիարժեք ըմբռնեմ բարդ գաղափարները։；複雑なアイデアを完全に掴むために、私はそのページを3回しっかりと勉強した。
+</p>
+    </main>
+
+    <div class="navigation">
+
+    <div class="previous">
+        <a href="adjective-adverb.html">← 前の章</a>
+    </div>
+
+    <div class="index">
+        <a href="index.html">目次</a>
+    </div>
+
+    <div class="next">
+        <a href="numeral.html">次の章 →</a>
+    </div>
+
+</div>
+
+    <footer>
+
+        現代東アルメニア語文法<br>
+        Ժամանակակից Արևելահայերենի Քերականություն
+
+    </footer>
+
+</div>
+
+</body>
+
+</html>
