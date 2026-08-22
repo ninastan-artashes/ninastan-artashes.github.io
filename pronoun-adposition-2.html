@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>代名詞・接置詞 | 現代東アルメニア語文法</title>
+
+    <style>
+
+        .logo-link {
+    position: fixed;
+    top: 15px;
+    left: 20px;
+    z-index: 1000;
+    display: block;
+}
+
+.site-logo {
+    width: 80px;
+    height: auto;
+    display: block;
+}
+
+        body {
+            margin: 0;
+            background: #f8f6f0;
+            color: #20242a;
+            font-family: Georgia, "Times New Roman", serif;
+            line-height: 1.9;
+        }
+
+        .page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 50px 100px;
+            background: #fffdf8;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0 55px;
+            border-bottom: 1px solid #aaa;
+        }
+
+        .book-title {
+            font-size: 0.9rem;
+            letter-spacing: 0.12em;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            font-weight: normal;
+            color: #18283b;
+            margin: 0;
+        }
+
+        .armenian {
+            margin-top: 12px;
+            font-size: 1.2rem;
+        }
+
+        main {
+            max-width: 720px;
+            margin: 55px auto;
+        }
+
+        h2 {
+    font-size: 1.85rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 90px;
+    margin-bottom: 35px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid #18283b;
+           }
+
+        h3 {
+    font-size: 1.45rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 70px;
+    margin-bottom: 28px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #d5d2ca;
+           }
+
+        h4 {
+    font-size: 1.15rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 42px;
+    margin-bottom: 18px;
+    padding-left: 12px;
+    border-left: 3px solid #18283b;
+           }
+
+    p {
+    margin: 0 0 1em;
+    text-align: justify;
+      }
+
+        .armenian-text {
+            font-size: 1.05em;
+        }
+
+      .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    padding-top: 25px;
+    border-top: 1px solid #aaa;
+}
+
+.navigation a {
+    color: #18283b;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.navigation a:hover {
+    color: #8e111b;
+    text-decoration: underline;
+}
+
+.navigation .index {
+    text-align: center;
+}
+
+.navigation .previous {
+    text-align: left;
+}
+
+.navigation .next {
+    text-align: right;
+}
+
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #777;
+        }
+
+        @media (max-width: 650px) {
+
+            .page {
+                padding: 40px 25px 70px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                text-align: left;
+            }
+
+        }
+
+        table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 35px 0 50px;
+    font-size: 0.95rem;
+    background: #fffdf8;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #d6d3cb;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    font-weight: normal;
+    color: #18283b;
+    background: #f1eee6;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+}
+
+tr:last-child td {
+    border-bottom: 1px solid #aaa;
+}
+
+        /* 表の左端の項目名 */
+        th:first-child {
+            text-align: center;
+        }
+
+        /* 表の中のアルメニア文字 */
+        td {
+            font-family: Georgia, "Times New Roman", serif;
+        }
+
+        /* スマートフォン */
+        @media (max-width: 650px) {
+
+            table {
+                font-size: 0.85rem;
+            }
+
+            th,
+            td {
+                padding: 8px 6px;
+            }
+
+        }
+
+        /* ---------- Alphabet Table ---------- */
+
+        .alphabet-table {
+            width: 100%;
+            margin: 35px 0 45px;
+        }
+
+        .alphabet-table th,
+        .alphabet-table td {
+            padding: 9px 14px;
+        }
+
+        .alphabet-table th {
+            font-size: 0.9rem;
+            letter-spacing: 0.03em;
+        }
+
+        .alphabet-table td:first-child {
+            font-size: 1.15rem;
+            font-weight: normal;
+        }
+
+        .alphabet-table td:nth-child(2) {
+            font-family: "Times New Roman", Georgia, serif;
+            font-style: italic;
+        }
+
+        .alphabet-table td:nth-child(4) {
+            font-variant-numeric: tabular-nums;
+        }
+
+        @media (max-width: 650px) {
+
+            .alphabet-table th,
+            .alphabet-table td {
+                padding: 8px 5px;
+                font-size: 0.85rem;
+            }
+
+            .alphabet-table td:first-child {
+                font-size: 1rem;
+            }
+
+        }
+        
+    </style>
+</head>
+
+
+<body>
+
+<a href="index.html" class="logo-link">
+    <img src="images/logo for github.png" alt="Home" class="site-logo">
+</a>
+
+<div class="page">
+
+    <header>
+
+        <div class="book-title">
+            MODERN EASTERN ARMENIAN GRAMMAR
+        </div>
+
+        <h1>
+            Ⅶ　代名詞・接置詞
+        </h1>
+
+        <div class="armenian">
+             Դերանուն ու Կապ
+        </div>
+
+    </header>
+
+    <main>
+       <h2>疑問代名詞と関係代名詞（interrogative and relative pronoun, հարցական և հարաբերական դերանուն）</h2>
+
+<p>疑問代名詞は関係代名詞を兼ねます。疑問代名詞と関係代名詞は以下のような語があります。</p>
+
+<table>
+    <tr>
+        <th>（人）</th>
+        <td>ով；誰</td>
+    </tr>
+    <tr>
+        <th>（物）</th>
+        <td>ինչ；何</td>
+    </tr>
+    <tr>
+        <th>（品質）</th>
+        <td>որ；どれ、どんな、ինչպիսի/որպիսի；何、どんな、</td>
+    </tr>
+    <tr>
+        <th>（量）</th>
+        <td>քանի；どれくらい（多くの）、ինչքան/որքան；どれくらい（多くの）、ինչչափ/որչափ；</td>
+    </tr>
+    <tr>
+        <th>（時間）</th>
+        <td>երբ；いつ、երվանից；いつから</td>
+    </tr>
+    <tr>
+        <th>（場所）</th>
+        <td>որտեղ；どこで、ուր；どこに、որտեղից；どこから</td>
+    </tr>
+    <tr>
+        <th>（方法）</th>
+        <td>ինչպես；どのように</td>
+    </tr>
+    <tr>
+        <th>（原因）</th>
+        <td>ինչու；なぜ</td>
+    </tr>
+</table>
+
+<h3>用法</h3>
+
+<p>これらの疑問代名詞や関係代名詞かつ関係代名詞を用いる表現をまとめます。基本は英語と同じです。IPは疑問代名詞および関係代名詞のことを指します。</p>
+
+<table>
+    <tr>
+        <th>疑問文を作る</th>
+        <td>IP</td>
+        <td>〜か？</td>
+    </tr>
+    <tr>
+        <th>関係代名詞・関係副詞になる</th>
+        <td>, IP</td>
+        <td>〜の</td>
+    </tr>
+    <tr>
+        <th>間接疑問文を作る</th>
+        <td>Թե＋IP</td>
+        <td>〜かどうか</td>
+    </tr>
+    <tr>
+        <th>その他さまざまな用法</th>
+        <td>IP＋էլ որ<br>IP որ</td>
+        <td>〜のような（名詞）はなんでも</td>
+    </tr>
+</table>
+
+<p>注意しなければならないことは，「関係代名詞，関係副詞として使われる」疑問代名詞は，ほぼ必ずその前にコンマがつくことです。英語では，制限用法と非制限用法のように，コンマの有無で意味が変わってきますが，アルメニア語ではそのような意味の違いは生じません。むしろ，コンマを使うことによってそれが関係代名詞節であることを強調しています。</p>
+
+<p>以下、代表的な疑問詞をいくつか取り上げて例文を載せますが、考え方は全て同じです。</p>
+
+<h3>ով</h3>
+
+<p>疑問代名詞のովは必ず人間を指します。変格は母音ի変格です。基本複数形で使いますが、どうしても複数形にしたいときには主格の時のみ複数形にすることができます。不規則ですので、しっかり覚えましょう。</p>
+
+<table>
+    <tr>
+        <th></th>
+        <th>単数</th>
+        <th>複数</th>
+    </tr>
+    <tr>
+        <th>主格</th>
+        <td>ով</td>
+        <td>ովքեր</td>
+    </tr>
+    <tr>
+        <th>与格</th>
+        <td>ում</td>
+        <td>－</td>
+    </tr>
+    <tr>
+        <th>奪格</th>
+        <td>ումից</td>
+        <td>－</td>
+    </tr>
+    <tr>
+        <th>具格</th>
+        <td>ումով</td>
+        <td>－</td>
+    </tr>
+    <tr>
+        <th>地格</th>
+        <td>Ում մեջ</td>
+        <td>－</td>
+    </tr>
+</table>
+
+<p>例；:Ո՞վ է եղել Հայաստանի առաջին նախագահը։；誰がアルメニアの最初の大統領でしたか。</p>
+
+<p>例；Ո՞ւմ ես սպասում այսքան ժամանակ։；こんな長い時間誰を待っているの。</p>
+
+<p>例；Ո՞ւմով է փոխանցվել այս տեղեկություն։；誰によってその情報が伝わりましたか。</p>
+
+<p>例；Ես տեսել եմ այն կինն, ով հաղթել է մրցույթում։；私はその大会で勝ったその女性を見た。</p>
+
+<p>例；Մենք դեռ ըենք պարգել, թե ով է գրել այդ հոդվածը։；私たちはまだあの記事を誰が書いたのかわかっていない。</p>
+
+<p>例；Անկախ նրանից, թե ով զանգի, ես չեմ պատասխանելու։；誰が電話してこようとも、私は応えない。</p>
+
+<p>「間接疑問文を作る」疑問代名詞の一つ重要な用法は、անկախ նրանիցの後に続けることで、「〜が〜であろうとも」のような譲歩の意味を表すことです。この用法は、副詞的に用いられるIP＋էլ որと同じ意味になります。</p>
+
+<p>例；Ով էլ որ այն կարդա կամ լսի դրա բացատրությունը կամ քննարկումը, կսկսի օրեցօր ավելի ու ավելի լավը դառնալ, մինչև աճի ու դառնա կատարյալ մարդ։；これを読んだり、彼の説明や議論を聞く人は誰でも、毎日どんどんいい人になっていき、完璧な人になるだろう。</p>
+
+<p>例；Ով էլ որ լինեք և որտեղ էլ որ լինեք, դուք կարող եք ավելի շատ մարդկանց երջանկացնել, քան այժմ պատկերացնում եք։；あなたが誰であれ、どこにいようとも、あなたが想像できるより多くの人を幸せにできるのですよ。</p>
+
+<h3>コラム　―անկախ նրանիցの用法―</h3>
+
+<p>譲歩を表すこの表現は、直訳すれば「これに関係なく」という意味です。アルメニア語ではこの後ろに自由に文章をつけることで、もしくはその後にթե＋IPをつけることによって、それを従属節のように扱い、「たとえ（従属節の内容）であっても」という譲歩の意味になります。</p>
+
+<p>例；Անկախ նրանից՝սիրում են մարդիկ հեռուստացույց, թե ոչ՝ այն մեծ դեր է խաղում նրանց կյանքում։；人々がテレビを好きか嫌いかに関わらず、それは人々の生活の中で重要な役割を果たす。</p>
+
+<p>例；Կամայականության դրսեւորումը գարշելի է Աստծու աչքին, անկախ նրանից, թե մարդն ինչ դիրք է զբաղեցնում՝ բարձր թե ցածր։；恣意性の表現は神の目のもとでは忌まわしいものだ、その人の地位が如何であれ、貴賓だろうが、低位だろうが。</p>
+
+<h3>ինչ</h3>
+
+<p>人間以外のものを表します。なので、動物などの活動体も含まれます。名詞化されて、母音ի変格に従って変格することができます。</p>
+
+<p>先に出てきたովと異なり、複数形もすべての格で使うことができます。</p>
+
+<p>例；Ի՞նչ է հավաքում Անուշ։；アヌシュは何を集めていますか。</p>
+
+<p>例；Ինչի՞ն է սիրում Նարան։；ナラは何が好きですか。</p>
+
+<p>上の文での「何」は、対格の役割で、与格と同じ形になっているので、活動体であることが分かります。</p>
+
+<p>例；Ինչե՞ր են ձեր սիրելի գրքերը։；あなたの好きな本は何ですか。</p>
+
+<p>例；Այն,ինչ մեզ չի բավարարում, պետք է քանդվի և կրկին կառուցվի։；私たちを満足させないものは、破壊され、もう一度作られなければいけない。</p>
+
+<p>例；Բայց մայրն ավելի լավ գիտի, թե ինչ է պետք անել։；でも、母親の方が何をすべきかをよく知っています。</p>
+
+<p>例；Այն, ինչ մենք սովորել ենք, օգտակար կլինի։；私たちが学んだものは有用になります。</p>
+
+<p>例；Սակայն, ինչ էլ որ անենք, հարկավոր է հիսել, որ, չկարողանալով փոխել իրավիճակը, կարող ենք փոխել մեր վերաբերմունք։；ですが、私たちが何をしようとも、現実は変えられないが、私たちの反応を変えることはできる。</p>
+
+<h3>որ</h3>
+
+<p>この疑問代名詞は「どのような」という意味を表します。人にも物にも使えます。母音ի変格に従って変格します。少し不規則なので下に示します。</p>
+
+<table>
+    <tr>
+        <th></th>
+        <th>単数</th>
+        <th>複数</th>
+    </tr>
+    <tr>
+        <th>主格</th>
+        <td>որը</td>
+        <td>որոնք</td>
+    </tr>
+    <tr>
+        <th>与格</th>
+        <td>որի</td>
+        <td>որոնց</td>
+    </tr>
+    <tr>
+        <th>奪格</th>
+        <td>որից</td>
+        <td>որոնցից</td>
+    </tr>
+    <tr>
+        <th>具格</th>
+        <td>որով</td>
+        <td>որոնցով</td>
+    </tr>
+    <tr>
+        <th>地格</th>
+        <td>որում</td>
+        <td>որոնցում</td>
+    </tr>
+</table>
+
+<p>例；Ո՞ր ֆիլմը դիտել ես վերջերս։；どんな映画を最近見ましたか。</p>
+
+<p>例；Որո՞վ ես պատրաստել այս ուտեստը։；どうやってこの料理を作りましたか。</p>
+
+<p>例；Այս չորս ֆիլմերից ո՞րը կառաջարկէիր ինձ։；これらの4つの映画の中からどれがあなたのおすすめですか。</p>
+
+<p>例；Սա այն գիրքն է, որ ես կարդացել եմ անցյալ տարի։；これは私が去年に読んだ本です。</p>
+
+<h3>ինչպիսի/որպիսի</h3>
+
+<p>「どのような、どんな」という意味を表します。Որպիսիはもう使われることはほとんどありません。一応複数形であるինչպիսիք/որպիսիքはありますが、今はほとんど使われていません。</p>
+
+<p>もし名詞化して活用させるなら母音ի変格に従って変格します。</p>
+
+<p>例；Ինչպիսի՞ գրքեր գնեցիր։；どんな本を買いましたか。</p>
+
+<p>疑問代名詞ինչպիսիはինչに置き換えられます。</p>
+
+<p>例；Ի՞նչ գրքեր գնեցիր։；（意味は上と同じ）</p>
+
+<h3>քանի/ինչքան/որքան/ինչչափ/որչափ</h3>
+
+<p>「どれだけ、どれくらい」という意味を表します。主に名詞に修飾することで使われます。</p>
+
+<p>例；Ինչպիսի՞ երաժշտություն ես սիրում։；どんな音楽が好きですか。</p> 
+    </main>
+
+    <div class="navigation">
+
+    <div class="previous">
+        <a href="adjective-adverb.html">← 前の章</a>
+    </div>
+
+    <div class="index">
+        <a href="index.html">目次</a>
+    </div>
+
+    <div class="next">
+        <a href="numeral.html">次の章 →</a>
+    </div>
+
+</div>
+
+    <footer>
+
+        現代東アルメニア語文法<br>
+        Ժամանակակից Արևելահայերենի Քերականություն
+
+    </footer>
+
+</div>
+
+</body>
+
+</html>
