@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>動詞 | 現代東アルメニア語文法</title>
+
+    <style>
+
+        .logo-link {
+    position: fixed;
+    top: 15px;
+    left: 20px;
+    z-index: 1000;
+    display: block;
+}
+
+.site-logo {
+    width: 80px;
+    height: auto;
+    display: block;
+}
+
+        body {
+            margin: 0;
+            background: #f8f6f0;
+            color: #20242a;
+            font-family: Georgia, "Times New Roman", serif;
+            line-height: 1.9;
+        }
+
+        .page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 50px 100px;
+            background: #fffdf8;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0 55px;
+            border-bottom: 1px solid #aaa;
+        }
+
+        .book-title {
+            font-size: 0.9rem;
+            letter-spacing: 0.12em;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            font-weight: normal;
+            color: #18283b;
+            margin: 0;
+        }
+
+        .armenian {
+            margin-top: 12px;
+            font-size: 1.2rem;
+        }
+
+        main {
+            max-width: 720px;
+            margin: 55px auto;
+        }
+
+        h2 {
+    font-size: 1.85rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 90px;
+    margin-bottom: 35px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid #18283b;
+           }
+
+        h3 {
+    font-size: 1.45rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 70px;
+    margin-bottom: 28px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #d5d2ca;
+           }
+
+        h4 {
+    font-size: 1.15rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 42px;
+    margin-bottom: 18px;
+    padding-left: 12px;
+    border-left: 3px solid #18283b;
+           }
+
+    p {
+    margin: 0 0 1em;
+    text-align: justify;
+      }
+
+        .armenian-text {
+            font-size: 1.05em;
+        }
+
+      .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    padding-top: 25px;
+    border-top: 1px solid #aaa;
+}
+
+.navigation a {
+    color: #18283b;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.navigation a:hover {
+    color: #8e111b;
+    text-decoration: underline;
+}
+
+.navigation .index {
+    text-align: center;
+}
+
+.navigation .previous {
+    text-align: left;
+}
+
+.navigation .next {
+    text-align: right;
+}
+
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #777;
+        }
+
+        @media (max-width: 650px) {
+
+            .page {
+                padding: 40px 25px 70px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                text-align: left;
+            }
+
+        }
+
+        table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 35px 0 50px;
+    font-size: 0.95rem;
+    background: #fffdf8;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #d6d3cb;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    font-weight: normal;
+    color: #18283b;
+    background: #f1eee6;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+}
+
+tr:last-child td {
+    border-bottom: 1px solid #aaa;
+}
+
+        /* 表の左端の項目名 */
+        th:first-child {
+            text-align: center;
+        }
+
+        /* 表の中のアルメニア文字 */
+        td {
+            font-family: Georgia, "Times New Roman", serif;
+        }
+
+        /* スマートフォン */
+        @media (max-width: 650px) {
+
+            table {
+                font-size: 0.85rem;
+            }
+
+            th,
+            td {
+                padding: 8px 6px;
+            }
+
+        }
+
+        /* ---------- Alphabet Table ---------- */
+
+        .alphabet-table {
+            width: 100%;
+            margin: 35px 0 45px;
+        }
+
+        .alphabet-table th,
+        .alphabet-table td {
+            padding: 9px 14px;
+        }
+
+        .alphabet-table th {
+            font-size: 0.9rem;
+            letter-spacing: 0.03em;
+        }
+
+        .alphabet-table td:first-child {
+            font-size: 1.15rem;
+            font-weight: normal;
+        }
+
+        .alphabet-table td:nth-child(2) {
+            font-family: "Times New Roman", Georgia, serif;
+            font-style: italic;
+        }
+
+        .alphabet-table td:nth-child(4) {
+            font-variant-numeric: tabular-nums;
+        }
+
+        @media (max-width: 650px) {
+
+            .alphabet-table th,
+            .alphabet-table td {
+                padding: 8px 5px;
+                font-size: 0.85rem;
+            }
+
+            .alphabet-table td:first-child {
+                font-size: 1rem;
+            }
+
+        }
+        
+    </style>
+</head>
+
+
+<body>
+
+<a href="index.html" class="logo-link">
+    <img src="images/logo for github.png" alt="Home" class="site-logo">
+</a>
+
+<div class="page">
+
+    <header>
+
+        <div class="book-title">
+            MODERN EASTERN ARMENIAN GRAMMAR
+        </div>
+
+        <h1>
+            Ⅴ　動詞
+        </h1>
+
+        <div class="armenian">
+             Բայ
+        </div>
+
+    </header>
+
+    <main>
+<h2>動詞の活用まとめ</h2>
+
+<p>
+今まで学んできた動詞の膨大な変格をまとめてみましょう。ただ、紙面の都合上、動相のみをまとめます（静相、進行相、未来相は今までの解説を参考にしてください）。また、否定形に関しても省略します。
+</p>
+
+<h3>一般的なել動詞</h3>
+
+<p>ここではել動詞の内の一つであるգրելを活用させてみます。</p>
+
+<h4>非定形動詞</h4>
+
+<table>
+  <thead>
+    <tr><th>項目</th><th>形</th></tr>
+  </thead>
+  <tbody>
+    <tr><th>不定詞</th><td>գրել</td></tr>
+    <tr><th>現在分詞</th><td>գրում</td></tr>
+    <tr><th>進行分詞</th><td>գրելիս</td></tr>
+    <tr><th>未来分詞Ⅰ</th><td>գրելու</td></tr>
+    <tr><th>未来分詞Ⅱ</th><td>գրելիք</td></tr>
+    <tr><th>結果分詞</th><td>գրած</td></tr>
+    <tr><th>主格分詞</th><td>գրող</td></tr>
+    <tr><th>完了分詞</th><td>գրել</td></tr>
+    <tr><th>否定分詞</th><td>գրի</td></tr>
+  </tbody>
+</table>
+
+<h4>直説法</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>人称</th>
+      <th>現在形</th>
+      <th>過去形</th>
+      <th>現在完了形</th>
+      <th>過去完了形</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><th>1人称単数</th><td>Գրում եմ</td><td>Գրում էի</td><td>Գրել եմ</td><td>Գրել էի</td></tr>
+    <tr><th>2人称単数</th><td>Գրում ես</td><td>Գրում էիր</td><td>Գրել ես</td><td>Գրել էիր</td></tr>
+    <tr><th>3人称単数</th><td>Գրում է</td><td>Գրում էր</td><td>Գրել է</td><td>Գրել էր</td></tr>
+    <tr><th>1人称複数</th><td>Գրում ենք</td><td>Գրում էինք</td><td>Գրել ենք</td><td>Գրել էինք</td></tr>
+    <tr><th>2人称複数</th><td>Գրում եք</td><td>Գրում էիք</td><td>Գրել եք</td><td>Գրել էիք</td></tr>
+    <tr><th>3人称複数</th><td>Գրում են</td><td>Գրում էին</td><td>Գրել են</td><td>Գրել էին</td></tr>
+  </tbody>
+</table>
+
+<h4>アオリスト・未来形・過去未来形</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>人称</th>
+      <th>アオリスト</th>
+      <th>未来形</th>
+      <th>過去未来形</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><th>1人称単数</th><td>Գրեցի</td><td>Գրելու եմ</td><td>Գրելու էի</td></tr>
+    <tr><th>2人称単数</th><td>Գրեցիր</td><td>Գրելու ես</td><td>Գրելու էիր</td></tr>
+    <tr><th>3人称単数</th><td>Գրեց</td><td>Գրելու է</td><td>Գրելու էր</td></tr>
+    <tr><th>1人称複数</th><td>Գրեցինք</td><td>Գրելու ենք</td><td>Գրելու էինք</td></tr>
+    <tr><th>2人称複数</th><td>Գրեցիք</td><td>Գրելու եք</td><td>Գրելու էիք</td></tr>
+    <tr><th>3人称複数</th><td>Գրեցին</td><td>Գրելու են</td><td>Գրելու էին</td></tr>
+  </tbody>
+</table>
+
+<h4>接続法</h4>
+
+<table>
+  <thead>
+    <tr><th>人称</th><th>未来</th><th>過去</th></tr>
+  </thead>
+  <tbody>
+    <tr><th>1人称単数</th><td>գրեմ</td><td>գրեի</td></tr>
+    <tr><th>2人称単数</th><td>գրես</td><td>գրեիր</td></tr>
+    <tr><th>3人称単数</th><td>գրի</td><td>գրեր</td></tr>
+    <tr><th>1人称複数</th><td>գրենք</td><td>գրեինք</td></tr>
+    <tr><th>2人称複数</th><td>գրեք</td><td>գրեիք</td></tr>
+    <tr><th>3人称複数</th><td>գրեն</td><td>գրեին</td></tr>
+  </tbody>
+</table>
+
+<h4>条件法</h4>
+
+<table>
+  <thead>
+    <tr><th>人称</th><th>未来</th><th>過去</th></tr>
+  </thead>
+  <tbody>
+    <tr><th>1人称単数</th><td>կգրեմ</td><td>կգրեի</td></tr>
+    <tr><th>2人称単数</th><td>կգրես</td><td>կգրեիր</td></tr>
+    <tr><th>3人称単数</th><td>կգրի</td><td>կգրեր</td></tr>
+    <tr><th>1人称複数</th><td>կգրենք</td><td>կգրեինք</td></tr>
+    <tr><th>2人称複数</th><td>կգրեք</td><td>կգրեիք</td></tr>
+    <tr><th>3人称複数</th><td>կգրեն</td><td>կգրեին</td></tr>
+  </tbody>
+</table>
+
+<h4>義務法</h4>
+
+<table>
+  <thead>
+    <tr><th>人称</th><th>現在</th><th>過去</th></tr>
+  </thead>
+  <tbody>
+    <tr><th>1人称単数</th><td>պիտի գրեմ</td><td>պիտի գրեի</td></tr>
+    <tr><th>2人称単数</th><td>պիտի գրես</td><td>պիտի գրեիր</td></tr>
+    <tr><th>3人称単数</th><td>պիտի գրի</td><td>պիտի գրեր</td></tr>
+    <tr><th>1人称複数</th><td>պիտի գրենք</td><td>պիտի գրենք</td></tr>
+    <tr><th>2人称複数</th><td>պիտի գրեք</td><td>պիտի գրեք</td></tr>
+    <tr><th>3人称複数</th><td>պիտի գրեն</td><td>պիտի գրեն</td></tr>
+  </tbody>
+</table>
+
+<h4>命令法</h4>
+
+<table>
+  <thead>
+    <tr><th></th><th>形</th></tr>
+  </thead>
+  <tbody>
+    <tr><th>二人称単数</th><td>գրիր</td></tr>
+    <tr><th>二人称複数</th><td>գրեք</td></tr>
+  </tbody>
+</table>
+
+<h3>一般的なալ動詞</h3>
+
+<p>ここではալ動詞の一つであるխաղալを活用させてみます。</p>
+
+<h4>非定形動詞</h4>
+
+<table>
+  <thead>
+    <tr><th>項目</th><th>形</th></tr>
+  </thead>
+  <tbody>
+    <tr><th>不定詞</th><td>խաղալ</td></tr>
+    <tr><th>現在分詞</th><td>խաղում</td></tr>
+    <tr><th>進行分詞</th><td>խաղալիս</td></tr>
+    <tr><th>未来分詞Ⅰ</th><td>խաղալու</td></tr>
+    <tr><th>未来分詞Ⅱ</th><td>խաղալիք</td></tr>
+    <tr><th>結果分詞</th><td>խաղացած</td></tr>
+    <tr><th>主格分詞</th><td>խաղացող</td></tr>
+    <tr><th>完了分詞</th><td>խաղացել</td></tr>
+    <tr><th>否定分詞</th><td>խաղա</td></tr>
+  </tbody>
+</table>
+
+<h4>直説法</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>人称</th>
+      <th>現在形</th>
+      <th>過去形</th>
+      <th>現在完了形</th>
+      <th>過去完了形</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><th>1人称単数</th><td>Խաղում եմ</td><td>Խաղում էի</td><td>Խաղացել եմ</td><td>Խաղացել էի</td></tr>
+    <tr><th>2人称単数</th><td>Խաղում ես</td><td>Խաղում էիր</td><td>Խաղացել ես</td><td>Խաղացել էիր</td></tr>
+    <tr><th>3人称単数</th><td>Խաղում է</td><td>Խաղում էր</td><td>Խաղացել է</td><td>Խաղացել էր</td></tr>
+    <tr><th>1人称複数</th><td>Խաղում ենք</td><td>Խալում էինք</td><td>Խաղացել ենք</td><td>Խաղացել էինք</td></tr>
+    <tr><th>2人称複数</th><td>Խաղում եք</td><td>Խաղում էիք</td><td>Խաղացել եք</td><td>Խաղացել էիք</td></tr>
+    <tr><th>3人称複数</th><td>Խաղում են</td><td>Խաղում էին</td><td>Խաղացել են</td><td>Խաղացել էին</td></tr>
+  </tbody>
+</table>
+
+<h4>アオリスト・未来形・過去未来形</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>人称</th>
+      <th>アオリスト</th>
+      <th>未来形</th>
+      <th>過去未来形</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><th>1人称単数</th><td>խաղացի</td><td>Խաղալու եմ</td><td>Խաղալու էի</td></tr>
+    <tr><th>2人称単数</th><td>խաղացիր</td><td>Խաղալու ես</td><td>Խաղալու էիր</td></tr>
+    <tr><th>3人称単数</th><td>խաղաց</td><td>Խաղալու է</td><td>Խաղալու էր</td></tr>
+    <tr><th>1人称複数</th><td>խաղացինք</td><td>Խաղալու ենք</td><td>Խաղալու էինք</td></tr>
+    <tr><th>2人称複数</th><td>խաղացիք</td><td>Խաղալու եք</td><td>Խաղալու էիք</td></tr>
+    <tr><th>3人称複数</th><td>խաղացին</td><td>Խաղալու են</td><td>Խաղալու էին</td></tr>
+  </tbody>
+</table>
+
+<h4>接続法</h4>
+
+<table>
+  <thead>
+    <tr><th>人称</th><th>未来</th><th>過去</th></tr>
+  </thead>
+  <tbody>
+    <tr><th>1人称単数</th><td>խաղամ</td><td>խաղայի</td></tr>
+    <tr><th>2人称単数</th><td>խաղաս</td><td>խաղայիր</td></tr>
+    <tr><th>3人称単数</th><td>խաղա</td><td>խաղա</td></tr>
+    <tr><th>1人称複数</th><td>խաղանք</td><td>խաղայինք</td></tr>
+    <tr><th>2人称複数</th><td>խաղաք</td><td>խաղայիք</td></tr>
+    <tr><th>3人称複数</th><td>խաղան</td><td>խաղային</td></tr>
+  </tbody>
+</table>
+
+<h4>条件法</h4>
+
+<table>
+  <thead>
+    <tr><th>人称</th><th>未来</th><th>過去</th></tr>
+  </thead>
+  <tbody>
+    <tr><th>1人称単数</th><td>կխաղամ</td><td>կխաղայի</td></tr>
+    <tr><th>2人称単数</th><td>կխաղաս</td><td>կխաղայիր</td></tr>
+    <tr><th>3人称単数</th><td>կխաղա</td><td>կխաղա</td></tr>
+    <tr><th>1人称複数</th><td>կխաղանք</td><td>կխաղայինք</td></tr>
+    <tr><th>2人称複数</th><td>կխաղաք</td><td>կխաղայիք</td></tr>
+    <tr><th>3人称複数</th><td>կխաղան</td><td>կխաղային</td></tr>
+  </tbody>
+</table>
+
+<h4>義務法</h4>
+
+<table>
+  <thead>
+    <tr><th>人称</th><th>未来</th><th>過去</th></tr>
+  </thead>
+  <tbody>
+    <tr><th>1人称単数</th><td>պիտի խաղամ</td><td>պիտի խաղայի</td></tr>
+    <tr><th>2人称単数</th><td>պիտի խաղաս</td><td>պիտի խաղայիր</td></tr>
+    <tr><th>3人称単数</th><td>պիտի խաղա</td><td>պիտի խաղա</td></tr>
+    <tr><th>1人称複数</th><td>պիտի խաղանք</td><td>պիտի խաղայինք</td></tr>
+    <tr><th>2人称複数</th><td>պիտի խաղաք</td><td>պիտի խաղայիք</td></tr>
+    <tr><th>3人称複数</th><td>պիտի խաղան</td><td>պիտի խաղային</td></tr>
+  </tbody>
+</table>
+
+<h4>命令法</h4>
+
+<table>
+  <thead>
+    <tr><th></th><th>形</th></tr>
+  </thead>
+  <tbody>
+    <tr><th>二人称単数</th><td>խաղա</td></tr>
+    <tr><th>二人称複数</th><td>խաղացեք</td></tr>
+  </tbody>
+</table>
+    </main>
+
+    <div class="navigation">
+
+    <div class="previous">
+        <a href="adjective-adverb.html">← 前の章</a>
+    </div>
+
+    <div class="index">
+        <a href="index.html">目次</a>
+    </div>
+
+    <div class="next">
+        <a href="numeral.html">次の章 →</a>
+    </div>
+
+</div>
+
+    <footer>
+
+        現代東アルメニア語文法<br>
+        Ժամանակակից Արևելահայերենի Քերականություն
+
+    </footer>
+
+</div>
+
+</body>
+
+</html>
