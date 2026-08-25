@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>句読法・話法 | 現代東アルメニア語文法</title>
+
+    <style>
+
+        .logo-link {
+    position: fixed;
+    top: 15px;
+    left: 20px;
+    z-index: 1000;
+    display: block;
+}
+
+.site-logo {
+    width: 80px;
+    height: auto;
+    display: block;
+}
+
+        body {
+            margin: 0;
+            background: #f8f6f0;
+            color: #20242a;
+            font-family: Georgia, "Times New Roman", serif;
+            line-height: 1.9;
+        }
+
+        .page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 50px 100px;
+            background: #fffdf8;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0 55px;
+            border-bottom: 1px solid #aaa;
+        }
+
+        .book-title {
+            font-size: 0.9rem;
+            letter-spacing: 0.12em;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            font-weight: normal;
+            color: #18283b;
+            margin: 0;
+        }
+
+        .armenian {
+            margin-top: 12px;
+            font-size: 1.2rem;
+        }
+
+        main {
+            max-width: 720px;
+            margin: 55px auto;
+        }
+
+        h2 {
+    font-size: 1.85rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 90px;
+    margin-bottom: 35px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid #18283b;
+           }
+
+        h3 {
+    font-size: 1.45rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 70px;
+    margin-bottom: 28px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #d5d2ca;
+           }
+
+        h4 {
+    font-size: 1.15rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 42px;
+    margin-bottom: 18px;
+    padding-left: 12px;
+    border-left: 3px solid #18283b;
+           }
+
+    p {
+    margin: 0 0 1em;
+    text-align: justify;
+      }
+
+        .armenian-text {
+            font-size: 1.05em;
+        }
+
+      .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    padding-top: 25px;
+    border-top: 1px solid #aaa;
+}
+
+.navigation a {
+    color: #18283b;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.navigation a:hover {
+    color: #8e111b;
+    text-decoration: underline;
+}
+
+.navigation .index {
+    text-align: center;
+}
+
+.navigation .previous {
+    text-align: left;
+}
+
+.navigation .next {
+    text-align: right;
+}
+
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #777;
+        }
+
+        @media (max-width: 650px) {
+
+            .page {
+                padding: 40px 25px 70px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                text-align: left;
+            }
+
+        }
+
+        table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 35px 0 50px;
+    font-size: 0.95rem;
+    background: #fffdf8;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #d6d3cb;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    font-weight: normal;
+    color: #18283b;
+    background: #f1eee6;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+}
+
+tr:last-child td {
+    border-bottom: 1px solid #aaa;
+}
+
+        /* 表の左端の項目名 */
+        th:first-child {
+            text-align: center;
+        }
+
+        /* 表の中のアルメニア文字 */
+        td {
+            font-family: Georgia, "Times New Roman", serif;
+        }
+
+        /* スマートフォン */
+        @media (max-width: 650px) {
+
+            table {
+                font-size: 0.85rem;
+            }
+
+            th,
+            td {
+                padding: 8px 6px;
+            }
+
+        }
+
+        /* ---------- Alphabet Table ---------- */
+
+        .alphabet-table {
+            width: 100%;
+            margin: 35px 0 45px;
+        }
+
+        .alphabet-table th,
+        .alphabet-table td {
+            padding: 9px 14px;
+        }
+
+        .alphabet-table th {
+            font-size: 0.9rem;
+            letter-spacing: 0.03em;
+        }
+
+        .alphabet-table td:first-child {
+            font-size: 1.15rem;
+            font-weight: normal;
+        }
+
+        .alphabet-table td:nth-child(2) {
+            font-family: "Times New Roman", Georgia, serif;
+            font-style: italic;
+        }
+
+        .alphabet-table td:nth-child(4) {
+            font-variant-numeric: tabular-nums;
+        }
+
+        @media (max-width: 650px) {
+
+            .alphabet-table th,
+            .alphabet-table td {
+                padding: 8px 5px;
+                font-size: 0.85rem;
+            }
+
+            .alphabet-table td:first-child {
+                font-size: 1rem;
+            }
+
+        }
+        
+    </style>
+</head>
+
+
+<body>
+
+<a href="index.html" class="logo-link">
+    <img src="images/logo for github.png" alt="Home" class="site-logo">
+</a>
+
+<div class="page">
+
+    <header>
+
+        <div class="book-title">
+            MODERN EASTERN ARMENIAN GRAMMAR
+        </div>
+
+        <h1>
+            Ⅷ　句読法・話法
+        </h1>
+
+        <div class="armenian">
+             Կետադրություն ու Խոսք
+        </div>
+
+    </header>
+
+    <main>
+        <h1>句読法</h1>
+
+<p>この章では、アルメニア語の句読法、英語ではpunctuationと言いますが、について解説していきます。句読法とは、「句読点　、　」や「読点　。　」などの記号の使い方</p>
+
+<p>勉強していただければわかるのですが、アルメニア語の句読法は日本語のそれとも、英語のそれとも違う様相を呈しています。最初は私もかなり戸惑い、正確な文の流れを掴むのに苦労をしました。たかが小さな点だとみくびらないで、正しく勉強することが上達への近道です。</p>
+
+<h2>① Վերջակետ 読点 →։</h2>
+
+<p>西欧の言語のコロン：に見えますが、これはアルメニア語では文の終わりを示します。つまりピリオドと同じです。</p>
+
+<p>例；Տերևները շարժվում են քամուց։；葉っぱは風によって動かされた。</p>
+
+<p>文の最後に小さな二つの点々があります。これは疑問文のときも同じようにつけます。また疑問文の作り方で詳しく説明します。</p>
+
+<h2>② Հարցական 疑問符 →՞</h2>
+
+<p>西欧の言語と異なり、疑問符は疑問の中心となる語のアクセント母音の右肩につけます。アクセントがつく母音がどれなのかは、アクセントの説明箇所をよく読んで、注意して選びましょう。</p>
+
+<p>例；Դուք որտե՞ղ եք ապրում։；どこに住んでいますか。</p>
+
+<p>例；Ինչո՞ւ ես ուշացել։；なぜ遅れたのですか。</p>
+
+<h2>③ Միջակետ 中符 →.</h2>
+
+<p>日本語や英語にはない概念です。緊密な一体感のある文章を畳み掛けるように並列させる時に使います。</p>
+
+<p>例；Երեկո էր. Աշակերտները տուն էին գնում. Հեռվից լսվում էր եկեղեցու<br>
+զանգերի ղողանջ։；昨晩のこと。生徒たちは家に向かう。遠くから教会の鐘の音が聞こえてきた。</p>
+
+<h2>④ Ստորակետ 句読点 → ,</h2>
+
+<p>基本的にはコンマと働きは同じですが、機能の一部は終止符と役割交代しています。</p>
+
+<ul>
+  <li>文の切れ目に打つ</li>
+  <li>等位接続詞の前後で主語が交代する場合に打つ</li>
+  <li>相関接続詞が二回以上出現する時に打つ。</li>
+  <li>従属接続詞の前では必ず打つ。</li>
+</ul>
+
+<p>例；Մայրը երգում է, և երեխան քնում է օրորոցում։；母は歌い、子供はゆりかご寝る。</p>
+
+<h2>⑤ Բութ（休止符） →՝</h2>
+
+<p>西欧の言語のコンマやコロンの働きと似ています。用法は以下のとおりです。</p>
+
+<ul>
+  <li>
+    発言の引用のマークとして
+    <p>例；Այս ուսանողը ասել են՝ ուզում եմ ավելի շատ բան գիտեմ։；その生徒は「もっと知りたい」と言った。</p>
+    <p>ただし、引用文の出だしは小文字で始める。</p>
+  </li>
+  <li>
+    例示を列挙する場合、本文との切れ目に挿入する
+    <p>例；Իմ ընկերներն են՝ Վարդանը, Գրիգորը, և Հարույթը։；僕の友人のヴァルダン、グリゴル、ハルートだ。</p>
+    <p>例；Ես ուզում եմ ձեզ ցույց տալ մի բան, օրինակ, իմ գլխարկը.；私はあなたにちょっと見せたいものがある。例えば私の帽子とか。</p>
+  </li>
+  <li>
+    同格を表す
+    <p>例；Տիգրանը՝ Վարդանի հայրը, Երևան է գնում։；ヴァルダンの父、ティグランは、イェレヴァンに向かっている。</p>
+  </li>
+  <li>
+    同じ構造の文章が続くときに省略された事を示す
+    <p>例；Հայաստանը Կավկասիայում գտնվում է, Ճապոնիան՝ արևելյան Ասիայում։；アルメニアはコーカサスに位置し、日本は東アジアに位置する。</p>
+  </li>
+  <li>
+    付帯状況を表す具格の不定詞句と主節の切れ目に挿入する
+    <p>例；Բացելով սենյակին դուռը, իմ մայրը բարձրաձայն գոռաց։；部屋のドアを開けながら、母は大きな声をあげた。</p>
+  </li>
+</ul>
+
+<h2>⑥ Շեշտ（強勢符） →՛</h2>
+
+<p>文中で強調したい語につけます。普段は命令文の中にあります。</p>
+
+<p>例；Տեղափոխե՛ք այս աթոռը։；この椅子を動かして！</p>
+
+<p>尚、強調したい語につけるので、以下のような文章も可能。</p>
+
+<p>例；Տեղափոխեք այս աթո՛ռը։；この椅子を動かして！</p>
+
+<p>この場合は椅子に注目して言っている。</p>
+
+<h2>⑦ Բացականցական նշան（感嘆符） →՜</h2>
+
+<p>感嘆文並びに挨拶表現などで話者が思いを込めて発音した場合に置きます。感嘆の意をこめる語につけるのがポイントです。疑問符や強勢符の時と同じですね。</p>
+
+<p>例；Բարե՜ւ, Արամ, ինչպե՞ս ես։；いやあ、アラム、元気かい。</p>
+
+<p>※そのほかにもたくさん記号があるが、それらは全て西欧語と同じです。</p>
+    </main>
+
+    <div class="navigation">
+
+    <div class="previous">
+        <a href="pronoun-adposition.html">← 前の章</a>
+    </div>
+
+    <div class="index">
+        <a href="index.html">目次</a>
+    </div>
+
+    <div class="next">
+        <a href="syntax.html">次の章 →</a>
+    </div>
+
+</div>
+
+    <footer>
+
+        現代東アルメニア語文法<br>
+        Ժամանակակից Արևելահայերենի Քերականություն
+
+    </footer>
+
+</div>
+
+</body>
+
+</html>
