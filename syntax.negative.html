@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>文構造 | 現代東アルメニア語文法</title>
+
+    <style>
+
+        .logo-link {
+    position: fixed;
+    top: 15px;
+    left: 20px;
+    z-index: 1000;
+    display: block;
+}
+
+.site-logo {
+    width: 80px;
+    height: auto;
+    display: block;
+}
+
+        body {
+            margin: 0;
+            background: #f8f6f0;
+            color: #20242a;
+            font-family: Georgia, "Times New Roman", serif;
+            line-height: 1.9;
+        }
+
+        .page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 50px 100px;
+            background: #fffdf8;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0 55px;
+            border-bottom: 1px solid #aaa;
+        }
+
+        .book-title {
+            font-size: 0.9rem;
+            letter-spacing: 0.12em;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            font-weight: normal;
+            color: #18283b;
+            margin: 0;
+        }
+
+        .armenian {
+            margin-top: 12px;
+            font-size: 1.2rem;
+        }
+
+        main {
+            max-width: 720px;
+            margin: 55px auto;
+        }
+
+        h2 {
+    font-size: 1.85rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 90px;
+    margin-bottom: 35px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid #18283b;
+           }
+
+        h3 {
+    font-size: 1.45rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 70px;
+    margin-bottom: 28px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #d5d2ca;
+           }
+
+        h4 {
+    font-size: 1.15rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 42px;
+    margin-bottom: 18px;
+    padding-left: 12px;
+    border-left: 3px solid #18283b;
+           }
+
+    p {
+    margin: 0 0 1em;
+    text-align: justify;
+      }
+
+        .armenian-text {
+            font-size: 1.05em;
+        }
+
+      .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    padding-top: 25px;
+    border-top: 1px solid #aaa;
+}
+
+.navigation a {
+    color: #18283b;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.navigation a:hover {
+    color: #8e111b;
+    text-decoration: underline;
+}
+
+.navigation .index {
+    text-align: center;
+}
+
+.navigation .previous {
+    text-align: left;
+}
+
+.navigation .next {
+    text-align: right;
+}
+
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #777;
+        }
+
+        @media (max-width: 650px) {
+
+            .page {
+                padding: 40px 25px 70px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                text-align: left;
+            }
+
+        }
+
+        table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 35px 0 50px;
+    font-size: 0.95rem;
+    background: #fffdf8;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #d6d3cb;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    font-weight: normal;
+    color: #18283b;
+    background: #f1eee6;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+}
+
+tr:last-child td {
+    border-bottom: 1px solid #aaa;
+}
+
+        /* 表の左端の項目名 */
+        th:first-child {
+            text-align: center;
+        }
+
+        /* 表の中のアルメニア文字 */
+        td {
+            font-family: Georgia, "Times New Roman", serif;
+        }
+
+        /* スマートフォン */
+        @media (max-width: 650px) {
+
+            table {
+                font-size: 0.85rem;
+            }
+
+            th,
+            td {
+                padding: 8px 6px;
+            }
+
+        }
+
+        /* ---------- Alphabet Table ---------- */
+
+        .alphabet-table {
+            width: 100%;
+            margin: 35px 0 45px;
+        }
+
+        .alphabet-table th,
+        .alphabet-table td {
+            padding: 9px 14px;
+        }
+
+        .alphabet-table th {
+            font-size: 0.9rem;
+            letter-spacing: 0.03em;
+        }
+
+        .alphabet-table td:first-child {
+            font-size: 1.15rem;
+            font-weight: normal;
+        }
+
+        .alphabet-table td:nth-child(2) {
+            font-family: "Times New Roman", Georgia, serif;
+            font-style: italic;
+        }
+
+        .alphabet-table td:nth-child(4) {
+            font-variant-numeric: tabular-nums;
+        }
+
+        @media (max-width: 650px) {
+
+            .alphabet-table th,
+            .alphabet-table td {
+                padding: 8px 5px;
+                font-size: 0.85rem;
+            }
+
+            .alphabet-table td:first-child {
+                font-size: 1rem;
+            }
+
+        }
+        
+    </style>
+</head>
+
+
+<body>
+
+<a href="index.html" class="logo-link">
+    <img src="images/logo for github.png" alt="Home" class="site-logo">
+</a>
+
+<div class="page">
+
+    <header>
+
+        <div class="book-title">
+            MODERN EASTERN ARMENIAN GRAMMAR
+        </div>
+
+        <h1>
+            Ⅸ　文構造
+        </h1>
+
+        <div class="armenian">
+             Շարահյուսություն
+        </div>
+
+    </header>
+
+    <main>
+<h2>否定文の作り方</h2>
+
+<p>否定文とはそもそも文構造的には「普通でない」状態です。その「普通でない」状態だからこそ、文構造に特殊な変化が起こります。それが、前に説明してある「前接焦点」の考え方です。一つ一つ見ていきましょう。</p>
+
+<h3>文全体を否定する場合</h3>
+
+<p>―不定詞は不定詞の前にչをつけることで否定します。</p>
+
+<p>例；Բժիշկը խորհուրդ տվեց չծխել։；医者はタバコを吸わないように忠告した。</p>
+
+<p>例；Վարչապետը կոչ արեց քաղաքացիներին չտարածել չստուգված տեղեկություններ սոցիալական ցանցերում։；首相は市民に出所のわからない情報をSNSに流さないように求めた。</p>
+
+<p>―アオリストのような一語の定形動詞は、定形動詞の前にչをつけることで否定します。</p>
+
+<p>例；Իմ թիմը չհաղթեց եզրափակիչ խաղում, սակայն արժանապատիվ մրցեց։；私のチームは決勝では勝てなかったが、意義ある戦いをした。</p>
+
+<p>例；Ես չգնացի համալսարան, որովհետև հիվանդ էի:；私は病気だったので大学には行かなかった。</p>
+
+<p>―aux V＋participle（分詞）の場合は、aux Vを否定形にすることで否定します。この場合、前接焦点の語順が適用されます。</p>
+
+<p>例；Ես չեմ կարդացել Պարույր Սևակի բանաստեղծությունները։；私はまだパリュール・セヴァクの詩を読んだことがありません。</p>
+
+<p>例；Ես շշնջել եմ Մարիամին, որ ոչ ոքի չպատմի այն նամակի մասին, որը դեռ չենք գտել։；私はマリアムに、図書館で見つけ他手紙のことについて誰にも話さないようにささやいた。</p>
+
+<p>―命令文の否定は、միを動詞の前に置くことで作ることができます。</p>
+
+<p>例；Մի ծխիր։；タバコを吸うな！</p>
+
+<p>―義務法の文章は、պիտի պետքにչをつけることで否定できます。</p>
+
+<p>例；Բայց չպիտի հանձնվեմ, պիտի պայքարեմ։；しかし降参してはいけない、戦わなければいけない。</p>
+
+<p>―条件法の文章は、特別な否定の仕方があったのを覚えていますか。そうですね、否定分詞という分詞をわざわざ作って、そこに非定形の補助動詞をくっつけて表します。この時、前接焦点の語順が適用されます。したに、条件法の否定の仕方をまとめた表を再掲しておきます。条件法の章でも取り上げていますので、そちらも参考にしてくださいね。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>動相</th>
+      <th>否定分詞 ＋ չ＋助動詞（現在or過去）</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>静相</td>
+      <td>結果分詞 ＋ չ＋助動詞（現在or過去） ＋ 助動詞の否定分詞</td>
+    </tr>
+    <tr>
+      <td>進行相</td>
+      <td>進行分詞 ＋ չ＋助動詞（現在or過去） ＋ 助動詞の否定分詞</td>
+    </tr>
+    <tr>
+      <td>未来相</td>
+      <td>未来分詞 ＋ չ＋助動詞（現在or過去） ＋ 助動詞の否定分詞</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>試しにգրելという動詞の条件法未来形動相を否定形にしてみましょう。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>未来形動相</th>
+      <th>過去形動相</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Գրի չեմ</td>
+      <td>Գրի չէի</td>
+    </tr>
+    <tr>
+      <td>Գրի չես</td>
+      <td>Գրի չէիր</td>
+    </tr>
+    <tr>
+      <td>Գրի չի</td>
+      <td>Գրի չէր</td>
+    </tr>
+    <tr>
+      <td>Գրի չենք</td>
+      <td>Գրի չէինք</td>
+    </tr>
+    <tr>
+      <td>Գրի չեք</td>
+      <td>Գրի չէիք</td>
+    </tr>
+    <tr>
+      <td>Գրի չեն</td>
+      <td>Գրի չէին</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>例；Եթե նրանք ժամանակին տեղեկացնին մեզ, մենք չէինք ուշանա հանդիպումից։；もし彼らが時間通りに私たちに情報を伝えていたら、私たちは遅れることはなかっただろうに。</p>
+
+<p>上の例のように、この場合も前接焦点の語順が適用されます。</p>
+
+<h3>文の一要素を否定する場合</h3>
+
+<p>文の一部分を否定する場合は、その構成素の前にոչをつけるだけで大丈夫です。この場合、前接焦点とかは全く関係ないので、語順の変化は起こりません。</p>
+
+<p>例；Նա ընտրեց ոչ թե ամենաէժան հյուրանոցը, այլ ամենահարմարավետը։；彼は最も安いホテルではなく、最も便利なホテルを選んだ。</p>
+
+<p>例；Զեկույցը գրվել է ոչ ղեկավարի ձեռքով։；そのレポートはマネージャーの手によって書かれたのではない。</p>
+
+<h3>二つのものを対照させて否定するとき</h3>
+
+<p>二つのものを対照させる否定とは、「AではなくてBなのだ」という論調の文章のことです。</p>
+
+<p>―文語では、「Aではなく」の部分を動詞を否定形にして前接焦点の語順に、「Bなのだ」はայլ/բայց՝ Bのように表します。</p>
+
+<p>例；Անին ձուկ չի ուտում, բայց՝ միս։；アニは魚を食べません。肉を食べます。</p>
+
+<p>例；Այս տաճարը չի քրիստոնեության, այլ՝ հեթանոսական կրոնի համար։；この神殿はキリスト教のためではなく、異教のためです。</p>
+
+<p>―口語では、「Aではなく」をոչ թե Aとして、「Bなのだ」はայլ Bとするのが普通です。動詞はこの場合、否定形にしません。</p>
+
+<p>例；Անին ուտում է ոչ թե ձուկ, այլ՝ միս։；アニは魚ではなく肉を食べます。</p>
+
+<h3>等位否定</h3>
+
+<p>同じ格、同じ役割をしている構成素をոչで否定することができます。</p>
+
+<p>例；Հիմա իմ մասին տեղեկություն չունի, արդեն քանի տարի է իրար հետ կապ չունենք՝ ոչ գրում ենք, ոչ զանգում։；今彼は私に関する情報を持っていない、何年も連絡を取り合っていないし、手紙もしていないし、電話もかけていない。</p>
+
+<h3>否定語を伴う否定</h3>
+
+<p>単語の中には、元々否定の意味を持つものがあります。英語では例えばno one nobody, nothingなどがあるのと同じです。代名詞の章で説明したように、否定的代名詞が使われる時は、必ず動詞も否定形にしてください。</p>
+
+<p>元々否定の意味を持つものの一部をまとめました。</p>
+
+<p>―人 ոչ ոք；誰も、ոչ մեկը；誰も</p>
+
+<p>―物 ոչինչ；何も、ոչ մեկը；何も</p>
+
+<p>―場所 ոչ մի տեղ；どこも</p>
+
+<p>―時間 երբեք；決して</p>
+
+<p>―ոչ մի→これは名詞にくっつけて「どんな〜も」という意味をつけ加えます。</p>
+
+<p>例；Ոչ ոք ինձ չի սիրի։；誰も私を愛さないだろう。</p>
+
+<p>例；Քննարկման ընթացքում ոչ մեկը չառարկեց առաջարկված ծրագրի դեմ։；議論の最中、誰も提案された計画に対して反対しなかった。</p>
+
+<p>例；Այս տարի մարզում ոչ մի գյուղ առանց խմելու ջրի չի մնացել։；その年地区ではどの町も水を飲むことができなかったのはなかった。</p>
+
+<p>例；Փափուլ պապն ասում է, որ գիրքը երբեք տնից դուրս չի հանել։；パプル爺さんはこの家から一度も本を出したことがないと言っている。</p>
+</main>
+
+    <div class="navigation">
+
+    <div class="previous">
+        <a href="adjective-adverb.html">← 前の章</a>
+    </div>
+
+    <div class="index">
+        <a href="index.html">目次</a>
+    </div>
+
+    <div class="next">
+        <a href="numeral.html">次の章 →</a>
+    </div>
+
+</div>
+
+    <footer>
+
+        現代東アルメニア語文法<br>
+        Ժամանակակից Արևելահայերենի Քերականություն
+
+    </footer>
+
+</div>
+
+</body>
+
+</html>
