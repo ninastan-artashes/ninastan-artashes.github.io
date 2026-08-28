@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>文構造 | 現代東アルメニア語文法</title>
+
+    <style>
+
+        .logo-link {
+    position: fixed;
+    top: 15px;
+    left: 20px;
+    z-index: 1000;
+    display: block;
+}
+
+.site-logo {
+    width: 80px;
+    height: auto;
+    display: block;
+}
+
+        body {
+            margin: 0;
+            background: #f8f6f0;
+            color: #20242a;
+            font-family: Georgia, "Times New Roman", serif;
+            line-height: 1.9;
+        }
+
+        .page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 50px 100px;
+            background: #fffdf8;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0 55px;
+            border-bottom: 1px solid #aaa;
+        }
+
+        .book-title {
+            font-size: 0.9rem;
+            letter-spacing: 0.12em;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            font-weight: normal;
+            color: #18283b;
+            margin: 0;
+        }
+
+        .armenian {
+            margin-top: 12px;
+            font-size: 1.2rem;
+        }
+
+        main {
+            max-width: 720px;
+            margin: 55px auto;
+        }
+
+        h2 {
+    font-size: 1.85rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 90px;
+    margin-bottom: 35px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid #18283b;
+           }
+
+        h3 {
+    font-size: 1.45rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 70px;
+    margin-bottom: 28px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #d5d2ca;
+           }
+
+        h4 {
+    font-size: 1.15rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 42px;
+    margin-bottom: 18px;
+    padding-left: 12px;
+    border-left: 3px solid #18283b;
+           }
+
+    p {
+    margin: 0 0 1em;
+    text-align: justify;
+      }
+
+        .armenian-text {
+            font-size: 1.05em;
+        }
+
+      .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    padding-top: 25px;
+    border-top: 1px solid #aaa;
+}
+
+.navigation a {
+    color: #18283b;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.navigation a:hover {
+    color: #8e111b;
+    text-decoration: underline;
+}
+
+.navigation .index {
+    text-align: center;
+}
+
+.navigation .previous {
+    text-align: left;
+}
+
+.navigation .next {
+    text-align: right;
+}
+
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #777;
+        }
+
+        @media (max-width: 650px) {
+
+            .page {
+                padding: 40px 25px 70px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                text-align: left;
+            }
+
+        }
+
+        table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 35px 0 50px;
+    font-size: 0.95rem;
+    background: #fffdf8;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #d6d3cb;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    font-weight: normal;
+    color: #18283b;
+    background: #f1eee6;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+}
+
+tr:last-child td {
+    border-bottom: 1px solid #aaa;
+}
+
+        /* 表の左端の項目名 */
+        th:first-child {
+            text-align: center;
+        }
+
+        /* 表の中のアルメニア文字 */
+        td {
+            font-family: Georgia, "Times New Roman", serif;
+        }
+
+        /* スマートフォン */
+        @media (max-width: 650px) {
+
+            table {
+                font-size: 0.85rem;
+            }
+
+            th,
+            td {
+                padding: 8px 6px;
+            }
+
+        }
+
+        /* ---------- Alphabet Table ---------- */
+
+        .alphabet-table {
+            width: 100%;
+            margin: 35px 0 45px;
+        }
+
+        .alphabet-table th,
+        .alphabet-table td {
+            padding: 9px 14px;
+        }
+
+        .alphabet-table th {
+            font-size: 0.9rem;
+            letter-spacing: 0.03em;
+        }
+
+        .alphabet-table td:first-child {
+            font-size: 1.15rem;
+            font-weight: normal;
+        }
+
+        .alphabet-table td:nth-child(2) {
+            font-family: "Times New Roman", Georgia, serif;
+            font-style: italic;
+        }
+
+        .alphabet-table td:nth-child(4) {
+            font-variant-numeric: tabular-nums;
+        }
+
+        @media (max-width: 650px) {
+
+            .alphabet-table th,
+            .alphabet-table td {
+                padding: 8px 5px;
+                font-size: 0.85rem;
+            }
+
+            .alphabet-table td:first-child {
+                font-size: 1rem;
+            }
+
+        }
+        
+    </style>
+</head>
+
+
+<body>
+
+<a href="index.html" class="logo-link">
+    <img src="images/logo for github.png" alt="Home" class="site-logo">
+</a>
+
+<div class="page">
+
+    <header>
+
+        <div class="book-title">
+            MODERN EASTERN ARMENIAN GRAMMAR
+        </div>
+
+        <h1>
+            Ⅸ　文構造
+        </h1>
+
+        <div class="armenian">
+             Շարահյուսություն
+        </div>
+
+    </header>
+
+    <main>
+       <h2>文の要素</h2>
+
+<p>アルメニア語には文の要素として主語と述語から文が成り立っていると見なします。この4つの要素の定義は、英語の時のものと同じで大丈夫です。</p>
+
+<p>以下に若干の例文を示しておきます。</p>
+
+<h3>① 主語</h3>
+
+<p>主語は、英語の無生物主語の文章のように、人でないものが比喩的に主語になることも可能です。また、動詞の活用で主語がわかる場合も多いので、主語は省略されることもあります。主語が明記される場合には、基本的には主格で表されます。ただし、「部分的な主語」と言って、受動態の動詞の主語で、その主語が表すもの・ことの一部でしか実行されていない場合には、その主語は奪格か与格で表されます。</p>
+
+<p>例；Ես կարդում եմ:；私は本を読みます。</p>
+
+<p>例；Ընկնող աստղերից կարելի է տեսվել Հայաստանում։；流星群のいくつかはアルメニアで見られます。</p>
+
+<h3>② 述語</h3>
+
+<p>述語は、文の主語を詳しく説明するものです。述語の中心は動詞ですが、動詞は必ず主語と数・人称を一致させる必要があります。この「一致」は意味上の数・人称に関係なく、文法的な数・人称に一致させます。</p>
+
+<p>例；Անին գնում է տուն:；アニは家にいきます。</p>
+
+<p>例； Չորս աշակերտ նամակ է ստացել։；四人の子供は手紙を受け取った。</p>
+
+<p>述語の中心である動詞は、英語の時と同じように「他動詞」と「自動詞」に分けるとこができます。アルメニア語ではこの2つの区別に少し面白い特徴があるのでそれについて詳しく解説していきたいと思います。</p>
+
+<h3>・他動詞的な文章</h3>
+
+<p>他動詞的な文章というのは、誰かもしくは何かにある動作を加えるもしくはさせるという内容を表す文章のことを言います。この時に使われる動詞句は以下のパターンに分類されます。</p>
+
+<p>A；元々他動詞である動詞</p>
+
+<p>B； –ցնをつけることで他動詞化された動詞</p>
+
+<p>C；տալと組み合わせて使役を表す動詞</p>
+
+<p>Aについては何も説明はいらないでしょう。元々他動詞的な意味を持つ動詞のことです。例えばգրել（書く）առաջարկել（提供する）վերահսկել（コントロールする）などです。</p>
+
+<p>例；Ուսանողները շարադրություն են գրում։；生徒たちはエッセイを書く。</p>
+
+<p>例；Մենք օգնություն ենք առաջարկում։；私たちは助けを提供しています。</p>
+
+<p>Bについてですが、これは元々他動詞でなかった動詞を接尾辞ցնをつけることによって他動詞的な意味を持たせた動詞のことです。例えばհանգստանալはこのままでは「落ち着く」という意味の自動詞ですが、これにցնという接尾辞を加えհանգստացնել「落ち着かせる」という他動詞にすることができます。なんと便利な接尾辞でしょう。この接尾辞に関する説明は、動詞の章の「動詞の種類」でも取り上げていますので、そちらも参考にしてください。</p>
+
+<p>例；Այս երաժշտությունը ինձ հանգստացնում է։；この音楽は私を落ち着かせる。</p>
+
+<p>例；Ես վաղ արթնացա։；私は早く起きた。</p>
+
+<p>例；Մի մայրս ինձ վաղ արթնացրեց։；私の母は早くに私を起こした。</p>
+
+<p>Cについてこれは英語の使役文の形と似ています（例えばmake sb do sth）。アルメニア語の場合にはmakeとかletではなくgiveにあたるտալが使われます。</p>
+
+<p>例；Աննան Արամին կարդալ տվեց նոր գիրքը։；アンナはアラムに新しい本を読ませた。</p>
+
+<p>例；Բժիշկը հիվանդին վերադառնալ տվեց մեկ շաբաթ անց։；医者は患者に一週間後に戻るようにさせた。</p>
+
+<h3>・自動詞的な文章</h3>
+
+<p>自動詞的な文章を作る動詞句は以下のパターンに分けられます。</p>
+
+<p>A；元々自動詞である動詞</p>
+
+<p>B； վを用いて自動詞化される動詞</p>
+
+<p>C；他の語と一緒に使うことで自動詞的な意味を持つ動詞句</p>
+
+<p>Aについては何も問題ありません。自動詞的な意味を持つ動詞を用いて文を作ればいいのです。</p>
+
+<p>例；Երեխան վազում է այգում։；子供達は公園で走っています。</p>
+
+<p>例；Սևանը լիճը ձմռանը հաճախ սառչում է։；セヴァン湖は冬になると大抵凍ります。</p>
+
+<p>Bはアルメニア語に特徴的なものです。動詞の章の「動詞の種類」でվという接尾辞は紹介しました。そこにも載せてあるとおり、このվには4つの意味「受動・再帰・相互・逆使役」があります。</p>
+
+<p>以下にそれぞれの意味に分けて解説をしていきますが、アルメニア語のվが非常に多義であるので、実際にはどの意味なのか明確に判別することは難しいです。（これをdoubletsと言ったりします。）</p>
+
+<h4>受動</h4>
+
+<p>受動の用法は、英語の受動態にあたる表現です。主語を動作主ではなく、動作を被る人に変えます。</p>
+
+<p>例；Ծրագիրը մշակվել է մասնիագիտների բազմաճյուղ խմբի կողմից։；その計画は専門家のさまざまなチームによって計画された。</p>
+
+<p>例；Հոդվածը տպագրվել է ամսագրում։；記事は雑誌に掲載された。</p>
+
+<h4>再帰</h4>
+
+<p>再帰の用法は、主語が動作の主体であり、かつ動作を被るものでもあるときに使われます。この考え方は英語にもあります。</p>
+
+<p>例；Ι washed myself.；私は体を洗った。</p>
+
+<p>英語では「再帰代名詞」と呼ばれるもので再帰の意味を表すしかありませんが、アルメニア語では、そのように再帰代名詞を用いる方法と、վを用いて表す方法と二種類あります。</p>
+
+<p>例；Ես հագնվեցի և դուրս եկա տնից։；私は着替えて外に出た。</p>
+
+<p>例；Ես արագ պատրաստվեցի դասին։；私は授業への支度を早く済ませた。</p>
+
+<h4>相互</h4>
+
+<p>相互は、主語で示されているものが、お互いに動作を及ぼし合っている時に使われます。</p>
+
+<p>Ուսանողները հաճախ վիճվում են դասերից հետո։</p>
+
+<p>Երկու գիտնականները հաճախ նամաակգրվում են։</p>
+
+<h4>逆使役</h4>
+
+<p>英語では anticausativisationといいます。これは英語では明示されない言語の特性なのですが、「ある動作の動作主を明示しない」ことを目的とした用法です。英語の例をみてみましょう。</p>
+
+<p>例；Adam opened the door.；アダムがドアを開けた。</p>
+
+<p>例；The door opened.；ドアが開いた。（逆使役）</p>
+
+<p>上の二つの文章で、一つ目は、ドアがアダムによって開けられたことが明白ですが、二つ目ではドアは勝手に自動ドアのように開いたのかもしれないし、誰かが開けたのかもしれないですよね。このように逆使役の文章はその動作の対象（ここではドア）だけに着目して、他は着目しない文のことです。</p>
+
+<p>例；Պատուհանը ջարդվեց:；窓が割れた。</p>
+
+<p>例；Ծաղկամանը ջարդվեց։；花瓶が壊れた。</p>
+
+<p>Cについては「再帰」と「相互」の意味を作れる構文があります。</p>
+
+<p>その他の方法で再帰と相互の意味を表すことができます。</p>
+
+<h4>再帰</h4>
+
+<p>いわゆる英語の再帰代名詞のように、ինձ・մեզ・քեզ・ձեզ・իրենの代名詞を用いることで再帰の意味を表します。ただし、英語のような再帰用の代名詞はなく、元の代名詞をそのまま使います。</p>
+
+<p>例；Լրագրողների այն հարցին, թե ինքն իրեն ճանաչում է որպես ահաբեկիչ, Հարությունյանը պատասխանել է. «Ես պարզապես մարդ եմ«։；自分のことをテロリストだと思っているかという記者の質問に対してハルトゥティアンは「私はただ人間だ。」と答えた。</p>
+
+<h4>相互</h4>
+
+<p>相互代名詞を用いて表すことができます。相互代名詞はիրար・միմյանց・մեկմեկなどです。変格については代名詞の章参照です。</p>
+
+<p>例；Նրանք իրար վաղուց ճանաչել են։；彼らはお互いに早くから認識していた。</p>
+
+<p>例；Մարզիկները մեկմեկ հաջողություն մաղթեցին մրցումից առաջ։；スポーツマンたちは試合前に互いに成功を祈った。</p>
+    </main>
+
+    <div class="navigation">
+
+    <div class="previous">
+        <a href="adjective-adverb.html">← 前の章</a>
+    </div>
+
+    <div class="index">
+        <a href="index.html">目次</a>
+    </div>
+
+    <div class="next">
+        <a href="numeral.html">次の章 →</a>
+    </div>
+
+</div>
+
+    <footer>
+
+        現代東アルメニア語文法<br>
+        Ժամանակակից Արևելահայերենի Քերականություն
+
+    </footer>
+
+</div>
+
+</body>
+
+</html>
