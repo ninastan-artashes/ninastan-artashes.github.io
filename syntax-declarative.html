@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>文構造 | 現代東アルメニア語文法</title>
+
+    <style>
+
+        .logo-link {
+    position: fixed;
+    top: 15px;
+    left: 20px;
+    z-index: 1000;
+    display: block;
+}
+
+.site-logo {
+    width: 80px;
+    height: auto;
+    display: block;
+}
+
+        body {
+            margin: 0;
+            background: #f8f6f0;
+            color: #20242a;
+            font-family: Georgia, "Times New Roman", serif;
+            line-height: 1.9;
+        }
+
+        .page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 50px 100px;
+            background: #fffdf8;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0 55px;
+            border-bottom: 1px solid #aaa;
+        }
+
+        .book-title {
+            font-size: 0.9rem;
+            letter-spacing: 0.12em;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            font-weight: normal;
+            color: #18283b;
+            margin: 0;
+        }
+
+        .armenian {
+            margin-top: 12px;
+            font-size: 1.2rem;
+        }
+
+        main {
+            max-width: 720px;
+            margin: 55px auto;
+        }
+
+        h2 {
+    font-size: 1.85rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 90px;
+    margin-bottom: 35px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid #18283b;
+           }
+
+        h3 {
+    font-size: 1.45rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 70px;
+    margin-bottom: 28px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #d5d2ca;
+           }
+
+        h4 {
+    font-size: 1.15rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 42px;
+    margin-bottom: 18px;
+    padding-left: 12px;
+    border-left: 3px solid #18283b;
+           }
+
+    p {
+    margin: 0 0 1em;
+    text-align: justify;
+      }
+
+        .armenian-text {
+            font-size: 1.05em;
+        }
+
+      .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    padding-top: 25px;
+    border-top: 1px solid #aaa;
+}
+
+.navigation a {
+    color: #18283b;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.navigation a:hover {
+    color: #8e111b;
+    text-decoration: underline;
+}
+
+.navigation .index {
+    text-align: center;
+}
+
+.navigation .previous {
+    text-align: left;
+}
+
+.navigation .next {
+    text-align: right;
+}
+
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #777;
+        }
+
+        @media (max-width: 650px) {
+
+            .page {
+                padding: 40px 25px 70px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                text-align: left;
+            }
+
+        }
+
+        table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 35px 0 50px;
+    font-size: 0.95rem;
+    background: #fffdf8;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #d6d3cb;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    font-weight: normal;
+    color: #18283b;
+    background: #f1eee6;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+}
+
+tr:last-child td {
+    border-bottom: 1px solid #aaa;
+}
+
+        /* 表の左端の項目名 */
+        th:first-child {
+            text-align: center;
+        }
+
+        /* 表の中のアルメニア文字 */
+        td {
+            font-family: Georgia, "Times New Roman", serif;
+        }
+
+        /* スマートフォン */
+        @media (max-width: 650px) {
+
+            table {
+                font-size: 0.85rem;
+            }
+
+            th,
+            td {
+                padding: 8px 6px;
+            }
+
+        }
+
+        /* ---------- Alphabet Table ---------- */
+
+        .alphabet-table {
+            width: 100%;
+            margin: 35px 0 45px;
+        }
+
+        .alphabet-table th,
+        .alphabet-table td {
+            padding: 9px 14px;
+        }
+
+        .alphabet-table th {
+            font-size: 0.9rem;
+            letter-spacing: 0.03em;
+        }
+
+        .alphabet-table td:first-child {
+            font-size: 1.15rem;
+            font-weight: normal;
+        }
+
+        .alphabet-table td:nth-child(2) {
+            font-family: "Times New Roman", Georgia, serif;
+            font-style: italic;
+        }
+
+        .alphabet-table td:nth-child(4) {
+            font-variant-numeric: tabular-nums;
+        }
+
+        @media (max-width: 650px) {
+
+            .alphabet-table th,
+            .alphabet-table td {
+                padding: 8px 5px;
+                font-size: 0.85rem;
+            }
+
+            .alphabet-table td:first-child {
+                font-size: 1rem;
+            }
+
+        }
+        
+    </style>
+</head>
+
+
+<body>
+
+<a href="index.html" class="logo-link">
+    <img src="images/logo for github.png" alt="Home" class="site-logo">
+</a>
+
+<div class="page">
+
+    <header>
+
+        <div class="book-title">
+            MODERN EASTERN ARMENIAN GRAMMAR
+        </div>
+
+        <h1>
+            Ⅸ　文構造
+        </h1>
+
+        <div class="armenian">
+             Շարահյուսություն
+        </div>
+
+    </header>
+<main>
+   <h2>平叙文の作り方</h2>
+
+<p>ここからは平叙文の作り方について見ていきます。</p>
+
+<h3>主語について</h3>
+
+<p>主語は、通常主格で表され、動詞の動作を行う主体を表します。英語の考え方と同じです。ただし、主語が部分的なものしか表さないならば、奪格で表されます。</p>
+
+<p>アルメニア語は、動詞が数と人称で活用するため、よく主語が省略されます。そのような省略される時を除いて、基本主語は語頭にきます。</p>
+
+<p>例；Անուշն կարդացել է այս գիրքը։；アヌシュはこの本を読んだ。</p>
+
+<h3>直接目的語について</h3>
+
+<p>直接目的語も、英語と考え方は同じで、動詞の目的語、すなわち動詞によって表される動作が及ぶ対象に使われます。直接目的語は、体格で表されます。</p>
+
+<p>直接目的語は、後置冠詞がついているときはSVOの語順です。もし後置冠詞がついていないときはSOVの語順で、かつ、動詞句は「前接焦点の語順」の形、すなわちauxV+V、にするのが最も一般的です。</p>
+
+<p>例；Աշակերտները կազմակերպել են մշակութային միջոցառումները։；生徒たちは、文化交流のイベントを運営している。</p>
+
+<p>例；Հայաստանը նոր կամուրջի կառուցում է նախատեսում։；アルメニアは新しい橋の建設を予定しています。</p>
+
+<p>ここで注意してほしいのは、前接焦点が使われているからといって、これは強調されているわけではありません。ただ文法がこの語順を規定しているだけです。</p>
+
+<h3>間接目的語について</h3>
+
+<p>間接目的語は、基本的には英語の考え方と同じでいいですが、注意が必要なのは使役文でも使われると言うことです（二番目の文章を見てください）。間接目的語は、与格で表されます。</p>
+
+<p>例；Այս մասին այսօր լրագրողներին ասաց ՀՀ արտգործնախարար Վարդան Օսկանյանը։；そのことについて、アルメニアの外務大臣ヴァルダン・オスカにヤンが今日記者たちに説明した。</p>
+
+<p>例；Բժիշկը տվեց երախային հանգստանալ։；医者は子供たちに休むように言った。</p>
+
+<p>例；Լիլիթը գնաց հացի։；リリットはパンを買いに行った。</p>
+
+<p>例；Ես պարոն Զոնսոնին հաղորդագրությունը ուղարկեցի:；私はジョンソン氏にメッセージを送った。</p>
+
+<h3>その他の句の語順</h3>
+
+<p>主語に使われる主格、直接目的語に使われる対格以外の格を「斜格」と言います。斜格のうち、与格の間接目的語の用法はすでにお伝えしているので、そのほかの目的語について紹介します。</p>
+
+<h4>受動の目的語</h4>
+
+<p>受動の文章の動作主は大抵、与格＋կողմիցで表されますが、これらは大抵文章の最後に現れることが多いです。</p>
+
+<p>例；Սակայն բնակչության համեմատաբար բավարար կամ բարձր վաստակը ստեղծվում է արտագնա աշխատանքից։；だが、人口の比較的多くの割合の人は外での仕事で成り立っている。</p>
+
+<p>例；Արտադրողականությունը բարձրացնելու նոր գաղափարները առաջարկվել են աշխատակիցների կողմից:；生産性を上げるための新しいアイデアは従業員から提案された。</p>
+
+<h4>分離の目的語</h4>
+
+<p>分離の目的語は、大抵奪格で表されますが、これらは動詞の前に置かれることが多いです。</p>
+
+<p>例；Ընկերությունը վերջին տարիներին ավանդական մոդելից հերանում է։；会社は近年従来のモデルから離れつつある。</p>
+
+<h4>手段の目的語</h4>
+
+<p>手段は、人間ではないならմիջոցովで、人間ならձեռքովで表すのが普通です。これらの要素は大抵動詞の後に後置されます。</p>
+
+<p>例；Այս լսարանում անցկացվող կատարողականությունը տարածվում է հեռաստացույցով։；この音楽堂で行われているパフォーマンスはテレビを通して配信されている。</p>
+
+<p>例；Խաղաղության պայմանագիրը կնքվել է Թրամփի ձերքով։；平和条約はトランプによって成し遂げられた。</p>
+
+<h4>比較の目的語</h4>
+
+<p>比較の対象は、奪格で表される時は動詞の前に、քանを使って表されるときは動詞の後、文の最後に置かれるのが普通です。</p>
+
+<p>例；Հրեաների թիվը հազարից պակաս է։；ユダヤ人の数は1000人以下だった。</p>
+
+<p>例；Իրական առաջնորդը ավելի շատ լսում է, քան խոսում, որովհետև գիտակցում է, որ ճիշտ որոշումները հաճախ ծնվում են ուշադիր լսելու արդյունքում։；本当のリーダーはしゃべるよりも聞くものだ。なぜなら良い判断とは注意を聞くことで生まれると知っているからだ。</p>
+
+<h4>そのほかの斜格目的語</h4>
+
+<p>その他の斜格目的語は基本的に文の最後に置かれます。</p>
+
+<h3>名詞句内の語順</h3>
+
+<p>名詞には形容詞や数詞、関係詞や後置冠詞など様々な要素がくっついてきます。アルメニア語では名詞句内の語順には厳しいルールがあり、詩でない限りはこのルールを破れません。ですので、この語順はしっかり覚えておく必要があります。</p>
+
+<p>とは言ってもルールは簡単です。以下のルールを覚えておけば大丈夫です。</p>
+
+<p>名詞に前置するもの</p>
+
+<p>―形容詞＋名詞</p>
+
+<p>―数詞＋名詞</p>
+
+<p>―指示詞＋名詞</p>
+
+<p>―所有代名詞＋名詞</p>
+
+<p>―属格名詞＋名詞</p>
+
+<p>―不定冠詞＋名詞</p>
+
+<p>名詞に後置するもの</p>
+
+<p>―名詞＋同格のもの</p>
+
+<p>―名詞＋関係詞</p>
+
+<p>―名詞＋後置冠詞</p>
+
+<p>―名詞＋所有の接尾辞</p>
+
+<p>そして、これらの修飾が二個以上ある場合は、「話者の主観」に関係する語は名詞から遠く、「客観的な情報」に関する情報は名詞に近いところに置かれるのが通常とされています。一応これは英語と同じだとされていますが、未だアルメニア語に関する網羅的なこれに関する研究がなされていないようです。</p>
+
+<p>ここでは「名詞＋同格のもの」に関してだけ少し解説しておきます。</p>
+
+<p>同格には二つの種類があります。制限的同格（close apposition）と非制限的同格（loose apposition）です。</p>
+
+<p>制限的同格では、同格になっている二つの名詞の間には何もマーク（コンマなど）は打ちません。</p>
+
+<p>例；Բանաստեղծ Հովհաննես Թումանյանը մեծ ազդեցություն է ունեցել հայ գրականության զարգացման վրա։；詩人ホヴハネス・トゥマニヤンはアルメニアの文学史に大きな影響を持ちました。</p>
+
+<p>例；Քաղաք Երևանը համարվում է աշխարհի ամենահին շարունակաբար բնակեցված քաղաքներից մեկը։；イェレヴァンは世界で最も古い、人がずっと住み続けている街の一つだと言われています。</p>
+
+<p>非制限的同格では、同格になっている二つの名詞の間に休止符（բութ）を打つ必要があります。</p>
+
+<p>例；Վարդանը՝ իմ եղբայրը, ապրում է Մոսկվայում։；ヴァルダン、私の兄弟、はモスクワに住んでいます。</p>
+
+<h3>関係詞句の語順</h3>
+
+<p>関係詞は、必ず修飾する名詞の後に置く必要があります。ですが、接していなくても良く、文の最後に置かれる時もあります。</p>
+
+<p>例；Ուսանողները, որոնցից մի քանիսը արդեն հրապարակել էին գիտական հոդվածներ, մասնակցեցին միջազգային համաժիղովին։；学術論文を発表した生徒を含む生徒たちは、国際的な会議に参加した。</p>
+
+<p>例；Յուրաքանչյուր ոք, ով ճանաչում էր նրան, լավ կարծիք ուներ նրա մասին։；彼を知っていたすべての人は彼に良い印象を持っていた。</p>
+
+<p>例；Նրանք երկու սենյակ են զբաղեցնում, որոնցից մեկը ծառայում է որպես հյուրասենյակ, ննջարան և լսարան, իսկ մյուսը պահեստ ու խորդանոց։；彼らは二つの椅子を使っていたが、そのうち一つはリビング、寝室そしてお風呂で、もう一つはおしいれと倉庫で使われた。</p>
+
+<h3>従属節を伴う諸々の語順</h3>
+
+<p>従属節を伴う場合でも、ルールは全く同じです。主節に対する従属節の位置は、自由と考えて良いでしょう。むしろ、従属節に関しては、様々な場面に応じて使われる用法を学ぶべきです。その様々な種類を「重要構文」の章で説明しています。そこで参照してください。</p>
+</main>
+    <div class="navigation">
+
+    <div class="previous">
+        <a href="adjective-adverb.html">← 前の章</a>
+    </div>
+
+    <div class="index">
+        <a href="index.html">目次</a>
+    </div>
+
+    <div class="next">
+        <a href="numeral.html">次の章 →</a>
+    </div>
+
+</div>
+
+    <footer>
+
+        現代東アルメニア語文法<br>
+        Ժամանակակից Արևելահայերենի Քերականություն
+
+    </footer>
+
+</div>
+
+</body>
+
+</html>
