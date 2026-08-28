@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>文構造 | 現代東アルメニア語文法</title>
+
+    <style>
+
+        .logo-link {
+    position: fixed;
+    top: 15px;
+    left: 20px;
+    z-index: 1000;
+    display: block;
+}
+
+.site-logo {
+    width: 80px;
+    height: auto;
+    display: block;
+}
+
+        body {
+            margin: 0;
+            background: #f8f6f0;
+            color: #20242a;
+            font-family: Georgia, "Times New Roman", serif;
+            line-height: 1.9;
+        }
+
+        .page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 50px 100px;
+            background: #fffdf8;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0 55px;
+            border-bottom: 1px solid #aaa;
+        }
+
+        .book-title {
+            font-size: 0.9rem;
+            letter-spacing: 0.12em;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            font-weight: normal;
+            color: #18283b;
+            margin: 0;
+        }
+
+        .armenian {
+            margin-top: 12px;
+            font-size: 1.2rem;
+        }
+
+        main {
+            max-width: 720px;
+            margin: 55px auto;
+        }
+
+        h2 {
+    font-size: 1.85rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 90px;
+    margin-bottom: 35px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid #18283b;
+           }
+
+        h3 {
+    font-size: 1.45rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 70px;
+    margin-bottom: 28px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #d5d2ca;
+           }
+
+        h4 {
+    font-size: 1.15rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 42px;
+    margin-bottom: 18px;
+    padding-left: 12px;
+    border-left: 3px solid #18283b;
+           }
+
+    p {
+    margin: 0 0 1em;
+    text-align: justify;
+      }
+
+        .armenian-text {
+            font-size: 1.05em;
+        }
+
+      .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    padding-top: 25px;
+    border-top: 1px solid #aaa;
+}
+
+.navigation a {
+    color: #18283b;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.navigation a:hover {
+    color: #8e111b;
+    text-decoration: underline;
+}
+
+.navigation .index {
+    text-align: center;
+}
+
+.navigation .previous {
+    text-align: left;
+}
+
+.navigation .next {
+    text-align: right;
+}
+
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #777;
+        }
+
+        @media (max-width: 650px) {
+
+            .page {
+                padding: 40px 25px 70px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                text-align: left;
+            }
+
+        }
+
+        table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 35px 0 50px;
+    font-size: 0.95rem;
+    background: #fffdf8;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #d6d3cb;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    font-weight: normal;
+    color: #18283b;
+    background: #f1eee6;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+}
+
+tr:last-child td {
+    border-bottom: 1px solid #aaa;
+}
+
+        /* 表の左端の項目名 */
+        th:first-child {
+            text-align: center;
+        }
+
+        /* 表の中のアルメニア文字 */
+        td {
+            font-family: Georgia, "Times New Roman", serif;
+        }
+
+        /* スマートフォン */
+        @media (max-width: 650px) {
+
+            table {
+                font-size: 0.85rem;
+            }
+
+            th,
+            td {
+                padding: 8px 6px;
+            }
+
+        }
+
+        /* ---------- Alphabet Table ---------- */
+
+        .alphabet-table {
+            width: 100%;
+            margin: 35px 0 45px;
+        }
+
+        .alphabet-table th,
+        .alphabet-table td {
+            padding: 9px 14px;
+        }
+
+        .alphabet-table th {
+            font-size: 0.9rem;
+            letter-spacing: 0.03em;
+        }
+
+        .alphabet-table td:first-child {
+            font-size: 1.15rem;
+            font-weight: normal;
+        }
+
+        .alphabet-table td:nth-child(2) {
+            font-family: "Times New Roman", Georgia, serif;
+            font-style: italic;
+        }
+
+        .alphabet-table td:nth-child(4) {
+            font-variant-numeric: tabular-nums;
+        }
+
+        @media (max-width: 650px) {
+
+            .alphabet-table th,
+            .alphabet-table td {
+                padding: 8px 5px;
+                font-size: 0.85rem;
+            }
+
+            .alphabet-table td:first-child {
+                font-size: 1rem;
+            }
+
+        }
+        
+    </style>
+</head>
+
+
+<body>
+
+<a href="index.html" class="logo-link">
+    <img src="images/logo for github.png" alt="Home" class="site-logo">
+</a>
+
+<div class="page">
+
+    <header>
+
+        <div class="book-title">
+            MODERN EASTERN ARMENIAN GRAMMAR
+        </div>
+
+        <h1>
+            Ⅸ　文構造
+        </h1>
+
+        <div class="armenian">
+             Շարահյուսություն
+        </div>
+
+    </header>
+
+    <main>
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>文構造 | 現代東アルメニア語文法</title>
+
+    <style>
+
+        .logo-link {
+    position: fixed;
+    top: 15px;
+    left: 20px;
+    z-index: 1000;
+    display: block;
+}
+
+.site-logo {
+    width: 80px;
+    height: auto;
+    display: block;
+}
+
+        body {
+            margin: 0;
+            background: #f8f6f0;
+            color: #20242a;
+            font-family: Georgia, "Times New Roman", serif;
+            line-height: 1.9;
+        }
+
+        .page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 50px 100px;
+            background: #fffdf8;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0 55px;
+            border-bottom: 1px solid #aaa;
+        }
+
+        .book-title {
+            font-size: 0.9rem;
+            letter-spacing: 0.12em;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            font-weight: normal;
+            color: #18283b;
+            margin: 0;
+        }
+
+        .armenian {
+            margin-top: 12px;
+            font-size: 1.2rem;
+        }
+
+        main {
+            max-width: 720px;
+            margin: 55px auto;
+        }
+
+        h2 {
+    font-size: 1.85rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 90px;
+    margin-bottom: 35px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid #18283b;
+           }
+
+        h3 {
+    font-size: 1.45rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 70px;
+    margin-bottom: 28px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #d5d2ca;
+           }
+
+        h4 {
+    font-size: 1.15rem;
+    font-weight: normal;
+    color: #18283b;
+    margin-top: 42px;
+    margin-bottom: 18px;
+    padding-left: 12px;
+    border-left: 3px solid #18283b;
+           }
+
+    p {
+    margin: 0 0 1em;
+    text-align: justify;
+      }
+
+        .armenian-text {
+            font-size: 1.05em;
+        }
+
+      .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    padding-top: 25px;
+    border-top: 1px solid #aaa;
+}
+
+.navigation a {
+    color: #18283b;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.navigation a:hover {
+    color: #8e111b;
+    text-decoration: underline;
+}
+
+.navigation .index {
+    text-align: center;
+}
+
+.navigation .previous {
+    text-align: left;
+}
+
+.navigation .next {
+    text-align: right;
+}
+
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #777;
+        }
+
+        @media (max-width: 650px) {
+
+            .page {
+                padding: 40px 25px 70px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                text-align: left;
+            }
+
+        }
+
+        table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 35px 0 50px;
+    font-size: 0.95rem;
+    background: #fffdf8;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #d6d3cb;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    font-weight: normal;
+    color: #18283b;
+    background: #f1eee6;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+}
+
+tr:last-child td {
+    border-bottom: 1px solid #aaa;
+}
+
+        /* 表の左端の項目名 */
+        th:first-child {
+            text-align: center;
+        }
+
+        /* 表の中のアルメニア文字 */
+        td {
+            font-family: Georgia, "Times New Roman", serif;
+        }
+
+        /* スマートフォン */
+        @media (max-width: 650px) {
+
+            table {
+                font-size: 0.85rem;
+            }
+
+            th,
+            td {
+                padding: 8px 6px;
+            }
+
+        }
+
+        /* ---------- Alphabet Table ---------- */
+
+        .alphabet-table {
+            width: 100%;
+            margin: 35px 0 45px;
+        }
+
+        .alphabet-table th,
+        .alphabet-table td {
+            padding: 9px 14px;
+        }
+
+        .alphabet-table th {
+            font-size: 0.9rem;
+            letter-spacing: 0.03em;
+        }
+
+        .alphabet-table td:first-child {
+            font-size: 1.15rem;
+            font-weight: normal;
+        }
+
+        .alphabet-table td:nth-child(2) {
+            font-family: "Times New Roman", Georgia, serif;
+            font-style: italic;
+        }
+
+        .alphabet-table td:nth-child(4) {
+            font-variant-numeric: tabular-nums;
+        }
+
+        @media (max-width: 650px) {
+
+            .alphabet-table th,
+            .alphabet-table td {
+                padding: 8px 5px;
+                font-size: 0.85rem;
+            }
+
+            .alphabet-table td:first-child {
+                font-size: 1rem;
+            }
+
+        }
+        
+    </style>
+</head>
+
+
+<body>
+
+<a href="index.html" class="logo-link">
+    <img src="images/logo for github.png" alt="Home" class="site-logo">
+</a>
+
+<div class="page">
+
+    <header>
+
+        <div class="book-title">
+            MODERN EASTERN ARMENIAN GRAMMAR
+        </div>
+
+        <h1>
+            Ⅸ　文構造
+        </h1>
+
+        <div class="armenian">
+             Շարահյուսություն
+        </div>
+
+    </header>
+
+    <main>
+<h2>疑問文の作り方</h2>
+
+<h3>疑問文を作る方法</h3>
+
+<p>疑問文とは、相手に何かを問いかけるときに使う文章です。これから疑問文を作る時のルールを学んでいくわけですが、その前に、たいていの言語で使える裏技があります。それは…</p>
+
+<p>「文末のイントネーションを上げる」です。</p>
+
+<p>これは英語とかでも起こることですよね。特に会話では、平叙文をそのままイントネーションをあげて話すことで相手に答えを求めることができます。ですから、疑問文の作り方を全部忘れてしまった場合でも、文末を適当にあげてしゃべれば伝わるでしょう。</p>
+
+<h3>疑問文の基本の考え方</h3>
+
+<p>アルメニア語の疑問文の基本の考え方を以下にまとめました。</p>
+
+<p>・聞きたい内容の語の最後の母音に՞（疑問符）をつける</p>
+
+<p>例えば以下の文章を例に考えてみましょう。</p>
+
+<p>例；Արամը գնում է դպրո՞ց։；アラムは“学校に“行っていますか。</p>
+
+<p>さあ、疑問符がどこにあるかみてください。そうդպրոց；学校部にありますね。つまりこの話者は「学校に行ったのか、それとも他の場所に行ったのか」を聞きたかったということです。</p>
+
+<p>これはアルメニア語の大きな特徴です。理論上ではアルメニア語は文中の全ての構成素に対して疑問文を作ることができます。</p>
+
+<p>ここで注意、もし聞きたい内容の語に後置冠詞ըがついていたとしても、このըに疑問符を打ってはいけません。</p>
+
+<p>もう一つ注意、最後の母音がウの場合、ո՞ւとしてください。他にも、一部の複合語では、最後の母音ではないところに疑問符が打たれることがあります。そのような単語は非常にレアです。</p>
+
+<h3>コラム　―疑問符の置く位置―</h3>
+
+<p>疑問符の置かれる位置を詳しく説明しますが、これは疑問符だけでなく、強勢符や感嘆符も同様のルールで置かれます。</p>
+
+<p>1、基本は最後のシラブル（音節）の母音に置く</p>
+
+<p>例；որտե՞ղ</p>
+
+<p>2、և, ու, յա, յուはそれぞれև՞, ո՞ւ, յ՞ա, յո՞ւが一般的です。ただしև՞は大文字にするならԵ՞վとなります。</p>
+
+<p>例；ինչո՞ւ</p>
+
+<p>3、語末に後置冠詞のըが置かれている場合は、その一個前の母音に置かれます。</p>
+
+<p>例；կանա՞չը</p>
+
+<p>4、երորդがついている単語は、元の単語の最終音節におきます。</p>
+
+<p>例；հ՞ինգերորդ</p>
+
+<p>5、գուցե、երևիには疑問符は置けません。</p>
+
+<p>・聞きたい内容の語を前接焦点の位置に持ってくることが多い</p>
+
+<p>先ほど紹介した文章は、以下のように語順を変えることもできます。</p>
+
+<p>例；Արամը դպրո՞ց է գնում։；アラムは“学校に行っていますか。</p>
+
+<p>ここで、դպրոցが前接焦点の位置に来ているのがわかりますね。極性疑問文では基本不要、内容疑問文では基本必須だと言われています。ですが、それは好みによります。また、口語では大抵前接焦点の位置に持ってくると言われており、文語では語順はそのままになることが多いそうです。不思議ですね</p>
+
+<h3>極性疑問文（polar question）</h3>
+
+<p>極性疑問文とは、別名yes-no questionと言います。つまりその文章に対する答えがyesかnoで答えられるもののことを言います。</p>
+
+<p>以下の文章でぜひみてほしいのは、疑問符がどこにでも置けるということです。</p>
+
+<p>例；Այս գիրքը քոնն է՞։；この本はあなたのものですか</p>
+
+<p>Ո՛չ, այն իմ ընկերոջն է։；いいえ、これは私の友達の物です。</p>
+
+<p>例；Անին ռուսերեն խոսո՞ւմ է։；アニはロシア語を話しますか。</p>
+
+<p>Այո՛, նա ռուսերեն է խոսում։；はい、彼女はロシア語をはなします。</p>
+
+<p>例；Մարիամի՞ փոքր եղբայրը կարդում է իմ դասագիրքը։；“マリアムの“弟が私の教科書を読んでいるのですか。</p>
+
+<p>例；Մարիամի փո՞քր եղբայրը կադրում է իմ դասագիրքը։；マリアムの“弟が“私の教科書を読んでいるのですか。</p>
+
+<p>極性疑問文は前接焦点の語順にすることは少ないですが、するならば、聞きたい内容の語を含む全ての構成素を前接焦点の位置に置かなければなりません。</p>
+
+<p>例；Պուշկինի անվան դպրոց է գնում Արամը։；“プシュキンの名が冠せられた学校に“アラムは行っているのですか。</p>
+
+<h3>内容疑問文（content question）</h3>
+
+<p>内容疑問文とは「これはなんですか」と、情報を引き出すような疑問文のことです。このときには、文章の中に「まだ分かっていない内容」があるはずなので、それを疑問詞で置き換えて話す必要があります。各疑問詞の使い方については、おおまかに疑問詞の章で説明しているので、そちらを参考にしてください。</p>
+
+<p>念のため、疑問詞の一覧を再掲します。</p>
+
+<p>（人）；ով；誰</p>
+
+<p>（物）；ինչ；何</p>
+
+<p>（品質）；որ；どれ、どんな、ինչպիսի/որպիսի；何、どんな、</p>
+
+<p>（量）；քանի；どれくらい（多くの）、ինչքան/որքան；どれくらい（多くの）、ինչչափ/որչափ；</p>
+
+<p>（時間）；երբ；いつ、երվանից；いつから</p>
+
+<p>（場所）；որտեղ；どこで、ուր；どこに、որտեղից；どこから</p>
+
+<p>（方法）；ինչպես；どのように</p>
+
+<p>（原因）；ինչու；なぜ</p>
+
+<p>疑問詞は多くの場合、前接焦点の位置に置かれ、文全体の語順も前接焦点の語順になります。ですが、必須ではないので、破られる時もあります。また、極性疑問文の時と同様に、前接焦点を使う場合は、関連する全ての構成素を動かすようにしてください。</p>
+
+<p>例；Ո՞վ է կարդում իմ հոդվածը։；誰が私の記事を読んでいるのですか。</p>
+
+<p>例；Ո՞ր համալսարանն եք ընտրել ձեր մագիստրոսական ուսման համար։；あなたは修士課程の学びのためにどこの大学を選んだのですか。</p>
+
+<p>例；Քանի՞ մասնակից էր ներկա միջազգային գիտաժողովին։；どれだけの参加者がその国際的な学会にいましたか。</p>
+
+<p>例；Կարող ենք գտնել այդ պատմական փաստաթղթի բնօրինակը ո՞ր կայքում։；その歴史的なドキュメントを私たちはどのウェブサイトで見つけることができますか。</p>
+
+<h3>特殊な疑問文</h3>
+
+<h4>選択疑問文</h4>
+
+<p>複数のものを並列して「Aですか、それともBですか…」と聞く場合の疑問文です。</p>
+
+<p>例；Ուզում եք թե՞յ, թե՞ սուրճ։；お茶ですか、それともコーヒーですか。</p>
+
+<p>ここで注意すべきは疑問符の置く場所です。ルールは、「թեを含め、それより前に出てくる比較対象の単語」なら全てにつき得ます。</p>
+
+<p>例；Չգիտեմ, թե որ թեյը կվերցնեմ.սև՞ը, կանա՞չը, մրգայի՞նը, թե՞ բուսական։；どのお茶を飲んだらいいのか分からない。黒、緑、フルーツ、もしくはハーブ？</p>
+
+<h4>複数の疑問詞がある内容疑問文</h4>
+
+<p>疑問詞を二個使うだけで大丈夫です。どちらを前接焦点の位置に持って来るのかとかは、その時の文脈で判断してください。</p>
+
+<p>例；Ո՞վ ի՞նչ է հարվածել։；誰が何を殴りましたか。</p>
+
+<p>例；Ո՞վ ո՞ւմ է երկար նամակ գրում։；誰が誰に向けて長い手紙を書いているのですか。</p>
+</main>
+
+    <div class="navigation">
+
+    <div class="previous">
+        <a href="adjective-adverb.html">← 前の章</a>
+    </div>
+
+    <div class="index">
+        <a href="index.html">目次</a>
+    </div>
+
+    <div class="next">
+        <a href="numeral.html">次の章 →</a>
+    </div>
+
+</div>
+
+    <footer>
+
+        現代東アルメニア語文法<br>
+        Ժամանակակից Արևելահայերենի Քերականություն
+
+    </footer>
+
+</div>
+
+</body>
+
+</html>
+</main>
+
+    <div class="navigation">
+
+    <div class="previous">
+        <a href="adjective-adverb.html">← 前の章</a>
+    </div>
+
+    <div class="index">
+        <a href="index.html">目次</a>
+    </div>
+
+    <div class="next">
+        <a href="numeral.html">次の章 →</a>
+    </div>
+
+</div>
+
+    <footer>
+
+        現代東アルメニア語文法<br>
+        Ժամանակակից Արևելահայերենի Քերականություն
+
+    </footer>
+
+</div>
+
+</body>
+
+</html>
