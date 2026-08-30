@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -11,7 +12,7 @@
 
         body {
             margin: 0;
-            background: #f8f6f0;
+            background: #f3f0e8;
             color: #20242a;
             font-family: Georgia, "Times New Roman", serif;
             line-height: 1.9;
@@ -20,35 +21,38 @@
         .page {
             max-width: 900px;
             margin: 0 auto;
-            padding: 60px 50px 100px;
+            padding: 60px 55px 100px;
             background: #fffdf8;
             min-height: 100vh;
             box-sizing: border-box;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.04);
         }
 
         header {
             text-align: center;
-            padding: 20px 0 55px;
+            padding: 25px 0 50px;
             border-bottom: 1px solid #aaa;
         }
 
         .book-title {
-            font-size: 0.9rem;
-            letter-spacing: 0.12em;
-            color: #555;
-            margin-bottom: 25px;
+            font-size: 0.85rem;
+            letter-spacing: 0.16em;
+            color: #666;
+            margin-bottom: 22px;
         }
 
         h1 {
-            font-size: 2.4rem;
+            font-size: 2.45rem;
             font-weight: normal;
             color: #18283b;
             margin: 0;
+            letter-spacing: 0.03em;
         }
 
         .armenian {
-            margin-top: 12px;
-            font-size: 1.2rem;
+            margin-top: 14px;
+            font-size: 1.15rem;
+            color: #555;
         }
 
         main {
@@ -57,21 +61,52 @@
         }
 
         p {
-            margin-bottom: 1.7em;
+            margin: 0 0 1.6em;
             text-align: justify;
         }
 
+        h2 {
+            margin-top: 3em;
+            margin-bottom: 1.2em;
+            padding-bottom: 0.45em;
+            border-bottom: 1px solid #c5c0b5;
+            color: #18283b;
+            font-size: 1.35rem;
+            font-weight: normal;
+            letter-spacing: 0.02em;
+        }
+
+        h3 {
+            margin-top: 2.3em;
+            margin-bottom: 0.8em;
+            color: #18283b;
+            font-size: 1.05rem;
+            font-weight: normal;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        a {
+            color: #6f2935;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(111, 41, 53, 0.35);
+            transition: border-color 0.2s ease;
+        }
+
+        a:hover {
+            border-bottom-color: #6f2935;
+        }
+
         .navigation {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 80px;
+            max-width: 720px;
+            margin: 80px auto 0;
             padding-top: 25px;
             border-top: 1px solid #aaa;
         }
 
         .navigation a {
             color: #18283b;
-            text-decoration: none;
+            border-bottom: none;
         }
 
         .navigation a:hover {
@@ -80,24 +115,27 @@
 
         footer {
             margin-top: 60px;
+            padding-top: 25px;
+            border-top: 1px solid #ddd;
             text-align: center;
             font-size: 0.8rem;
             color: #777;
+            line-height: 1.8;
         }
-        
- .logo-link {
-    position: fixed;
-    top: 15px;
-    left: 20px;
-    z-index: 1000;
-    display: block;
-}
 
-.site-logo {
-    width: 80px;
-    height: auto;
-    display: block;
-}
+        .logo-link {
+            position: fixed;
+            top: 15px;
+            left: 20px;
+            z-index: 1000;
+            display: block;
+        }
+
+        .site-logo {
+            width: 80px;
+            height: auto;
+            display: block;
+        }
 
         @media (max-width: 650px) {
 
@@ -105,12 +143,29 @@
                 padding: 40px 25px 70px;
             }
 
+            header {
+                padding-bottom: 40px;
+            }
+
             h1 {
                 font-size: 2rem;
             }
 
+            h2 {
+                font-size: 1.2rem;
+            }
+
             p {
                 text-align: left;
+            }
+
+            .site-logo {
+                width: 65px;
+            }
+
+            .logo-link {
+                top: 10px;
+                left: 12px;
             }
 
         }
@@ -147,43 +202,55 @@
             言語のプロではなく学習者として書いてます。アルメニア語の、ひいてはアルメニアに関する知見を広める活動の一環です。
             お問い合わせは、以下の私のblogからお願いいたします。
         </p>
-        
-      <h2>
-        ・編集者・執筆者/Խմբագիր և Հեղինակ
-      </h2>
+
+        <h2>
+            ・編集者・執筆者 / Խմբագիր և Հեղինակ
+        </h2>
+
         <p>
             二宮　篤紀
         </p>
-        
+
         <h3>BIO</h3>
-        
-        <p>English version</p>
+
+        <p>
+            English version
+        </p>
+
         <p>
             A student who is passionate about learning modern languages around the world.
             Especially interested in Modern Greek, English, Armenian, and Tagalog.
         </p>
-       
-        <p>Հայերեն</p>
+
+        <p>
+            Հայերեն
+        </p>
 
         <p>
             Աշխարհի ժամանակակից լեզուները սովորելու մեծ հետաքրքրությամբ ուսանող։ Հատկապես հետաքրքրված է ժամանակակից հունարենով, անգլերենով, հայերենով և տագալոգերենով։
         </p>
 
         <h3>BLOG</h3>
-        
-         <p>
+
+        <p>
             Check out the link below!
         </p>
-            <p>
-    <a href="https://note.com/clear_pika621/all" target="_blank" rel="noopener noreferrer">Ninastan Blog in Note
-    </a>
-            </p>
 
-      <h2>・アルメニア語監修/Հայերենի Խմբագիր</h2>
+        <p>
+            <a href="https://note.com/clear_pika621/all"
+               target="_blank"
+               rel="noopener noreferrer">
+                Ninastan Blog in Note
+            </a>
+        </p>
 
-      <p>
-        Հասմիկ
-      </p>
+        <h2>
+            ・アルメニア語監修 / Հայերենի Խմբագիր
+        </h2>
+
+        <p>
+            Հասմիկ
+        </p>
 
         <h2>
             ・その他アルメニア語学習に有用な日本語のサイト
@@ -193,12 +260,15 @@
             おそらく日本語でかかれたアルメニアにかんする情報で、もっとも広く、もっとも詳細に説明がなされているサイトです。アルメニア語だけでなく、
             アルメニアという国についてもっと詳しく知りたいという人は、ぜひこちらも見てくださいね。
         </p>
+
         <p>
-            <a href="https://www.armenia-guide.pink/index.html" target="_blank" rel="noopener noreferrer">「アルメニア完全ガイド」
-    </a>
-            
+            <a href="https://www.armenia-guide.pink/index.html"
+               target="_blank"
+               rel="noopener noreferrer">
+                「アルメニア完全ガイド」
+            </a>
         </p>
-        
+
     </main>
 
     <div class="navigation">
@@ -221,3 +291,4 @@
 </body>
 
 </html>
+```
