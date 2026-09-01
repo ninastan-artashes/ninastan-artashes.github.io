@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ninastan-artashes.github.io/sitemap.xml
